@@ -58,6 +58,7 @@ implementation
 
 procedure TfrmColorDialog.ColorListBox1Change(Sender: TObject);
 begin
+
   if edtColorName.IsFocused then exit;
 
   if (ColorListBox1.ItemIndex > -1) then

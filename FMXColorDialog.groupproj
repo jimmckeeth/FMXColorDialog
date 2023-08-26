@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{5C32F757-D8DA-457B-9369-320DC360FD05}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Source\FMXColorDialogSample.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Tests\ColorUtilTests.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="FMXColorDialogSample">
+        <MSBuild Projects="Source\FMXColorDialogSample.dproj"/>
+    </Target>
+    <Target Name="FMXColorDialogSample:Clean">
+        <MSBuild Projects="Source\FMXColorDialogSample.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FMXColorDialogSample:Make">
+        <MSBuild Projects="Source\FMXColorDialogSample.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ColorUtilTests">
+        <MSBuild Projects="Tests\ColorUtilTests.dproj"/>
+    </Target>
+    <Target Name="ColorUtilTests:Clean">
+        <MSBuild Projects="Tests\ColorUtilTests.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ColorUtilTests:Make">
+        <MSBuild Projects="Tests\ColorUtilTests.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="FMXColorDialogSample;ColorUtilTests"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="FMXColorDialogSample:Clean;ColorUtilTests:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="FMXColorDialogSample:Make;ColorUtilTests:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
