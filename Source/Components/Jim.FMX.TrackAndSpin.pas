@@ -184,9 +184,18 @@ type
     property OnChange: TNotifyEvent read FOnChange write FOnChange;
   end;
 
+  TJimTrackSpin = class(TCustomTrackSpin)
+
+  end;
+
 procedure Register;
 
 implementation
+
+procedure Register;
+begin
+  RegisterComponents('Colors', [TJimTrackSpin]);
+end;
 
 type
   TSpinBoxHack = class(TSpinBox)
@@ -197,11 +206,6 @@ type
   public
     Property TheTrack: TControl read FTrack;
   end;
-
-procedure Register;
-begin
-  RegisterComponents('Colors', [TCustomTrackSpin]);
-end;
 
 { TCustomTrackSpin }
 
@@ -542,6 +546,6 @@ end;
 
 initialization
 
-  RegisterFmxClasses( [ TCustomTrackSpin ] );
+  RegisterFmxClasses( [ TJimTrackSpin, TCustomTrackSpin ] );
 
 end.
