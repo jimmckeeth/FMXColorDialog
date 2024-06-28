@@ -2,7 +2,7 @@ object frmColorDialog: TfrmColorDialog
   Left = 0
   Top = 0
   Caption = 'Color Picker'
-  ClientHeight = 250
+  ClientHeight = 308
   ClientWidth = 450
   Position = MainFormCenter
   FormFactor.Width = 320
@@ -17,7 +17,7 @@ object frmColorDialog: TfrmColorDialog
     Margins.Left = 8.000000000000000000
     Margins.Right = 8.000000000000000000
     Size.Width = 265.000000000000000000
-    Size.Height = 146.000000000000000000
+    Size.Height = 204.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     OnChange = ColorPanel1Change
@@ -28,7 +28,7 @@ object frmColorDialog: TfrmColorDialog
     Position.X = 8.000000000000000000
     Position.Y = 40.000000000000000000
     Size.Width = 161.000000000000000000
-    Size.Height = 146.000000000000000000
+    Size.Height = 204.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
     Color = claPowderblue
@@ -38,7 +38,7 @@ object frmColorDialog: TfrmColorDialog
     DefaultItemStyles.GroupFooterStyle = ''
     OnChange = ColorListBox1Change
     Viewport.Width = 141.000000000000000000
-    Viewport.Height = 142.000000000000000000
+    Viewport.Height = 200.000000000000000000
   end
   object Panel1: TPanel
     Align = Bottom
@@ -51,7 +51,7 @@ object frmColorDialog: TfrmColorDialog
     Margins.Right = 8.000000000000000000
     Margins.Bottom = 8.000000000000000000
     Position.X = 8.000000000000000000
-    Position.Y = 194.000000000000000000
+    Position.Y = 252.000000000000000000
     Size.Width = 434.000000000000000000
     Size.Height = 48.000000000000000000
     Size.PlatformDefault = False
@@ -66,6 +66,7 @@ object frmColorDialog: TfrmColorDialog
       Size.PlatformDefault = False
       TabOrder = 0
       Text = 'Accept'
+      TextSettings.Trimming = None
     end
     object Button2: TButton
       Cancel = True
@@ -74,6 +75,7 @@ object frmColorDialog: TfrmColorDialog
       Position.Y = 14.000000000000000000
       TabOrder = 1
       Text = 'Cancel'
+      TextSettings.Trimming = None
     end
   end
   object Layout1: TLayout
