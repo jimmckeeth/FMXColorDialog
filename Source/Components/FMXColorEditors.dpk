@@ -34,6 +34,7 @@ requires
 
 contains
   Jim.FMX.TrackAndSpin in 'Jim.FMX.TrackAndSpin.pas',
-  Jim.FMX.MoreTrackbars in 'Jim.FMX.MoreTrackbars.pas';
+  Jim.FMX.MoreTrackbars in 'Jim.FMX.MoreTrackbars.pas',
+  Jim.Color.Palettes in 'Jim.Color.Palettes.pas';
 
 end.

@@ -9,7 +9,8 @@ uses
   HTMLColorData in 'HTMLColorData.pas',
   ColorSliderConverter in 'ColorSliderConverter.pas' {Form1},
   Jim.FMX.TrackAndSpin in 'Components\Jim.FMX.TrackAndSpin.pas',
-  Jim.FMX.MoreTrackbars in 'Components\Jim.FMX.MoreTrackbars.pas';
+  Jim.FMX.MoreTrackbars in 'Components\Jim.FMX.MoreTrackbars.pas',
+  Jim.Color.Palettes in 'Components\Jim.Color.Palettes.pas';
 
 {$R *.res}
 

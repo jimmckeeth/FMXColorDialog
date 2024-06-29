@@ -51,7 +51,7 @@ begin
   FGradient := TGradient.Create;
   FGradient.StartPosition.X := 1;
   FGradient.StartPosition.y := 0;
-  FGradient.Points[CBeginIndex].Color := TAlphaColorRec.Red;
+  FGradient.Points[CBeginIndex].Color := TAlphaColorRec.Black;
   FGradient.Points[CEndIndex].Color := TAlphaColorRec.Blue;
 end;
 

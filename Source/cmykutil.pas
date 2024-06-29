@@ -45,8 +45,6 @@ uses
   Math, System.UIConsts;
 
 class function TCMYKColor.RGBToCMYK(RGBColor: TAlphaColor): TCMYKColor;
-var
-  r,g,b,k: Single;
 begin
   Result.A := TAlphaColorRec(RGBColor).A / 255;
   if (RGBColor = claBlack) or (RGBColor = 0) then
@@ -58,10 +56,10 @@ begin
   end
   else
   begin
-    r := 1 - (TAlphaColorRec(RGBColor).R / 255);
-    g := 1 - (TAlphaColorRec(RGBColor).G / 255);
-    b := 1 - (TAlphaColorRec(RGBColor).B / 255);
-    k := Min(r, Min(g, b));
+    var r := 1 - (TAlphaColorRec(RGBColor).R / 255);
+    var g := 1 - (TAlphaColorRec(RGBColor).G / 255);
+    var b := 1 - (TAlphaColorRec(RGBColor).B / 255);
+    var k := Min(r, Min(g, b));
     Result.C := (r - k) / (1 - k);
     Result.M := (g - k) / (1 - k);
     Result.Y := (b - k) / (1 - k);

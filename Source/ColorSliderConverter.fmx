@@ -1,192 +1,770 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'Form1'
-  ClientHeight = 480
-  ClientWidth = 640
+  Caption = 'Jim'#39's Overengineered Color Picker'
+  ClientHeight = 409
+  ClientWidth = 720
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
   DesignerMasterStyle = 0
-  object Layout9: TLayout
-    Position.X = 56.000000000000000000
-    Position.Y = 32.000000000000000000
-    Size.Width = 329.000000000000000000
-    Size.Height = 113.000000000000000000
+  object Layout6: TLayout
+    Align = Client
+    Size.Width = 185.000000000000000000
+    Size.Height = 409.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 2
-    object JimTrackSpin1: TJimTrackSpin
+    TabOrder = 3
+    object ColorBox1: TColorBox
       Align = Top
-      HitTest = True
-      Position.Y = 28.000000000000000000
-      Size.Width = 329.000000000000000000
-      Size.Height = 25.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 5
-      TextWidth = 70.000000000000000000
-      ColorRight = claRed
-      ColorLeft = claBlack
-      Text = 'Red'
-      Max = 255.000000000000000000
-      ReadOnly = False
-      KeyboardType = NumberPad
-      ReturnKeyType = Default
-      StyledSettings = [Family, Size, Style, FontColor]
-      TrackColor = claBlack
-    end
-    object JimTrackSpin2: TJimTrackSpin
-      Align = Top
-      HitTest = True
-      Position.Y = 53.000000000000000000
-      Size.Width = 329.000000000000000000
-      Size.Height = 25.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 4
-      TextWidth = 70.000000000000000000
-      ColorRight = claGreen
-      ColorLeft = claBlack
-      Text = 'Green'
-      Max = 255.000000000000000000
-      ReadOnly = False
-      KeyboardType = NumberPad
-      ReturnKeyType = Default
-      StyledSettings = [Family, Size, Style, FontColor]
-      TrackColor = claBlack
-    end
-    object JimTrackSpin3: TJimTrackSpin
-      Align = Top
-      HitTest = True
-      Position.Y = 78.000000000000000000
-      Size.Width = 329.000000000000000000
-      Size.Height = 25.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 3
-      TextWidth = 70.000000000000000000
-      ColorRight = claBlue
-      ColorLeft = claBlack
-      Text = 'Blue'
-      Max = 255.000000000000000000
-      ReadOnly = False
-      KeyboardType = NumberPad
-      ReturnKeyType = Default
-      StyledSettings = [Family, Size, Style, FontColor]
-      TrackColor = claBlack
-    end
-    object Layout10: TLayout
-      Align = Top
-      Size.Width = 329.000000000000000000
-      Size.Height = 28.000000000000000000
+      Color = xFFFFA9A9
+      Size.Width = 185.000000000000000000
+      Size.Height = 160.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
-      object Label9: TLabel
-        Align = Left
-        StyledSettings = [Family, Size, FontColor]
-        Size.Width = 70.000000000000000000
+      ParentShowHint = False
+      ShowHint = True
+      object ColorComplementary: TCircle
+        Align = Center
+        Anchors = [akLeft, akTop]
+        Hint = 'Complementary'
+        Size.Width = 50.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Thickness = 0.100000001490116100
+        ParentShowHint = False
+        ShowHint = True
+        OnDblClick = ColorComplementaryDblClick
+      end
+    end
+    object ColorQuadPicker: TColorQuad
+      Alpha = 1.000000000000000000
+      Align = Client
+      ColorBox = ColorBox1
+      Lum = 0.831325292587280300
+      Sat = 0.994594573974609400
+      Size.Width = 185.000000000000000000
+      Size.Height = 249.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+  end
+  object Layout5: TLayout
+    Align = Left
+    Size.Width = 344.000000000000000000
+    Size.Height = 409.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object AlphaTrackSpin1: TAlphaTrackSpin
+      Tag = 1
+      Anchors = [akLeft, akTop, akRight]
+      HitTest = True
+      Position.X = 8.000000000000000000
+      Position.Y = 368.000000000000000000
+      Size.Width = 327.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      TextWidth = 70.000000000000000000
+      Text = 'Alpha'
+      Max = 100.000000000000000000
+      Value = 100.000000000000000000
+      ReadOnly = False
+      KeyboardType = NumberPad
+      ReturnKeyType = Default
+      StyledSettings = [Family, Size, Style, FontColor]
+      ValueType = Integer
+      OnChange = ColorTrackChange
+    end
+    object Layout1: TLayout
+      Anchors = [akLeft, akTop, akRight]
+      Position.X = 8.000000000000000000
+      Position.Y = 119.000000000000000000
+      Size.Width = 329.000000000000000000
+      Size.Height = 113.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object HSLHue: THueTrackSpin
+        Tag = 2
+        Align = Top
+        HitTest = True
+        Position.Y = 28.000000000000000000
+        Size.Width = 329.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        TextWidth = 70.000000000000000000
+        Text = 'Hue'
+        Max = 360.000000000000000000
+        ReadOnly = False
+        KeyboardType = NumberPad
+        ReturnKeyType = Default
+        StyledSettings = [Family, Size, Style, FontColor]
+        ValueType = Integer
+        OnChange = ColorTrackChange
+      end
+      object HSLSaturation: TGradientTrackSpin
+        Tag = 2
+        Align = Top
+        HitTest = True
+        Position.Y = 53.000000000000000000
+        Size.Width = 329.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        TextWidth = 70.000000000000000000
+        Text = 'Saturation'
+        Max = 100.000000000000000000
+        Value = 100.000000000000000000
+        ReadOnly = False
+        KeyboardType = NumberPad
+        ReturnKeyType = Default
+        StyledSettings = [Family, Size, Style, FontColor]
+        ValueType = Integer
+        OnChange = ColorTrackChange
+        ColorEnd = claRed
+        ColorBegin = claBlue
+      end
+      object HSLLuminance: TBWTrackSpin
+        Tag = 2
+        Align = Top
+        HitTest = True
+        Position.Y = 78.000000000000000000
+        Size.Width = 329.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        TextWidth = 70.000000000000000000
+        Text = 'Luminance'
+        Max = 100.000000000000000000
+        Value = 50.000000000000000000
+        ReadOnly = False
+        KeyboardType = NumberPad
+        ReturnKeyType = Default
+        StyledSettings = [Family, Size, Style, FontColor]
+        ValueType = Integer
+        OnChange = ColorTrackChange
+      end
+      object Layout2: TLayout
+        Align = Top
+        Size.Width = 329.000000000000000000
         Size.Height = 28.000000000000000000
         Size.PlatformDefault = False
-        TextSettings.Font.StyleExt = {00070000000000000004000000}
-        TextSettings.HorzAlign = Center
-        Text = 'RGB'
         TabOrder = 0
+        object Label1: TLabel
+          Align = Left
+          StyledSettings = [Family, Size, FontColor]
+          Size.Width = 70.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = 'HSL'
+          TabOrder = 0
+        end
       end
-      object Edit2: TEdit
-        Touch.InteractiveGestures = [LongTap, DoubleTap]
-        Align = Right
-        TabOrder = 1
-        Text = '#FFFFFF'
-        TextSettings.HorzAlign = Center
-        Position.X = 240.000000000000000000
-        Position.Y = 2.000000000000000000
-        Margins.Top = 2.000000000000000000
-        Margins.Right = 2.000000000000000000
-        Margins.Bottom = 2.000000000000000000
-        Size.Width = 87.000000000000000000
-        Size.Height = 24.000000000000000000
+    end
+    object Layout3: TLayout
+      Anchors = [akLeft, akTop, akRight]
+      Position.X = 8.000000000000000000
+      Position.Y = 232.000000000000000000
+      Size.Width = 329.000000000000000000
+      Size.Height = 137.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object CMYKBlack: TGradientTrackSpin
+        Tag = 3
+        Align = Top
+        HitTest = True
+        Position.Y = 103.000000000000000000
+        Size.Width = 329.000000000000000000
+        Size.Height = 25.000000000000000000
         Size.PlatformDefault = False
+        TabOrder = 1
+        TextWidth = 70.000000000000000000
+        Text = 'Key/Black'
+        Max = 100.000000000000000000
+        ReadOnly = False
+        KeyboardType = NumberPad
+        ReturnKeyType = Default
+        StyledSettings = [Family, Size, Style, FontColor]
+        ValueType = Integer
+        OnChange = ColorTrackChange
+        ColorEnd = claBlack
+        ColorBegin = claWhite
+      end
+      object Layout4: TLayout
+        Align = Top
+        Size.Width = 329.000000000000000000
+        Size.Height = 28.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label2: TLabel
+          Align = Left
+          StyledSettings = [Family, Size, FontColor]
+          Size.Width = 70.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = 'CMYK'
+          TabOrder = 0
+        end
+      end
+      object CMYKCyan: TGradientTrackSpin
+        Tag = 3
+        Align = Top
+        HitTest = True
+        Position.Y = 28.000000000000000000
+        Size.Width = 329.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        TextWidth = 70.000000000000000000
+        Text = 'Cyan'
+        Max = 100.000000000000000000
+        ReadOnly = False
+        KeyboardType = NumberPad
+        ReturnKeyType = Default
+        StyledSettings = [Family, Size, Style, FontColor]
+        ValueType = Integer
+        OnChange = ColorTrackChange
+        ColorEnd = claAqua
+        ColorBegin = claBlack
+      end
+      object CMYKMagenta: TGradientTrackSpin
+        Tag = 3
+        Align = Top
+        HitTest = True
+        Position.Y = 53.000000000000000000
+        Size.Width = 329.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        TextWidth = 70.000000000000000000
+        Text = 'Magenta'
+        Max = 100.000000000000000000
+        Value = 100.000000000000000000
+        ReadOnly = False
+        KeyboardType = NumberPad
+        ReturnKeyType = Default
+        StyledSettings = [Family, Size, Style, FontColor]
+        ValueType = Integer
+        OnChange = ColorTrackChange
+        ColorEnd = claFuchsia
+        ColorBegin = claBlack
+      end
+      object CMYKYellow: TGradientTrackSpin
+        Tag = 3
+        Align = Top
+        HitTest = True
+        Position.Y = 78.000000000000000000
+        Size.Width = 329.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        TextWidth = 70.000000000000000000
+        Text = 'Yellow'
+        Max = 100.000000000000000000
+        Value = 100.000000000000000000
+        ReadOnly = False
+        KeyboardType = NumberPad
+        ReturnKeyType = Default
+        StyledSettings = [Family, Size, Style, FontColor]
+        ValueType = Integer
+        OnChange = ColorTrackChange
+        ColorEnd = claYellow
+        ColorBegin = claBlack
+      end
+    end
+    object Layout9: TLayout
+      Anchors = [akLeft, akTop, akRight]
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 329.000000000000000000
+      Size.Height = 113.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object RGBRed: TGradientTrackSpin
+        Tag = 1
+        Align = Top
+        HitTest = True
+        Position.Y = 28.000000000000000000
+        Size.Width = 329.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        TextWidth = 70.000000000000000000
+        Text = 'Red'
+        Max = 255.000000000000000000
+        Value = 255.000000000000000000
+        ReadOnly = False
+        KeyboardType = NumberPad
+        ReturnKeyType = Default
+        StyledSettings = [Family, Size, Style, FontColor]
+        ValueType = Integer
+        OnChange = ColorTrackChange
+        ColorEnd = claRed
+        ColorBegin = claBlack
+      end
+      object RGBGreen: TGradientTrackSpin
+        Tag = 1
+        Align = Top
+        HitTest = True
+        Position.Y = 53.000000000000000000
+        Size.Width = 329.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        TextWidth = 70.000000000000000000
+        Text = 'Green'
+        Max = 255.000000000000000000
+        ReadOnly = False
+        KeyboardType = NumberPad
+        ReturnKeyType = Default
+        StyledSettings = [Family, Size, Style, FontColor]
+        ValueType = Integer
+        OnChange = ColorTrackChange
+        ColorEnd = claGreen
+        ColorBegin = claBlack
+      end
+      object RGBBlue: TGradientTrackSpin
+        Tag = 1
+        Align = Top
+        HitTest = True
+        Position.Y = 78.000000000000000000
+        Size.Width = 329.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        TextWidth = 70.000000000000000000
+        Text = 'Blue'
+        Max = 255.000000000000000000
+        ReadOnly = False
+        KeyboardType = NumberPad
+        ReturnKeyType = Default
+        StyledSettings = [Family, Size, Style, FontColor]
+        ValueType = Integer
+        OnChange = ColorTrackChange
+        ColorEnd = claBlue
+        ColorBegin = claBlack
+      end
+      object Layout10: TLayout
+        Align = Top
+        Size.Width = 329.000000000000000000
+        Size.Height = 28.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label9: TLabel
+          Align = Left
+          StyledSettings = [Family, Size, FontColor]
+          Size.Width = 70.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = 'RGB'
+          TabOrder = 0
+        end
+        object RGBString: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Right
+          TabOrder = 1
+          Text = '#FFFFFF'
+          TextSettings.HorzAlign = Center
+          Position.X = 248.000000000000000000
+          Position.Y = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Size.Width = 79.000000000000000000
+          Size.Height = 24.000000000000000000
+          Size.PlatformDefault = False
+        end
       end
     end
   end
-  object Layout1: TLayout
-    Position.X = 56.000000000000000000
-    Position.Y = 143.000000000000000000
-    Size.Width = 329.000000000000000000
-    Size.Height = 113.000000000000000000
+  object Layout7: TLayout
+    Align = Right
+    Position.X = 538.000000000000000000
+    Size.Width = 182.000000000000000000
+    Size.Height = 409.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 1
-    object JimTrackSpin4: TJimTrackSpin
-      Align = Top
-      HitTest = True
-      Position.Y = 28.000000000000000000
-      Size.Width = 329.000000000000000000
-      Size.Height = 25.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 5
-      TextWidth = 70.000000000000000000
-      ColorRight = claBlack
-      ColorLeft = claRed
-      Text = 'Hue'
-      Max = 300.000000000000000000
-      ReadOnly = False
-      KeyboardType = NumberPad
-      ReturnKeyType = Default
-      StyledSettings = [Family, Size, Style, FontColor]
-      TrackColor = claBlack
-    end
-    object JimTrackSpin5: TJimTrackSpin
-      Align = Top
-      HitTest = True
-      Position.Y = 53.000000000000000000
-      Size.Width = 329.000000000000000000
-      Size.Height = 25.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 4
-      TextWidth = 70.000000000000000000
-      ColorRight = claBlack
-      ColorLeft = claGreen
-      Text = 'Saturation'
-      Max = 100.000000000000000000
-      ReadOnly = False
-      KeyboardType = NumberPad
-      ReturnKeyType = Default
-      StyledSettings = [Family, Size, Style, FontColor]
-      TrackColor = claBlack
-    end
-    object JimTrackSpin6: TJimTrackSpin
-      Align = Top
-      HitTest = True
-      Position.Y = 78.000000000000000000
-      Size.Width = 329.000000000000000000
-      Size.Height = 25.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 3
-      TextWidth = 70.000000000000000000
-      ColorRight = claBlack
-      ColorLeft = claBlue
-      Text = 'Luminance'
-      Max = 100.000000000000000000
-      ReadOnly = False
-      KeyboardType = NumberPad
-      ReturnKeyType = Default
-      StyledSettings = [Family, Size, Style, FontColor]
-      TrackColor = claBlack
-    end
-    object Layout2: TLayout
-      Align = Top
-      Size.Width = 329.000000000000000000
-      Size.Height = 28.000000000000000000
+    TabOrder = 4
+    object ColorListBox1: TColorListBox
+      Align = Client
+      Margins.Left = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 172.000000000000000000
+      Size.Height = 239.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
-      object Label1: TLabel
-        Align = Left
-        StyledSettings = [Family, Size, FontColor]
-        Size.Width = 70.000000000000000000
-        Size.Height = 28.000000000000000000
+      OnDblClick = Button1Click
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      OnChange = ColorListBox1Change
+      Viewport.Width = 152.000000000000000000
+      Viewport.Height = 235.000000000000000000
+    end
+    object GridPanelLayout1: TGridPanelLayout
+      Align = Top
+      Margins.Left = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Size.Width = 172.000000000000000000
+      Size.Height = 160.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      ColumnCollection = <
+        item
+          SizeStyle = Absolute
+          Value = 32.000000000000000000
+        end
+        item
+          SizeStyle = Absolute
+          Value = 32.000000000000000000
+        end
+        item
+          SizeStyle = Absolute
+          Value = 32.000000000000000000
+        end
+        item
+          SizeStyle = Absolute
+          Value = 80.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = ColorQuad1
+          Row = 0
+        end
+        item
+          Column = 1
+          Control = ColorQuad2
+          Row = 0
+        end
+        item
+          Column = 2
+          Control = ColorQuad3
+          Row = 0
+        end
+        item
+          Column = 3
+          Control = Label3
+          Row = 0
+        end
+        item
+          Column = 0
+          Control = ColorAnalogous1
+          Row = 1
+        end
+        item
+          Column = 1
+          Control = ColorAnalogous2
+          Row = 1
+        end
+        item
+          Column = 2
+          ColumnSpan = 2
+          Control = Label5
+          Row = 1
+        end
+        item
+          Column = 0
+          Control = ColorTriad1
+          Row = 2
+        end
+        item
+          Column = 1
+          Control = ColorTriad2
+          Row = 2
+        end
+        item
+          Column = 2
+          ColumnSpan = 2
+          Control = Label6
+          Row = 2
+        end
+        item
+          Column = 0
+          Control = ColorSplit1
+          Row = 3
+        end
+        item
+          Column = 1
+          Control = ColorSplit2
+          Row = 3
+        end
+        item
+          Column = 2
+          ColumnSpan = 2
+          Control = Label7
+          Row = 3
+        end
+        item
+          Column = 0
+          Control = ColorRectangle1
+          Row = 4
+        end
+        item
+          Column = 1
+          Control = ColorRectangle2
+          Row = 4
+        end
+        item
+          Column = 2
+          Control = ColorRectangle3
+          Row = 4
+        end
+        item
+          Column = 3
+          Control = Label4
+          Row = 4
+        end>
+      RowCollection = <
+        item
+          SizeStyle = Auto
+          Value = 20.000000000000000000
+        end
+        item
+          SizeStyle = Auto
+          Value = 20.000000000000000000
+        end
+        item
+          SizeStyle = Auto
+          Value = 20.000000000000000000
+        end
+        item
+          SizeStyle = Auto
+          Value = 20.000000000000000000
+        end
+        item
+          SizeStyle = Auto
+          Value = 20.000000000000000000
+        end>
+      object ColorQuad1: TColorBox
+        Anchors = []
+        Color = claNull
+        Hint = 'Quad'
+        Size.Width = 32.000000000000000000
+        Size.Height = 32.000000000000000000
         Size.PlatformDefault = False
-        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TabOrder = 22
+        ParentShowHint = False
+        ShowHint = True
+        OnDblClick = ColorSplit1DblClick
+      end
+      object ColorQuad2: TColorBox
+        Anchors = []
+        Color = claNull
+        Hint = 'Quad'
+        Position.X = 32.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 16
+        ParentShowHint = False
+        ShowHint = True
+        OnDblClick = ColorSplit1DblClick
+      end
+      object ColorQuad3: TColorBox
+        Anchors = []
+        Color = claNull
+        Hint = 'Quad'
+        Position.X = 64.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 12
+        ParentShowHint = False
+        ShowHint = True
+        OnDblClick = ColorSplit1DblClick
+      end
+      object Label3: TLabel
+        Align = Right
+        Margins.Left = 5.000000000000000000
+        Position.X = 76.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
         TextSettings.HorzAlign = Center
-        Text = 'HSL'
-        TabOrder = 0
+        Text = 'Quad'
+        TabOrder = 24
+      end
+      object ColorAnalogous1: TColorBox
+        Anchors = []
+        Color = claNull
+        Hint = 'Analogous'
+        Position.Y = 32.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 21
+        OnDblClick = ColorSplit1DblClick
+      end
+      object ColorAnalogous2: TColorBox
+        Anchors = []
+        Color = claNull
+        Hint = 'Analogous'
+        Position.X = 32.000000000000000000
+        Position.Y = 32.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 14
+        OnDblClick = ColorSplit1DblClick
+      end
+      object Label5: TLabel
+        Align = Right
+        Margins.Left = 5.000000000000000000
+        Position.X = 76.000000000000000000
+        Position.Y = 32.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'Analgous'
+        TabOrder = 17
+      end
+      object ColorTriad1: TColorBox
+        Anchors = []
+        Color = claNull
+        Hint = 'Triad'
+        Position.Y = 64.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 11
+        ParentShowHint = False
+        ShowHint = True
+        OnDblClick = ColorSplit1DblClick
+      end
+      object ColorTriad2: TColorBox
+        Anchors = []
+        Color = claNull
+        Hint = 'Triad'
+        Position.X = 32.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 8
+        ParentShowHint = False
+        ShowHint = True
+        OnDblClick = ColorSplit1DblClick
+      end
+      object Label6: TLabel
+        Align = Right
+        Margins.Left = 5.000000000000000000
+        Position.X = 76.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'Triad'
+        TabOrder = 20
+      end
+      object ColorSplit1: TColorBox
+        Anchors = []
+        Color = claNull
+        Hint = 'Split'
+        Position.Y = 96.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 13
+        OnDblClick = ColorSplit1DblClick
+      end
+      object ColorSplit2: TColorBox
+        Anchors = []
+        Color = claNull
+        Hint = 'Split'
+        Position.X = 32.000000000000000000
+        Position.Y = 96.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 10
+        OnDblClick = ColorSplit1DblClick
+      end
+      object Label7: TLabel
+        Align = Right
+        Margins.Left = 5.000000000000000000
+        Position.X = 76.000000000000000000
+        Position.Y = 96.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'Split'
+        TabOrder = 18
+      end
+      object ColorRectangle1: TColorBox
+        Anchors = []
+        Color = claNull
+        Hint = 'Rectangle'
+        Position.Y = 128.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 15
+        ParentShowHint = False
+        ShowHint = True
+        OnDblClick = ColorSplit1DblClick
+      end
+      object ColorRectangle2: TColorBox
+        Anchors = []
+        Color = claNull
+        Hint = 'Rectangle'
+        Position.X = 32.000000000000000000
+        Position.Y = 128.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 9
+        ParentShowHint = False
+        ShowHint = True
+        OnDblClick = ColorSplit1DblClick
+      end
+      object ColorRectangle3: TColorBox
+        Anchors = []
+        Color = claNull
+        Hint = 'Rectangle'
+        Position.X = 64.000000000000000000
+        Position.Y = 128.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 19
+        ParentShowHint = False
+        ShowHint = True
+        OnDblClick = ColorSplit1DblClick
+      end
+      object Label4: TLabel
+        Align = Right
+        Margins.Left = 5.000000000000000000
+        Position.X = 76.000000000000000000
+        Position.Y = 128.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'Rectangle'
+        TabOrder = 30
       end
     end
+  end
+  object Splitter1: TSplitter
+    Align = Left
+    Cursor = crHSplit
+    MinSize = 20.000000000000000000
+    Position.X = 344.000000000000000000
+    Size.Width = 9.000000000000000000
+    Size.Height = 409.000000000000000000
+    Size.PlatformDefault = False
   end
 end

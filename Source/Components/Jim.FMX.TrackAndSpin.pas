@@ -8,10 +8,8 @@ uses
   FMX.EditBox, FMX.Controls.Presentation, System.Types, System.UITypes,
   System.UIConsts,
 
-  Jim.FMX.MoreTrackbars;
-
-const
-  CDefaultTextWidth = 70;
+  Jim.FMX.MoreTrackbars,
+  FMX.Colors;
 
 type
   TCustomTrackSpin = class(TPresentedControl, IReadOnly, IValueRange,
@@ -19,10 +17,9 @@ type
   private
     { Private declarations }
     FLabel: TLabel;
-    FTrack: TGradientTrackBar;
+    FTrack: TCustomTrack;
     FSpin: TSpinBox;
     FOnChange: TNotifyEvent;
-    FTrackColor: TAlphaColor;
     procedure SetText(AText: String);
     procedure SetMax(const Value: Double);
     procedure SetMin(const Value: Double);
@@ -40,18 +37,15 @@ type
     procedure SetValueRange(const AValue: TCustomValueRange);
 
     function GetModel: TSpinBoxModel;
-    procedure SetTrackColor(const Value: TAlphaColor);
-    function GetColorRight: TAlphaColor;
-    function GetColorLeft: TAlphaColor;
-    procedure SetColorRight(const Value: TAlphaColor);
-    procedure SetColorLeft(const Value: TAlphaColor);
     function IsTextWidthStored: Boolean;
+    function GetValueType: TNumValueType;
+    procedure SetValueType(const Value: TNumValueType);
   protected
     { Protected declarations }
     procedure Change;
     function GetReadOnly: Boolean;
     procedure SetReadOnly(const Value: Boolean);
-        procedure Paint; override;
+    procedure Paint; override;
     property Model: TSpinBoxModel read GetModel;
 
     // IVirtualKeyboardControl
@@ -75,12 +69,14 @@ type
     function GetObject: TCustomCaret;
     procedure ShowCaret;
     procedure HideCaret;
+
+    // customization
+    function CreateTrackBar: TCustomTrack; virtual;
   public
 
     { Public declarations }
     constructor Create(AOwner: TComponent); override;
     destructor Destroy; override;
-
 
     // ITextActions
     procedure DeleteSelection;
@@ -144,25 +140,12 @@ type
     property OnMouseEnter;
     property OnMouseLeave;
 
-    property TextWidth: single
-      read GetTextWidth
-      write SetTextWidth stored IsTextWidthStored;
+    property TextWidth: single read GetTextWidth write SetTextWidth stored IsTextWidthStored;
 
-
-    property ColorRight: TAlphaColor read GetColorRight write SetColorRight;
-    property ColorLeft: TAlphaColor read GetColorLeft write SetColorLeft;
-    property Text: string
-      read GetText
-      write SetText;
-    property Min: Double
-      read GetMin
-      write SetMin;
-    property Max: Double
-      read GetMax
-      write SetMax;
-    property Value: Double
-      read GetValue
-      write SetValue;
+    property Text: string read GetText write SetText;
+    property Min: Double read GetMin write SetMin;
+    property Max: Double read GetMax write SetMax;
+    property Value: Double read GetValue write SetValue;
 
     // IReadOnly
     property ReadOnly: Boolean read GetReadOnly write SetReadOnly;
@@ -179,22 +162,50 @@ type
     // ICaret
     property Caret: TCustomCaret read GetObject;
 
-    property TrackColor: TAlphaColor read FTrackColor write SetTrackColor;
-    { Events }
+    property ValueType: TNumValueType read GetValueType write SetValueType;
+
+    // Events
     property OnChange: TNotifyEvent read FOnChange write FOnChange;
   end;
 
-  TJimTrackSpin = class(TCustomTrackSpin)
-
+  TGradientTrackSpin = class(TCustomTrackSpin)
+  protected
+    function CreateTrackBar: TCustomTrack; override;
+  public
+    function GetColorEnd: TAlphaColor;
+    function GetColorBegin: TAlphaColor;
+    procedure SetColorEnd(const Value: TAlphaColor);
+    procedure SetColorBegin(const Value: TAlphaColor);
+  published
+    property ColorEnd: TAlphaColor read GetColorEnd write SetColorEnd;
+    property ColorBegin: TAlphaColor read GetColorBegin write SetColorBegin;
   end;
 
-procedure Register;
+  THueTrackSpin = class(TCustomTrackSpin)
+  protected
+    function CreateTrackBar: TCustomTrack; override;
+  end;
+
+  TBWTrackSpin = class(TCustomTrackSpin)
+  protected
+    function CreateTrackBar: TCustomTrack; override;
+  end;
+
+  TAlphaTrackSpin = class(TCustomTrackSpin)
+  protected
+    function CreateTrackBar: TCustomTrack; override;
+  end;
+
+  procedure Register;
 
 implementation
 
+const
+  CDefaultTextWidth = 70;
+
 procedure Register;
 begin
-  RegisterComponents('Colors', [TJimTrackSpin]);
+  RegisterComponents('Colors', [TGradientTrackSpin, THueTrackSpin, TBWTrackSpin, TAlphaTrackSpin]);
 end;
 
 type
@@ -225,15 +236,17 @@ begin
   FLabel.Parent := Self;
   FLabel.SetDesign(False);
   FLabel.Width := CDefaultTextWidth;
-  FTrack := TGradientTrackBar.Create(self);
+
+  FTrack := CreateTrackBar; //TTrackBar.Create(self);
   FTrack.Stored := False;
   FTrack.Parent := Self;
   FTrack.SetDesign(False);
+
   FSpin := TSpinBox.Create(self);
   FSpin.Stored := False;
   FSpin.SetDesign(False);
   FSpin.Parent := Self;
-  FSpin.Width := 90;
+  FSpin.Width := 85;
 
   FLabel.Align := TAlignLayout.Left;
   FLabel.TextSettings.HorzAlign := TTextAlign.Center;
@@ -259,6 +272,12 @@ begin
   FTrack.CanFocus := True;
   FTrack.Margins.Right := 3;
   FTrack.Max := 255;
+end;
+
+function TCustomTrackSpin.CreateTrackBar: TCustomTrack;
+begin
+  FTrack := TTrackBar.Create(self);
+  Result := FTrack;
 end;
 
 procedure TCustomTrackSpin.CutToClipboard;
@@ -304,16 +323,6 @@ end;
 function TCustomTrackSpin.GetTextWidth: single;
 begin
   Result := FLabel.Width;
-end;
-
-function TCustomTrackSpin.GetColorRight: TAlphaColor;
-begin
-  Result := FTrack.EndColor;
-end;
-
-function TCustomTrackSpin.GetColorLeft: TAlphaColor;
-begin
-  Result := FTrack.BeginColor;
 end;
 
 function TCustomTrackSpin.GetDefaultTextSettings: TTextSettings;
@@ -379,6 +388,11 @@ end;
 function TCustomTrackSpin.GetValueRange: TCustomValueRange;
 begin
   Result := FSpin.ValueRange;
+end;
+
+function TCustomTrackSpin.GetValueType: TNumValueType;
+begin
+  Result := FSpin.ValueType;
 end;
 
 procedure TCustomTrackSpin.GoToTextBegin;
@@ -458,16 +472,6 @@ begin
   end;
 end;
 
-procedure TCustomTrackSpin.SetColorLeft(const Value: TAlphaColor);
-begin
-  FTrack.EndColor := Value;
-end;
-
-procedure TCustomTrackSpin.SetColorRight(const Value: TAlphaColor);
-begin
-  FTrack.BeginColor := Value;
-end;
-
 procedure TCustomTrackSpin.SetKeyboardType(Value: TVirtualKeyboardType);
 begin
   FSpin.KeyboardType := Value;
@@ -518,12 +522,6 @@ begin
   FSpin.TextSettings.Assign(Value);
 end;
 
-procedure TCustomTrackSpin.SetTrackColor(const Value: TAlphaColor);
-begin
-  FTrackColor := Value;
-  FTrack.Repaint;
-end;
-
 procedure TCustomTrackSpin.SetValue(const Value: Double);
 begin
   if (FTrack.Value <> Value) or (FSpin.Value <> Value) then
@@ -539,13 +537,70 @@ begin
   FSpin.ValueRange.Assign(AValue);
 end;
 
+procedure TCustomTrackSpin.SetValueType(const Value: TNumValueType);
+begin
+  FSpin.ValueType := Value;
+end;
+
 procedure TCustomTrackSpin.ShowCaret;
 begin
   FSpin.Caret.Show;
 end;
 
+{ TGradientTrackSpin }
+
+procedure TGradientTrackSpin.SetColorBegin(const Value: TAlphaColor);
+begin
+  TGradientTrackBar(FTrack).BeginColor := Value;
+end;
+
+procedure TGradientTrackSpin.SetColorEnd(const Value: TAlphaColor);
+begin
+  TGradientTrackBar(FTrack).EndColor := Value;
+end;
+
+function TGradientTrackSpin.GetColorEnd: TAlphaColor;
+begin
+  Result := TGradientTrackBar(FTrack).EndColor;
+end;
+
+function TGradientTrackSpin.GetColorBegin: TAlphaColor;
+begin
+  Result := TGradientTrackBar(FTrack).BeginColor;
+end;
+
+function TGradientTrackSpin.CreateTrackBar: TCustomTrack;
+begin
+  FTrack := TGradientTrackBar.Create(self);
+  Result := FTrack;
+end;
+
+{ THueTrackSpin }
+
+function THueTrackSpin.CreateTrackBar: TCustomTrack;
+begin
+  FTrack := THueTrackBar.Create(self);
+  Result := FTrack;
+end;
+
+{ TAlphaTrackSpin }
+
+function TAlphaTrackSpin.CreateTrackBar: TCustomTrack;
+begin
+  FTrack := TAlphaTrackBar.Create(self);
+  Result := FTrack;
+end;
+
+{ TBWTrackSpin }
+
+function TBWTrackSpin.CreateTrackBar: TCustomTrack;
+begin
+  FTrack := TBWTrackBar.Create(self);
+  Result := FTrack;
+end;
+
 initialization
 
-  RegisterFmxClasses( [ TJimTrackSpin, TCustomTrackSpin ] );
+  RegisterFmxClasses( [ TBWTrackSpin, TAlphaTrackSpin, THueTrackSpin, TGradientTrackSpin, TCustomTrackSpin ] );
 
 end.

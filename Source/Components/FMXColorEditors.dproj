@@ -80,6 +80,7 @@
         <DCCReference Include="fmx.dcp"/>
         <DCCReference Include="Jim.FMX.TrackAndSpin.pas"/>
         <DCCReference Include="Jim.FMX.MoreTrackbars.pas"/>
+        <DCCReference Include="Jim.Color.Palettes.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

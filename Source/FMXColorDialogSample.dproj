@@ -281,6 +281,7 @@
         </DCCReference>
         <DCCReference Include="Components\Jim.FMX.TrackAndSpin.pas"/>
         <DCCReference Include="Components\Jim.FMX.MoreTrackbars.pas"/>
+        <DCCReference Include="Components\Jim.Color.Palettes.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
