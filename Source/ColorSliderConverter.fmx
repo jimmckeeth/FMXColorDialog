@@ -57,18 +57,17 @@ object Form1: TForm1
     TabOrder = 2
     object AlphaTrackSpin1: TAlphaTrackSpin
       Tag = 1
-      Anchors = [akLeft, akTop, akRight]
+      Align = Top
       HitTest = True
-      Position.X = 8.000000000000000000
-      Position.Y = 368.000000000000000000
-      Size.Width = 327.000000000000000000
+      Position.Y = 363.000000000000000000
+      Size.Width = 344.000000000000000000
       Size.Height = 25.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       TextWidth = 70.000000000000000000
       Text = 'Alpha'
       Max = 100.000000000000000000
-      Value = 100.000000000000000000
+      Value = 1.000000000000000000
       ReadOnly = False
       KeyboardType = NumberPad
       ReturnKeyType = Default
@@ -77,10 +76,9 @@ object Form1: TForm1
       OnChange = ColorTrackChange
     end
     object Layout1: TLayout
-      Anchors = [akLeft, akTop, akRight]
-      Position.X = 8.000000000000000000
-      Position.Y = 119.000000000000000000
-      Size.Width = 329.000000000000000000
+      Align = Top
+      Position.Y = 113.000000000000000000
+      Size.Width = 344.000000000000000000
       Size.Height = 113.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 2
@@ -89,7 +87,7 @@ object Form1: TForm1
         Align = Top
         HitTest = True
         Position.Y = 28.000000000000000000
-        Size.Width = 329.000000000000000000
+        Size.Width = 344.000000000000000000
         Size.Height = 25.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 3
@@ -108,14 +106,14 @@ object Form1: TForm1
         Align = Top
         HitTest = True
         Position.Y = 53.000000000000000000
-        Size.Width = 329.000000000000000000
+        Size.Width = 344.000000000000000000
         Size.Height = 25.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
         TextWidth = 70.000000000000000000
         Text = 'Saturation'
         Max = 100.000000000000000000
-        Value = 100.000000000000000000
+        Value = 1.000000000000000000
         ReadOnly = False
         KeyboardType = NumberPad
         ReturnKeyType = Default
@@ -130,7 +128,7 @@ object Form1: TForm1
         Align = Top
         HitTest = True
         Position.Y = 78.000000000000000000
-        Size.Width = 329.000000000000000000
+        Size.Width = 344.000000000000000000
         Size.Height = 25.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
@@ -147,28 +145,48 @@ object Form1: TForm1
       end
       object Layout2: TLayout
         Align = Top
-        Size.Width = 329.000000000000000000
+        Size.Width = 344.000000000000000000
         Size.Height = 28.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
         object Label1: TLabel
           Align = Left
           StyledSettings = [Family, Size, FontColor]
-          Size.Width = 70.000000000000000000
+          Position.X = 25.000000000000000000
+          Size.Width = 45.000000000000000000
           Size.Height = 28.000000000000000000
           Size.PlatformDefault = False
           TextSettings.Font.StyleExt = {00070000000000000004000000}
-          TextSettings.HorzAlign = Center
           Text = 'HSL'
           TabOrder = 0
+        end
+        object Button2: TButton
+          Align = MostLeft
+          Size.Width = 25.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'arrowdowntoolbuttonbordered'
+          TabOrder = 2
+          Text = 'Button1'
+          TextSettings.Trimming = None
+        end
+        object HSLString: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Right
+          TabOrder = 3
+          Text = '(0, 100%, 50%)'
+          TextSettings.HorzAlign = Center
+          Position.X = 216.000000000000000000
+          Size.Width = 128.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
         end
       end
     end
     object Layout3: TLayout
-      Anchors = [akLeft, akTop, akRight]
-      Position.X = 8.000000000000000000
-      Position.Y = 232.000000000000000000
-      Size.Width = 329.000000000000000000
+      Align = Top
+      Position.Y = 226.000000000000000000
+      Size.Width = 344.000000000000000000
       Size.Height = 137.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
@@ -177,7 +195,7 @@ object Form1: TForm1
         Align = Top
         HitTest = True
         Position.Y = 103.000000000000000000
-        Size.Width = 329.000000000000000000
+        Size.Width = 344.000000000000000000
         Size.Height = 25.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
@@ -195,20 +213,30 @@ object Form1: TForm1
       end
       object Layout4: TLayout
         Align = Top
-        Size.Width = 329.000000000000000000
+        Size.Width = 344.000000000000000000
         Size.Height = 28.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
         object Label2: TLabel
           Align = Left
           StyledSettings = [Family, Size, FontColor]
-          Size.Width = 70.000000000000000000
+          Position.X = 25.000000000000000000
+          Size.Width = 45.000000000000000000
           Size.Height = 28.000000000000000000
           Size.PlatformDefault = False
           TextSettings.Font.StyleExt = {00070000000000000004000000}
-          TextSettings.HorzAlign = Center
           Text = 'CMYK'
           TabOrder = 0
+        end
+        object Button3: TButton
+          Align = MostLeft
+          Size.Width = 25.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'arrowdowntoolbuttonbordered'
+          TabOrder = 2
+          Text = 'Button1'
+          TextSettings.Trimming = None
         end
       end
       object CMYKCyan: TGradientTrackSpin
@@ -216,7 +244,7 @@ object Form1: TForm1
         Align = Top
         HitTest = True
         Position.Y = 28.000000000000000000
-        Size.Width = 329.000000000000000000
+        Size.Width = 344.000000000000000000
         Size.Height = 25.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 4
@@ -237,14 +265,14 @@ object Form1: TForm1
         Align = Top
         HitTest = True
         Position.Y = 53.000000000000000000
-        Size.Width = 329.000000000000000000
+        Size.Width = 344.000000000000000000
         Size.Height = 25.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 3
         TextWidth = 70.000000000000000000
         Text = 'Magenta'
         Max = 100.000000000000000000
-        Value = 100.000000000000000000
+        Value = 1.000000000000000000
         ReadOnly = False
         KeyboardType = NumberPad
         ReturnKeyType = Default
@@ -259,14 +287,14 @@ object Form1: TForm1
         Align = Top
         HitTest = True
         Position.Y = 78.000000000000000000
-        Size.Width = 329.000000000000000000
+        Size.Width = 344.000000000000000000
         Size.Height = 25.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
         TextWidth = 70.000000000000000000
         Text = 'Yellow'
         Max = 100.000000000000000000
-        Value = 100.000000000000000000
+        Value = 1.000000000000000000
         ReadOnly = False
         KeyboardType = NumberPad
         ReturnKeyType = Default
@@ -277,11 +305,10 @@ object Form1: TForm1
         ColorBegin = claBlack
       end
     end
-    object Layout9: TLayout
-      Anchors = [akLeft, akTop, akRight]
-      Position.X = 8.000000000000000000
-      Position.Y = 8.000000000000000000
-      Size.Width = 329.000000000000000000
+    object RGBLayout: TLayout
+      Align = Top
+      ClipChildren = True
+      Size.Width = 344.000000000000000000
       Size.Height = 113.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 3
@@ -290,14 +317,14 @@ object Form1: TForm1
         Align = Top
         HitTest = True
         Position.Y = 28.000000000000000000
-        Size.Width = 329.000000000000000000
+        Size.Width = 344.000000000000000000
         Size.Height = 25.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 3
         TextWidth = 70.000000000000000000
         Text = 'Red'
         Max = 255.000000000000000000
-        Value = 255.000000000000000000
+        Value = 254.000000000000000000
         ReadOnly = False
         KeyboardType = NumberPad
         ReturnKeyType = Default
@@ -312,7 +339,7 @@ object Form1: TForm1
         Align = Top
         HitTest = True
         Position.Y = 53.000000000000000000
-        Size.Width = 329.000000000000000000
+        Size.Width = 344.000000000000000000
         Size.Height = 25.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
@@ -333,7 +360,7 @@ object Form1: TForm1
         Align = Top
         HitTest = True
         Position.Y = 78.000000000000000000
-        Size.Width = 329.000000000000000000
+        Size.Width = 344.000000000000000000
         Size.Height = 25.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
@@ -349,20 +376,20 @@ object Form1: TForm1
         ColorEnd = claBlue
         ColorBegin = claBlack
       end
-      object Layout10: TLayout
+      object RGBHeader: TLayout
         Align = Top
-        Size.Width = 329.000000000000000000
+        Size.Width = 344.000000000000000000
         Size.Height = 28.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
         object Label9: TLabel
           Align = Left
           StyledSettings = [Family, Size, FontColor]
-          Size.Width = 70.000000000000000000
+          Position.X = 25.000000000000000000
+          Size.Width = 45.000000000000000000
           Size.Height = 28.000000000000000000
           Size.PlatformDefault = False
           TextSettings.Font.StyleExt = {00070000000000000004000000}
-          TextSettings.HorzAlign = Center
           Text = 'RGB'
           TabOrder = 0
         end
@@ -370,9 +397,9 @@ object Form1: TForm1
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           Align = Right
           TabOrder = 1
-          Text = '#FFFFFF'
+          Text = '#FFFFFFFF'
           TextSettings.HorzAlign = Center
-          Position.X = 248.000000000000000000
+          Position.X = 263.000000000000000000
           Position.Y = 2.000000000000000000
           Margins.Top = 2.000000000000000000
           Margins.Right = 2.000000000000000000
@@ -380,6 +407,18 @@ object Form1: TForm1
           Size.Width = 79.000000000000000000
           Size.Height = 24.000000000000000000
           Size.PlatformDefault = False
+          OnChangeTracking = RGBStringChangeTracking
+        end
+        object RGBVisibleBtn: TButton
+          Align = MostLeft
+          Size.Width = 25.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'arrowdowntoolbuttonbordered'
+          TabOrder = 2
+          Text = 'RGBVisibleBtn'
+          TextSettings.Trimming = None
+          OnClick = RGBVisibleBtnClick
         end
       end
     end

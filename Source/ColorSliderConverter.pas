@@ -18,8 +18,8 @@ type
     RGBRed: TGradientTrackSpin;
     RGBGreen: TGradientTrackSpin;
     RGBBlue: TGradientTrackSpin;
-    Layout9: TLayout;
-    Layout10: TLayout;
+    RGBLayout: TLayout;
+    RGBHeader: TLayout;
     Label9: TLabel;
     RGBString: TEdit;
     Layout1: TLayout;
@@ -62,12 +62,18 @@ type
     Layout6: TLayout;
     Layout7: TLayout;
     Splitter1: TSplitter;
+    RGBVisibleBtn: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    HSLString: TEdit;
     procedure ColorTrackChange(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure ColorListBox1Change(Sender: TObject);
     procedure ColorComplementaryDblClick(Sender: TObject);
     procedure ColorSplit1DblClick(Sender: TObject);
+    procedure RGBVisibleBtnClick(Sender: TObject);
+    procedure RGBStringChangeTracking(Sender: TObject);
   private
     { Private declarations }
     var Updating: Boolean;
@@ -123,21 +129,18 @@ end;
 procedure TForm1.ColorComplementaryDblClick(Sender: TObject);
 begin
   ColorBox1.Color := (Sender as TShape).Fill.Color;
-  UpdateHSL;
   UpdateUI;
 end;
 
 procedure TForm1.ColorListBox1Change(Sender: TObject);
 begin
   ColorBox1.Color := ColorListBox1.Color;
-  UpdateHSL;
   UpdateUI;
 end;
 
 procedure TForm1.ColorSplit1DblClick(Sender: TObject);
 begin
   ColorBox1.Color := (Sender as TColorBox).Color;
-  UpdateHSL;
   UpdateUI;
 end;
 
@@ -153,17 +156,12 @@ begin
           Trunc(AlphaTrackSpin1.Value*2.55), Trunc(RGBRed.Value),
           Trunc(RGBGreen.Value), Trunc(RGBBlue.Value)]);
         ColorBox1.Color := StringToAlphaColor(RGBString.Text);
-        UpdateHSL;
-        UpdateCMYK;
       end;
       2: // HSL
       begin
         ColorQuadPicker.Hue := HSLHue.Value/360;
         ColorQuadPicker.Sat := HSLSaturation.Value/100;
         ColorQuadPicker.Lum := HSLLuminance.Value/100;
-        UpdateHSL; // Trackbar
-        UpdateCMYK;
-        UpdateRGB;
       end;
       3: // CMYK
       begin
@@ -174,8 +172,6 @@ begin
         CR.B := Round(255 * (1-CMYKYellow.Value/100) * (1-K));
         CR.A := Round(AlphaTrackSpin1.Value * 2.55);
         ColorBox1.Color := TAlphaColor(CR);
-        UpdateHSL;
-        UpdateRGB;
       end;
     end;
     UpdateUI;
@@ -187,8 +183,29 @@ end;
 procedure TForm1.FormCreate(Sender: TObject);
 begin
   Updating := False;
-  UpdateHSL;
   UpdateUI;
+end;
+
+procedure TForm1.RGBStringChangeTracking(Sender: TObject);
+begin
+  ColorBox1.Color := StringToAlphaColor(RGBString.Text);
+  UpdateUI;
+
+end;
+
+procedure TForm1.RGBVisibleBtnClick(Sender: TObject);
+begin
+  if RGBVisibleBtn.StyleLookup = 'arrowdowntoolbutton' then
+  begin
+    RGBVisibleBtn.StyleLookup := 'arrowrighttoolbutton';
+    TAnimator.AnimateFloat(RGBLayout, 'Height',RGBHeader.Height);
+  end
+  else
+  begin
+    RGBVisibleBtn.StyleLookup := 'arrowdowntoolbutton';
+    TAnimator.AnimateFloat(RGBLayout, 'Height',114);
+  end;
+
 end;
 
 procedure TForm1.UpdateCMYK;
@@ -225,6 +242,8 @@ begin
   // Trackbar
   HSLSaturation.ColorBegin := HSLtoRGB(H,0,L);
   HSLSaturation.ColorEnd := HSLtoRGB(H,1,L);
+
+  HSLString.Text := Format('(%.0f, %.0f%%, %.0f%%)',[H*360, S*100, L*100]);
 end;
 
 procedure TForm1.UpdateRGB;
@@ -240,6 +259,10 @@ end;
 
 procedure TForm1.UpdateUI;
 begin
+  UpdateRGB;
+  UpdateHSL;
+  UpdateCMYK;
+
   ColorQuadPicker.Hue := HSLHue.Value/360;
   ColorQuadPicker.Sat := HSLSaturation.Value/100;
   ColorQuadPicker.Lum := HSLLuminance.Value/100;
