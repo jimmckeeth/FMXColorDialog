@@ -40,6 +40,8 @@ type
     function IsTextWidthStored: Boolean;
     function GetValueType: TNumValueType;
     procedure SetValueType(const Value: TNumValueType);
+    function IsMaxStored: Boolean;
+    function IsMinStored: Boolean;
   protected
     { Protected declarations }
     procedure Change;
@@ -143,8 +145,8 @@ type
     property TextWidth: single read GetTextWidth write SetTextWidth stored IsTextWidthStored;
 
     property Text: string read GetText write SetText;
-    property Min: Double read GetMin write SetMin;
-    property Max: Double read GetMax write SetMax;
+    property Min: Double read GetMin write SetMin stored IsMinStored;
+    property Max: Double read GetMax write SetMax stored IsMaxStored;
     property Value: Double read GetValue write SetValue;
 
     // IReadOnly
@@ -162,7 +164,7 @@ type
     // ICaret
     property Caret: TCustomCaret read GetObject;
 
-    property ValueType: TNumValueType read GetValueType write SetValueType;
+    property ValueType: TNumValueType read GetValueType write SetValueType default TNumValueType.Integer;
 
     // Events
     property OnChange: TNotifyEvent read FOnChange write FOnChange;
@@ -202,10 +204,13 @@ implementation
 
 const
   CDefaultTextWidth = 70;
+  CDefaultMin = 0;
+  CDefaultMax = 255;
 
 procedure Register;
 begin
-  RegisterComponents('Colors', [TGradientTrackSpin, THueTrackSpin, TBWTrackSpin, TAlphaTrackSpin]);
+  RegisterComponents('Colors',
+    [TGradientTrackSpin, THueTrackSpin, TBWTrackSpin, TAlphaTrackSpin]);
 end;
 
 type
@@ -246,7 +251,7 @@ begin
   FSpin.Stored := False;
   FSpin.SetDesign(False);
   FSpin.Parent := Self;
-  FSpin.Width := 85;
+  FSpin.Width := 75;
 
   FLabel.Align := TAlignLayout.Left;
   FLabel.TextSettings.HorzAlign := TTextAlign.Center;
@@ -262,7 +267,8 @@ begin
   FSpin.Locked := True;
   FSpin.Stored := False;
   FSpin.CanFocus := True;
-  FSpin.Max :=  255;
+  FSpin.Max :=  CDefaultMax;
+  FSpin.Min := CDefaultMin;
 
   FTrack.Align := TAlignLayout.Client;
   FTrack.OnChange := DoTrackChange;
@@ -271,7 +277,8 @@ begin
   FTrack.Stored := False;
   FTrack.CanFocus := True;
   FTrack.Margins.Right := 3;
-  FTrack.Max := 255;
+  FTrack.Max := CDefaultMax;
+  FTrack.Min := CDefaultMin;
 end;
 
 function TCustomTrackSpin.CreateTrackBar: TCustomTrack;
@@ -305,6 +312,11 @@ end;
 
 procedure TCustomTrackSpin.DoSpinChange(Sender: TObject);
 begin
+  if FTrack.Value = FTrack.Max then
+    FTrack.Value := FTrack.Min + 1
+  else if FTrack.Value = FTrack.Min then
+    FTrack.Value := FTrack.Max - 1;
+
   FTrack.Value := FSpin.Value;
   Change;
 end;
@@ -410,6 +422,16 @@ begin
   FSpin.Caret.Hide;
 end;
 
+function TCustomTrackSpin.IsMaxStored: Boolean;
+begin
+  Result := Trunc(FSpin.Max) <> CDefaultMax
+end;
+
+function TCustomTrackSpin.IsMinStored: Boolean;
+begin
+  Result := Trunc(FSpin.Min) <> CDefaultMin
+end;
+
 function TCustomTrackSpin.IsPassword: Boolean;
 begin
   Result := FSpin.Password;
@@ -479,7 +501,7 @@ end;
 
 procedure TCustomTrackSpin.SetMax(const Value: Double);
 begin
-  if (FSpin.Max <> Value) or (FTrack.Max <> Value) then
+  if ((FSpin.Max) <> Value) or (FTrack.Max <> Value) then
   begin
     FSpin.Max := Value;
     FTrack.Max := Value;
@@ -489,7 +511,7 @@ end;
 
 procedure TCustomTrackSpin.SetMin(const Value: Double);
 begin
-  if (FSpin.Min <> Value) or (FTrack.Min <> Value) then
+  if ((FSpin.Min) <> Value) or (FTrack.Min <> Value) then
   begin
     FSpin.Min := Value;
     FTrack.Min := Value;
