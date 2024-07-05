@@ -312,11 +312,6 @@ end;
 
 procedure TCustomTrackSpin.DoSpinChange(Sender: TObject);
 begin
-  if FTrack.Value = FTrack.Max then
-    FTrack.Value := FTrack.Min + 1
-  else if FTrack.Value = FTrack.Min then
-    FTrack.Value := FTrack.Max - 1;
-
   FTrack.Value := FSpin.Value;
   Change;
 end;
