@@ -1,923 +1,923 @@
-Hex,Name,Red,Green,Blue,source
-#8ffe09,acid green,143,254,9,xkcd
-#bd6c48,adobe,189,108,72,xkcd
-#54ac68,algae,84,172,104,xkcd
-#21c36f,algae green,33,195,111,xkcd
-#070d0d,almostblack,7,13,13,xkcd
-#feb308,amber,254,179,8,xkcd
-#9b5fc0,amethyst,155,95,192,xkcd
-#6ecb3c,apple,110,203,60,xkcd
-#76cd26,apple green,118,205,38,xkcd
-#ffb16d,apricot,255,177,109,xkcd
-#13eac9,aqua,19,234,201,xkcd
-#02d8e9,aqua blue,2,216,233,xkcd
-#12e193,aqua green,18,225,147,xkcd
-#2ee8bb,aqua marine,46,232,187,xkcd
-#4b5d16,army green,75,93,22,xkcd
-#77ab56,asparagus,119,171,86,xkcd
-#3d0734,aubergine,61,7,52,xkcd
-#9a3001,auburn,154,48,1,xkcd
-#90b134,avocado,144,177,52,xkcd
-#87a922,avocado green,135,169,34,xkcd
-#1d5dec,azul,29,93,236,xkcd
-#069af3,azure,6,154,243,xkcd
-#a2cffe,baby blue,162,207,254,xkcd
-#8cff9e,baby green,140,255,158,xkcd
-#ffb7ce,baby pink,255,183,206,xkcd
-#ab9004,baby poo,171,144,4,xkcd
-#937c00,baby poop,147,124,0,xkcd
-#8f9805,baby poop green,143,152,5,xkcd
-#b6c406,baby puke green,182,196,6,xkcd
-#ca9bf7,baby purple,202,155,247,xkcd
-#ad900d,baby poop brown,173,144,13,xkcd
-#889717,baby poop green,136,151,23,xkcd
-#ffff7e,banana,255,255,126,xkcd
-#fafe4b,banana yellow,250,254,75,xkcd
-#fe46a5,barbie pink,254,70,165,xkcd
-#94ac02,barf green,148,172,2,xkcd
-#ac1db8,barney,172,29,184,xkcd
-#a00498,barney purple,160,4,152,xkcd
-#6b7c85,battleship grey,107,124,133,xkcd
-#e6daa6,beige,230,218,166,xkcd
-#990f4b,berry,153,15,75,xkcd
-#b5c306,bile,181,195,6,xkcd
-#000000,black,0,0,0,xkcd
-#afa88b,bland,175,168,139,xkcd
-#770001,blood,119,0,1,xkcd
-#fe4b03,blood orange,254,75,3,xkcd
-#980002,blood red,152,0,2,xkcd
-#0343df,blue,3,67,223,xkcd
-#464196,blue berry,70,65,150,xkcd
-#2242c7,blue blue,34,66,199,xkcd
-#0f9b8e,blue green,15,155,142,xkcd
-#85a3b2,blue grey,133,163,178,xkcd
-#5a06ef,blue purple,90,6,239,xkcd
-#5d06e9,blue violet,93,6,233,xkcd
-#533cc6,blue with a hint of purple,83,60,198,xkcd
-#2bb179,blue y green,43,177,121,xkcd
-#89a0b0,blue y grey,137,160,176,xkcd
-#6241c7,blue y purple,98,65,199,xkcd
-#2976bb,bluish,41,118,187,xkcd
-#10a674,bluish green,16,166,116,xkcd
-#748b97,bluish grey,116,139,151,xkcd
-#703be7,bluish purple,112,59,231,xkcd
-#5539cc,blurple,85,57,204,xkcd
-#f29e8e,blush,242,158,142,xkcd
-#fe828c,blush pink,254,130,140,xkcd
-#9bb53c,booger,155,181,60,xkcd
-#96b403,booger green,150,180,3,xkcd
-#7b002c,bordeaux,123,0,44,xkcd
-#63b365,boring green,99,179,101,xkcd
-#044a05,bottle green,4,74,5,xkcd
-#a03623,brick,160,54,35,xkcd
-#c14a09,brick orange,193,74,9,xkcd
-#8f1402,brick red,143,20,2,xkcd
-#0bf9ea,bright aqua,11,249,234,xkcd
-#0165fc,bright blue,1,101,252,xkcd
-#41fdfe,bright cyan,65,253,254,xkcd
-#01ff07,bright green,1,255,7,xkcd
-#c760ff,bright lavender,199,96,255,xkcd
-#26f7fd,bright light blue,38,247,253,xkcd
-#2dfe54,bright light green,45,254,84,xkcd
-#c95efb,bright lilac,201,94,251,xkcd
-#87fd05,bright lime,135,253,5,xkcd
-#65fe08,bright lime green,101,254,8,xkcd
-#ff08e8,bright magenta,255,8,232,xkcd
-#9cbb04,bright olive,156,187,4,xkcd
-#ff5b00,bright orange,255,91,0,xkcd
-#fe01b1,bright pink,254,1,177,xkcd
-#be03fd,bright purple,190,3,253,xkcd
-#ff000d,bright red,255,0,13,xkcd
-#05ffa6,bright seagreen,5,255,166,xkcd
-#02ccfe,bright sky blue,2,204,254,xkcd
-#01f9c6,bright teal,1,249,198,xkcd
-#0ffef9,bright turquoise,15,254,249,xkcd
-#ad0afd,bright violet,173,10,253,xkcd
-#fffd01,bright yellow,255,253,1,xkcd
-#9dff00,bright yellow green,157,255,0,xkcd
-#05480d,british racing green,5,72,13,xkcd
-#a87900,bronze,168,121,0,xkcd
-#653700,brown,101,55,0,xkcd
-#706c11,brown green,112,108,17,xkcd
-#8d8468,brown grey,141,132,104,xkcd
-#9c6d57,brownish,156,109,87,xkcd
-#6a6e09,brownish green,106,110,9,xkcd
-#86775f,brownish grey,134,119,95,xkcd
-#cb7723,brownish orange,203,119,35,xkcd
-#c27e79,brownish pink,194,126,121,xkcd
-#76424e,brownish purple,118,66,78,xkcd
-#9e3623,brownish red,158,54,35,xkcd
-#c9b003,brownish yellow,201,176,3,xkcd
-#b96902,brown orange,185,105,2,xkcd
-#922b05,brown red,146,43,5,xkcd
-#b29705,brown yellow,178,151,5,xkcd
-#6f6c0a,browny green,111,108,10,xkcd
-#ca6b02,browny orange,202,107,2,xkcd
-#7e4071,bruise,126,64,113,xkcd
-#ff6cb5,bubblegum,255,108,181,xkcd
-#ff69af,bubblegum pink,255,105,175,xkcd
-#fef69e,buff,254,246,158,xkcd
-#610023,burgundy,97,0,35,xkcd
-#c04e01,burnt orange,192,78,1,xkcd
-#9f2305,burnt red,159,35,5,xkcd
-#b75203,burntsiena,183,82,3,xkcd
-#b04e0f,burntsienna,176,78,15,xkcd
-#a0450e,burntumber,160,69,14,xkcd
-#d5ab09,burnt yellow,213,171,9,xkcd
-#6832e3,burple,104,50,227,xkcd
-#ffff81,butter,255,255,129,xkcd
-#fdb147,butterscotch,253,177,71,xkcd
-#fffd74,butter yellow,255,253,116,xkcd
-#4e7496,cadet blue,78,116,150,xkcd
-#c69f59,camel,198,159,89,xkcd
-#7f8f4e,camo,127,143,78,xkcd
-#526525,camo green,82,101,37,xkcd
-#4b6113,camouflage green,75,97,19,xkcd
-#fdff63,canary,253,255,99,xkcd
-#fffe40,canary yellow,255,254,64,xkcd
-#ff63e9,candy pink,255,99,233,xkcd
-#af6f09,caramel,175,111,9,xkcd
-#9d0216,carmine,157,2,22,xkcd
-#fd798f,carnation,253,121,143,xkcd
-#ff7fa7,carnation pink,255,127,167,xkcd
-#8ab8fe,carolina blue,138,184,254,xkcd
-#befdb7,celadon,190,253,183,xkcd
-#c1fd95,celery,193,253,149,xkcd
-#a5a391,cement,165,163,145,xkcd
-#de0c62,cerise,222,12,98,xkcd
-#0485d1,cerulean,4,133,209,xkcd
-#056eee,cerulean blue,5,110,238,xkcd
-#343837,charcoal,52,56,55,xkcd
-#3c4142,charcoal grey,60,65,66,xkcd
-#c1f80a,chartreuse,193,248,10,xkcd
-#cf0234,cherry,207,2,52,xkcd
-#f7022a,cherry red,247,2,42,xkcd
-#742802,chestnut,116,40,2,xkcd
-#3d1c02,chocolate,61,28,2,xkcd
-#411900,chocolate brown,65,25,0,xkcd
-#ac4f06,cinnamon,172,79,6,xkcd
-#680018,claret,104,0,24,xkcd
-#b66a50,clay,182,106,80,xkcd
-#b2713d,clay brown,178,113,61,xkcd
-#247afd,clear blue,36,122,253,xkcd
-#1e488f,cobalt,30,72,143,xkcd
-#030aa7,cobalt blue,3,10,167,xkcd
-#875f42,cocoa,135,95,66,xkcd
-#a6814c,coffee,166,129,76,xkcd
-#4984b8,cool blue,73,132,184,xkcd
-#33b864,cool green,51,184,100,xkcd
-#95a3a6,cool grey,149,163,166,xkcd
-#b66325,copper,182,99,37,xkcd
-#fc5a50,coral,252,90,80,xkcd
-#ff6163,coral pink,255,97,99,xkcd
-#6a79f7,cornflower,106,121,247,xkcd
-#5170d7,cornflower blue,81,112,215,xkcd
-#9e003a,cranberry,158,0,58,xkcd
-#ffffc2,cream,255,255,194,xkcd
-#ffffb6,creme,255,255,182,xkcd
-#8c000f,crimson,140,0,15,xkcd
-#fffd78,custard,255,253,120,xkcd
-#00ffff,cyan,0,255,255,xkcd
-#fedf08,dandelion,254,223,8,xkcd
-#1b2431,dark,27,36,49,xkcd
-#05696b,dark aqua,5,105,107,xkcd
-#017371,dark aquamarine,1,115,113,xkcd
-#ac9362,dark beige,172,147,98,xkcd
-#030764,dark blue,3,7,100,xkcd
-#005249,dark blue green,0,82,73,xkcd
-#1f3b4d,dark blue grey,31,59,77,xkcd
-#341c02,dark brown,52,28,2,xkcd
-#cf524e,dark coral,207,82,78,xkcd
-#fff39a,dark cream,255,243,154,xkcd
-#0a888a,dark cyan,10,136,138,xkcd
-#002d04,dark forest green,0,45,4,xkcd
-#9d0759,dark fuchsia,157,7,89,xkcd
-#b59410,dark gold,181,148,16,xkcd
-#388004,dark grass green,56,128,4,xkcd
-#054907,dark green,5,73,7,xkcd
-#1f6357,dark green blue,31,99,87,xkcd
-#363737,dark grey,54,55,55,xkcd
-#29465b,dark grey blue,41,70,91,xkcd
-#d90166,dark hot pink,217,1,102,xkcd
-#1f0954,dark indigo,31,9,84,xkcd
-#014182,darkish blue,1,65,130,xkcd
-#287c37,darkish green,40,124,55,xkcd
-#da467d,darkish pink,218,70,125,xkcd
-#751973,darkish purple,117,25,115,xkcd
-#a90308,darkish red,169,3,8,xkcd
-#9b8f55,dark khaki,155,143,85,xkcd
-#856798,dark lavender,133,103,152,xkcd
-#9c6da5,dark lilac,156,109,165,xkcd
-#84b701,dark lime,132,183,1,xkcd
-#7ebd01,dark lime green,126,189,1,xkcd
-#960056,dark magenta,150,0,86,xkcd
-#3c0008,dark maroon,60,0,8,xkcd
-#874c62,dark mauve,135,76,98,xkcd
-#48c072,dark mint,72,192,114,xkcd
-#20c073,dark mint green,32,192,115,xkcd
-#a88905,dark mustard,168,137,5,xkcd
-#000435,dark navy,0,4,53,xkcd
-#00022e,dark navy blue,0,2,46,xkcd
-#373e02,dark olive,55,62,2,xkcd
-#3c4d03,dark olive green,60,77,3,xkcd
-#c65102,dark orange,198,81,2,xkcd
-#56ae57,dark pastel green,86,174,87,xkcd
-#de7e5d,dark peach,222,126,93,xkcd
-#665fd1,dark periwinkle,102,95,209,xkcd
-#cb416b,dark pink,203,65,107,xkcd
-#3f012c,dark plum,63,1,44,xkcd
-#35063e,dark purple,53,6,62,xkcd
-#840000,dark red,132,0,0,xkcd
-#b5485d,dark rose,181,72,93,xkcd
-#02066f,dark royal blue,2,6,111,xkcd
-#598556,dark sage,89,133,86,xkcd
-#c85a53,dark salmon,200,90,83,xkcd
-#a88f59,dark sand,168,143,89,xkcd
-#1fb57a,dark seafoam,31,181,122,xkcd
-#3eaf76,dark seafoam green,62,175,118,xkcd
-#11875d,dark sea green,17,135,93,xkcd
-#448ee4,dark sky blue,68,142,228,xkcd
-#214761,dark slate blue,33,71,97,xkcd
-#af884a,dark tan,175,136,74,xkcd
-#7f684e,dark taupe,127,104,78,xkcd
-#014d4e,dark teal,1,77,78,xkcd
-#045c5a,dark turquoise,4,92,90,xkcd
-#34013f,dark violet,52,1,63,xkcd
-#d5b60a,dark yellow,213,182,10,xkcd
-#728f02,dark yellow green,114,143,2,xkcd
-#08787f,deep aqua,8,120,127,xkcd
-#040273,deep blue,4,2,115,xkcd
-#410200,deep brown,65,2,0,xkcd
-#02590f,deep green,2,89,15,xkcd
-#8d5eb7,deep lavender,141,94,183,xkcd
-#966ebd,deep lilac,150,110,189,xkcd
-#a0025c,deep magenta,160,2,92,xkcd
-#dc4d01,deep orange,220,77,1,xkcd
-#cb0162,deep pink,203,1,98,xkcd
-#36013f,deep purple,54,1,63,xkcd
-#9a0200,deep red,154,2,0,xkcd
-#c74767,deep rose,199,71,103,xkcd
-#015482,deep sea blue,1,84,130,xkcd
-#0d75f8,deep sky blue,13,117,248,xkcd
-#00555a,deep teal,0,85,90,xkcd
-#017374,deep turquoise,1,115,116,xkcd
-#490648,deep violet,73,6,72,xkcd
-#3b638c,denim,59,99,140,xkcd
-#3b5b92,denim blue,59,91,146,xkcd
-#ccad60,desert,204,173,96,xkcd
-#9f8303,diarrhea,159,131,3,xkcd
-#8a6e45,dirt,138,110,69,xkcd
-#836539,dirt brown,131,101,57,xkcd
-#3f829d,dirty blue,63,130,157,xkcd
-#667e2c,dirty green,102,126,44,xkcd
-#c87606,dirty orange,200,118,6,xkcd
-#ca7b80,dirty pink,202,123,128,xkcd
-#734a65,dirty purple,115,74,101,xkcd
-#cdc50a,dirty yellow,205,197,10,xkcd
-#3e82fc,dodger blue,62,130,252,xkcd
-#828344,drab,130,131,68,xkcd
-#749551,drab green,116,149,81,xkcd
-#4b0101,dried blood,75,1,1,xkcd
-#c3fbf4,duck egg blue,195,251,244,xkcd
-#49759c,dull blue,73,117,156,xkcd
-#876e4b,dull brown,135,110,75,xkcd
-#74a662,dull green,116,166,98,xkcd
-#d8863b,dull orange,216,134,59,xkcd
-#d5869d,dull pink,213,134,157,xkcd
-#84597e,dull purple,132,89,126,xkcd
-#bb3f3f,dull red,187,63,63,xkcd
-#5f9e8f,dull teal,95,158,143,xkcd
-#eedc5b,dull yellow,238,220,91,xkcd
-#4e5481,dusk,78,84,129,xkcd
-#26538d,dusk blue,38,83,141,xkcd
-#475f94,dusky blue,71,95,148,xkcd
-#cc7a8b,dusky pink,204,122,139,xkcd
-#895b7b,dusky purple,137,91,123,xkcd
-#ba6873,dusky rose,186,104,115,xkcd
-#b2996e,dust,178,153,110,xkcd
-#5a86ad,dusty blue,90,134,173,xkcd
-#76a973,dusty green,118,169,115,xkcd
-#ac86a8,dustylavender,172,134,168,xkcd
-#f0833a,dusty orange,240,131,58,xkcd
-#d58a94,dusty pink,213,138,148,xkcd
-#825f87,dusty purple,130,95,135,xkcd
-#b9484e,dusty red,185,72,78,xkcd
-#c0737a,dusty rose,192,115,122,xkcd
-#4c9085,dusty teal,76,144,133,xkcd
-#a2653e,earth,162,101,62,xkcd
-#8cfd7e,easter green,140,253,126,xkcd
-#c071fe,easter purple,192,113,254,xkcd
-#feffca,ecru,254,255,202,xkcd
-#380835,eggplant,56,8,53,xkcd
-#430541,eggplant purple,67,5,65,xkcd
-#fffcc4,eggshell,255,252,196,xkcd
-#c4fff7,eggshell blue,196,255,247,xkcd
-#0652ff,electric blue,6,82,255,xkcd
-#21fc0d,electric green,33,252,13,xkcd
-#a8ff04,electriclime,168,255,4,xkcd
-#ff0490,electric pink,255,4,144,xkcd
-#aa23ff,electric purple,170,35,255,xkcd
-#01a049,emerald,1,160,73,xkcd
-#028f1e,emerald green,2,143,30,xkcd
-#05472a,evergreen,5,71,42,xkcd
-#658cbb,faded blue,101,140,187,xkcd
-#7bb274,faded green,123,178,116,xkcd
-#f0944d,faded orange,240,148,77,xkcd
-#de9dac,faded pink,222,157,172,xkcd
-#916e99,faded purple,145,110,153,xkcd
-#d3494e,faded red,211,73,78,xkcd
-#feff7f,faded yellow,254,255,127,xkcd
-#cfaf7b,fawn,207,175,123,xkcd
-#63a950,fern,99,169,80,xkcd
-#548d44,fern green,84,141,68,xkcd
-#fe0002,fire engine red,254,0,2,xkcd
-#3c73a8,flat blue,60,115,168,xkcd
-#699d4c,flat green,105,157,76,xkcd
-#08ff08,fluorescent green,8,255,8,xkcd
-#0aff02,fluro green,10,255,2,xkcd
-#90fda9,foam green,144,253,169,xkcd
-#0b5509,forest,11,85,9,xkcd
-#06470c,forest green,6,71,12,xkcd
-#154406,forrest green,21,68,6,xkcd
-#436bad,french blue,67,107,173,xkcd
-#69d84f,fresh green,105,216,79,xkcd
-#58bc08,frog green,88,188,8,xkcd
-#ed0dd9,fuchsia,237,13,217,xkcd
-#dbb40c,gold,219,180,12,xkcd
-#f5bf03,golden,245,191,3,xkcd
-#b27a01,golden brown,178,122,1,xkcd
-#f9bc08,goldenrod,249,188,8,xkcd
-#fec615,golden yellow,254,198,21,xkcd
-#6c3461,grape,108,52,97,xkcd
-#fd5956,grapefruit,253,89,86,xkcd
-#5d1451,grape purple,93,20,81,xkcd
-#5cac2d,grass,92,172,45,xkcd
-#3f9b0b,grass green,63,155,11,xkcd
-#419c03,grassy green,65,156,3,xkcd
-#15b01a,green,21,176,26,xkcd
-#5edc1f,green apple,94,220,31,xkcd
-#01c08d,green blue,1,192,141,xkcd
-#544e03,green brown,84,78,3,xkcd
-#77926f,green grey,119,146,111,xkcd
-#40a368,greenish,64,163,104,xkcd
-#c9d179,greenish beige,201,209,121,xkcd
-#0b8b87,greenish blue,11,139,135,xkcd
-#696112,greenish brown,105,97,18,xkcd
-#2afeb7,greenish cyan,42,254,183,xkcd
-#96ae8d,greenish grey,150,174,141,xkcd
-#bccb7a,greenish tan,188,203,122,xkcd
-#32bf84,greenish teal,50,191,132,xkcd
-#00fbb0,greenish turquoise,0,251,176,xkcd
-#cdfd02,greenish yellow,205,253,2,xkcd
-#0cb577,green teal,12,181,119,xkcd
-#42b395,greeny blue,66,179,149,xkcd
-#696006,greeny brown,105,96,6,xkcd
-#b5ce08,green yellow,181,206,8,xkcd
-#7ea07a,greeny grey,126,160,122,xkcd
-#c6f808,greeny yellow,198,248,8,xkcd
-#929591,grey,146,149,145,xkcd
-#647d8e,grey blue,100,125,142,xkcd
-#7f7053,grey brown,127,112,83,xkcd
-#86a17d,grey green,134,161,125,xkcd
-#a8a495,greyish,168,164,149,xkcd
-#5e819d,greyish blue,94,129,157,xkcd
-#7a6a4f,greyish brown,122,106,79,xkcd
-#82a67d,greyish green,130,166,125,xkcd
-#c88d94,greyish pink,200,141,148,xkcd
-#887191,greyish purple,136,113,145,xkcd
-#719f91,greyish teal,113,159,145,xkcd
-#c3909b,grey pink,195,144,155,xkcd
-#826d8c,grey purple,130,109,140,xkcd
-#5e9b8a,grey teal,94,155,138,xkcd
-#a0bf16,gross green,160,191,22,xkcd
-#536267,gun metal,83,98,103,xkcd
-#8e7618,hazel,142,118,24,xkcd
-#a484ac,heather,164,132,172,xkcd
-#d94ff5,heliotrope,217,79,245,xkcd
-#1bfc06,highlighter green,27,252,6,xkcd
-#9be5aa,hospital green,155,229,170,xkcd
-#25ff29,hot green,37,255,41,xkcd
-#f504c9,hotmagenta,245,4,201,xkcd
-#ff028d,hot pink,255,2,141,xkcd
-#cb00f5,hot purple,203,0,245,xkcd
-#0b4008,hunter green,11,64,8,xkcd
-#d6fffa,ice,214,255,250,xkcd
-#d7fffe,ice blue,215,255,254,xkcd
-#8fae22,icky green,143,174,34,xkcd
-#850e04,indian red,133,14,4,xkcd
-#380282,indigo,56,2,130,xkcd
-#3a18b1,indigo blue,58,24,177,xkcd
-#6258c4,iris,98,88,196,xkcd
-#019529,irish green,1,149,41,xkcd
-#ffffcb,ivory,255,255,203,xkcd
-#1fa774,jade,31,167,116,xkcd
-#2baf6a,jade green,43,175,106,xkcd
-#048243,jungle green,4,130,67,xkcd
-#009337,kelley green,0,147,55,xkcd
-#02ab2e,kelly green,2,171,46,xkcd
-#5cb200,kermit green,92,178,0,xkcd
-#aeff6e,keylime,174,255,110,xkcd
-#aaa662,khaki,170,166,98,xkcd
-#728639,khaki green,114,134,57,xkcd
-#9cef43,kiwi,156,239,67,xkcd
-#8ee53f,kiwi green,142,229,63,xkcd
-#c79fef,lavender,199,159,239,xkcd
-#8b88f8,lavender blue,139,136,248,xkcd
-#dd85d7,lavender pink,221,133,215,xkcd
-#4da409,lawn green,77,164,9,xkcd
-#71aa34,leaf,113,170,52,xkcd
-#5ca904,leaf green,92,169,4,xkcd
-#51b73b,leafy green,81,183,59,xkcd
-#ac7434,leather,172,116,52,xkcd
-#fdff52,lemon,253,255,82,xkcd
-#adf802,lemon green,173,248,2,xkcd
-#bffe28,lemon lime,191,254,40,xkcd
-#fdff38,lemon yellow,253,255,56,xkcd
-#8fb67b,lichen,143,182,123,xkcd
-#8cffdb,light aqua,140,255,219,xkcd
-#7bfdc7,light aquamarine,123,253,199,xkcd
-#fffeb6,light beige,255,254,182,xkcd
-#7bc8f6,light blue,123,200,246,xkcd
-#7efbb3,light blue green,126,251,179,xkcd
-#b7c9e2,light blue grey,183,201,226,xkcd
-#76fda8,light bluish green,118,253,168,xkcd
-#53fe5c,light bright green,83,254,92,xkcd
-#ad8150,light brown,173,129,80,xkcd
-#a8415b,light burgundy,168,65,91,xkcd
-#acfffc,light cyan,172,255,252,xkcd
-#894585,light eggplant,137,69,133,xkcd
-#75fd63,lighter green,117,253,99,xkcd
-#a55af4,lighter purple,165,90,244,xkcd
-#4f9153,light forest green,79,145,83,xkcd
-#fddc5c,light gold,253,220,92,xkcd
-#9af764,light grass green,154,247,100,xkcd
-#76ff7b,light green,118,255,123,xkcd
-#56fca2,light green blue,86,252,162,xkcd
-#63f7b4,light greenish blue,99,247,180,xkcd
-#d8dcd6,light grey,216,220,214,xkcd
-#9dbcd4,light grey blue,157,188,212,xkcd
-#b7e1a1,light grey green,183,225,161,xkcd
-#6d5acf,light indigo,109,90,207,xkcd
-#3d7afd,lightish blue,61,122,253,xkcd
-#61e160,lightish green,97,225,96,xkcd
-#a552e6,lightish purple,165,82,230,xkcd
-#fe2f4a,lightish red,254,47,74,xkcd
-#e6f2a2,light khaki,230,242,162,xkcd
-#efc0fe,light lavendar,239,192,254,xkcd
-#dfc5fe,light lavender,223,197,254,xkcd
-#cafffb,light light blue,202,255,251,xkcd
-#c8ffb0,light light green,200,255,176,xkcd
-#edc8ff,light lilac,237,200,255,xkcd
-#aefd6c,light lime,174,253,108,xkcd
-#b9ff66,light lime green,185,255,102,xkcd
-#fa5ff7,light magenta,250,95,247,xkcd
-#a24857,light maroon,162,72,87,xkcd
-#c292a1,light mauve,194,146,161,xkcd
-#b6ffbb,light mint,182,255,187,xkcd
-#a6fbb2,light mint green,166,251,178,xkcd
-#a6c875,light moss green,166,200,117,xkcd
-#f7d560,light mustard,247,213,96,xkcd
-#155084,light navy,21,80,132,xkcd
-#2e5a88,light navy blue,46,90,136,xkcd
-#4efd54,light neon green,78,253,84,xkcd
-#acbf69,light olive,172,191,105,xkcd
-#a4be5c,light olive green,164,190,92,xkcd
-#fdaa48,light orange,253,170,72,xkcd
-#b2fba5,light pastel green,178,251,165,xkcd
-#ffd8b1,light peach,255,216,177,xkcd
-#c4fe82,light pea green,196,254,130,xkcd
-#c1c6fc,light periwinkle,193,198,252,xkcd
-#ffd1df,light pink,255,209,223,xkcd
-#9d5783,light plum,157,87,131,xkcd
-#bf77f6,light purple,191,119,246,xkcd
-#ff474c,light red,255,71,76,xkcd
-#ffc5cb,light rose,255,197,203,xkcd
-#3a2efe,light royal blue,58,46,254,xkcd
-#bcecac,light sage,188,236,172,xkcd
-#fea993,light salmon,254,169,147,xkcd
-#a0febf,light seafoam,160,254,191,xkcd
-#a7ffb5,light seafoam green,167,255,181,xkcd
-#98f6b0,light seagreen,152,246,176,xkcd
-#c6fcff,light sky blue,198,252,255,xkcd
-#fbeeac,light tan,251,238,172,xkcd
-#90e4c1,light teal,144,228,193,xkcd
-#7ef4cc,light turquoise,126,244,204,xkcd
-#b36ff6,light urple,179,111,246,xkcd
-#d6b4fc,light violet,214,180,252,xkcd
-#fffe7a,light yellow,255,254,122,xkcd
-#ccfd7f,light yellow green,204,253,127,xkcd
-#c2ff89,light yellowish green,194,255,137,xkcd
-#cea2fd,lilac,206,162,253,xkcd
-#c48efd,liliac,196,142,253,xkcd
-#aaff32,lime,170,255,50,xkcd
-#89fe05,lime green,137,254,5,xkcd
-#d0fe1d,lime yellow,208,254,29,xkcd
-#d5174e,lipstick,213,23,78,xkcd
-#c0022f,lipstick red,192,2,47,xkcd
-#efb435,macaroni and cheese,239,180,53,xkcd
-#c20078,magenta,194,0,120,xkcd
-#4a0100,mahogany,74,1,0,xkcd
-#f4d054,maize,244,208,84,xkcd
-#ffa62b,mango,255,166,43,xkcd
-#fffa86,manilla,255,250,134,xkcd
-#fcc006,marigold,252,192,6,xkcd
-#042e60,marine,4,46,96,xkcd
-#01386a,marine blue,1,56,106,xkcd
-#650021,maroon,101,0,33,xkcd
-#ae7181,mauve,174,113,129,xkcd
-#2c6fbb,medium blue,44,111,187,xkcd
-#7f5112,medium brown,127,81,18,xkcd
-#39ad48,medium green,57,173,72,xkcd
-#7d7f7c,medium grey,125,127,124,xkcd
-#f36196,medium pink,243,97,150,xkcd
-#9e43a2,medium purple,158,67,162,xkcd
-#ff7855,melon,255,120,85,xkcd
-#730039,merlot,115,0,57,xkcd
-#4f738e,metallic blue,79,115,142,xkcd
-#276ab3,mid blue,39,106,179,xkcd
-#50a747,mid green,80,167,71,xkcd
-#03012d,midnight,3,1,45,xkcd
-#020035,midnight blue,2,0,53,xkcd
-#280137,midnight purple,40,1,55,xkcd
-#667c3e,military green,102,124,62,xkcd
-#7f4e1e,milk chocolate,127,78,30,xkcd
-#9ffeb0,mint,159,254,176,xkcd
-#8fff9f,mint green,143,255,159,xkcd
-#0bf77d,minty green,11,247,125,xkcd
-#9d7651,mocha,157,118,81,xkcd
-#769958,moss,118,153,88,xkcd
-#658b38,moss green,101,139,56,xkcd
-#638b27,mossy green,99,139,39,xkcd
-#735c12,mud,115,92,18,xkcd
-#60460f,mud brown,96,70,15,xkcd
-#886806,muddy brown,136,104,6,xkcd
-#657432,muddy green,101,116,50,xkcd
-#bfac05,muddy yellow,191,172,5,xkcd
-#606602,mud green,96,102,2,xkcd
-#920a4e,mulberry,146,10,78,xkcd
-#6c7a0e,murky green,108,122,14,xkcd
-#ba9e88,mushroom,186,158,136,xkcd
-#ceb301,mustard,206,179,1,xkcd
-#ac7e04,mustard brown,172,126,4,xkcd
-#a8b504,mustard green,168,181,4,xkcd
-#d2bd0a,mustard yellow,210,189,10,xkcd
-#3b719f,muted blue,59,113,159,xkcd
-#5fa052,muted green,95,160,82,xkcd
-#d1768f,muted pink,209,118,143,xkcd
-#805b87,muted purple,128,91,135,xkcd
-#70b23f,nasty green,112,178,63,xkcd
-#01153e,navy,1,21,62,xkcd
-#001146,navy blue,0,17,70,xkcd
-#35530a,navy green,53,83,10,xkcd
-#04d9ff,neon blue,4,217,255,xkcd
-#0cff0c,neon green,12,255,12,xkcd
-#fe019a,neon pink,254,1,154,xkcd
-#bc13fe,neon purple,188,19,254,xkcd
-#ff073a,neon red,255,7,58,xkcd
-#cfff04,neon yellow,207,255,4,xkcd
-#107ab0,nice blue,16,122,176,xkcd
-#040348,night blue,4,3,72,xkcd
-#017b92,ocean,1,123,146,xkcd
-#03719c,ocean blue,3,113,156,xkcd
-#3d9973,ocean green,61,153,115,xkcd
-#bf9b0c,ocher,191,155,12,xkcd
-#bf9005,ochre,191,144,5,xkcd
-#c69c04,ocre,198,156,4,xkcd
-#5684ae,off blue,86,132,174,xkcd
-#6ba353,off green,107,163,83,xkcd
-#ffffe4,off white,255,255,228,xkcd
-#f1f33f,off yellow,241,243,63,xkcd
-#c77986,old pink,199,121,134,xkcd
-#c87f89,old rose,200,127,137,xkcd
-#6e750e,olive,110,117,14,xkcd
-#645403,olive brown,100,84,3,xkcd
-#6f7632,olivedrab,111,118,50,xkcd
-#677a04,olive green,103,122,4,xkcd
-#c2b709,olive yellow,194,183,9,xkcd
-#f97306,orange,249,115,6,xkcd
-#be6400,orange brown,190,100,0,xkcd
-#fd8d49,orange ish,253,141,73,xkcd
-#ff6f52,orange pink,255,111,82,xkcd
-#fe420f,orange red,254,66,15,xkcd
-#b16002,orangey brown,177,96,2,xkcd
-#ffad01,orange yellow,255,173,1,xkcd
-#fa4224,orangey red,250,66,36,xkcd
-#fdb915,orange y yellow,253,185,21,xkcd
-#fc824a,orangish,252,130,74,xkcd
-#b25f03,orangish brown,178,95,3,xkcd
-#f43605,orangish red,244,54,5,xkcd
-#c875c4,orchid,200,117,196,xkcd
-#fff9d0,pale,255,249,208,xkcd
-#b8ffeb,pale aqua,184,255,235,xkcd
-#d0fefe,pale blue,208,254,254,xkcd
-#b1916e,pale brown,177,145,110,xkcd
-#b7fffa,pale cyan,183,255,250,xkcd
-#fdde6c,pale gold,253,222,108,xkcd
-#c7fdb5,pale green,199,253,181,xkcd
-#fdfdfe,pale grey,253,253,254,xkcd
-#eecffe,palelavender,238,207,254,xkcd
-#b1fc99,pale light green,177,252,153,xkcd
-#e4cbff,pale lilac,228,203,255,xkcd
-#befd73,pale lime,190,253,115,xkcd
-#b1ff65,pale lime green,177,255,101,xkcd
-#d767ad,pale magenta,215,103,173,xkcd
-#fed0fc,pale mauve,254,208,252,xkcd
-#b9cc81,pale olive,185,204,129,xkcd
-#b1d27b,pale olive green,177,210,123,xkcd
-#ffa756,pale orange,255,167,86,xkcd
-#ffe5ad,palepeach,255,229,173,xkcd
-#ffcfdc,pale pink,255,207,220,xkcd
-#b790d4,pale purple,183,144,212,xkcd
-#d9544d,pale red,217,84,77,xkcd
-#fdc1c5,palerose,253,193,197,xkcd
-#ffb19a,pale salmon,255,177,154,xkcd
-#bdf6fe,pale sky blue,189,246,254,xkcd
-#82cbb2,pale teal,130,203,178,xkcd
-#a5fbd5,pale turquoise,165,251,213,xkcd
-#ceaefa,pale violet,206,174,250,xkcd
-#ffff84,pale yellow,255,255,132,xkcd
-#fefcaf,parchment,254,252,175,xkcd
-#a2bffe,pastel blue,162,191,254,xkcd
-#b0ff9d,pastel green,176,255,157,xkcd
-#ff964f,pastel orange,255,150,79,xkcd
-#ffbacd,pastel pink,255,186,205,xkcd
-#caa0ff,pastel purple,202,160,255,xkcd
-#db5856,pastel red,219,88,86,xkcd
-#fffe71,pastel yellow,255,254,113,xkcd
-#a4bf20,pea,164,191,32,xkcd
-#ffb07c,peach,255,176,124,xkcd
-#ff9a8a,peachy pink,255,154,138,xkcd
-#016795,peacock blue,1,103,149,xkcd
-#8eab12,pea green,142,171,18,xkcd
-#cbf85f,pear,203,248,95,xkcd
-#929901,pea soup,146,153,1,xkcd
-#94a617,pea soup green,148,166,23,xkcd
-#8e82fe,periwinkle,142,130,254,xkcd
-#8f99fb,periwinkle blue,143,153,251,xkcd
-#8f8ce7,perrywinkle,143,140,231,xkcd
-#005f6a,petrol,0,95,106,xkcd
-#e78ea5,pig pink,231,142,165,xkcd
-#2b5d34,pine,43,93,52,xkcd
-#0a481e,pine green,10,72,30,xkcd
-#ff81c0,pink,255,129,192,xkcd
-#d46a7e,pinkish,212,106,126,xkcd
-#b17261,pinkish brown,177,114,97,xkcd
-#c8aca9,pinkish grey,200,172,169,xkcd
-#ff724c,pinkish orange,255,114,76,xkcd
-#d648d7,pinkish purple,214,72,215,xkcd
-#f10c45,pinkish red,241,12,69,xkcd
-#d99b82,pinkish tan,217,155,130,xkcd
-#ef1de7,pink purple,239,29,231,xkcd
-#f5054f,pink red,245,5,79,xkcd
-#fc86aa,pinky,252,134,170,xkcd
-#c94cbe,pinky purple,201,76,190,xkcd
-#fc2647,pinky red,252,38,71,xkcd
-#ddd618,piss yellow,221,214,24,xkcd
-#c0fa8b,pistachio,192,250,139,xkcd
-#580f41,plum,88,15,65,xkcd
-#4e0550,plum purple,78,5,80,xkcd
-#40fd14,poison green,64,253,20,xkcd
-#8f7303,poo,143,115,3,xkcd
-#885f01,poo brown,136,95,1,xkcd
-#7f5e00,poop,127,94,0,xkcd
-#7a5901,poop brown,122,89,1,xkcd
-#6f7c00,poop green,111,124,0,xkcd
-#b1d1fc,powder blue,177,209,252,xkcd
-#ffb2d0,powder pink,255,178,208,xkcd
-#0804f9,primary blue,8,4,249,xkcd
-#004577,prussian blue,0,69,119,xkcd
-#a57e52,puce,165,126,82,xkcd
-#a5a502,puke,165,165,2,xkcd
-#947706,puke brown,148,119,6,xkcd
-#9aae07,puke green,154,174,7,xkcd
-#c2be0e,puke yellow,194,190,14,xkcd
-#e17701,pumpkin,225,119,1,xkcd
-#fb7d07,pumpkin orange,251,125,7,xkcd
-#0203e2,pure blue,2,3,226,xkcd
-#7e1e9c,purple,126,30,156,xkcd
-#5d21d0,purple blue,93,33,208,xkcd
-#673a3f,purple brown,103,58,63,xkcd
-#866f85,purple grey,134,111,133,xkcd
-#98568d,purpleish,152,86,141,xkcd
-#6140ef,purpleish blue,97,64,239,xkcd
-#df4ec8,purpleish pink,223,78,200,xkcd
-#d725de,purple pink,215,37,222,xkcd
-#990147,purple red,153,1,71,xkcd
-#8756e4,purpley,135,86,228,xkcd
-#5f34e7,purpley blue,95,52,231,xkcd
-#947e94,purpley grey,148,126,148,xkcd
-#c83cb9,purpley pink,200,60,185,xkcd
-#94568c,purplish,148,86,140,xkcd
-#601ef9,purplish blue,96,30,249,xkcd
-#6b4247,purplish brown,107,66,71,xkcd
-#7a687f,purplish grey,122,104,127,xkcd
-#ce5dae,purplish pink,206,93,174,xkcd
-#b0054b,purplish red,176,5,75,xkcd
-#983fb2,purply,152,63,178,xkcd
-#661aee,purply blue,102,26,238,xkcd
-#f075e6,purply pink,240,117,230,xkcd
-#beae8a,putty,190,174,138,xkcd
-#014600,racing green,1,70,0,xkcd
-#2cfa1f,radioactive green,44,250,31,xkcd
-#b00149,raspberry,176,1,73,xkcd
-#9a6200,rawsienna,154,98,0,xkcd
-#a75e09,rawumber,167,94,9,xkcd
-#d4ffff,really light blue,212,255,255,xkcd
-#e50000,red,229,0,0,xkcd
-#8b2e16,red brown,139,46,22,xkcd
-#c44240,red dish,196,66,64,xkcd
-#7f2b0a,red dish brown,127,43,10,xkcd
-#997570,red dish grey,153,117,112,xkcd
-#f8481c,red dish orange,248,72,28,xkcd
-#fe2c54,red dish pink,254,44,84,xkcd
-#910951,red dish purple,145,9,81,xkcd
-#6e1005,reddy brown,110,16,5,xkcd
-#fd3c06,red orange,253,60,6,xkcd
-#fa2a55,red pink,250,42,85,xkcd
-#820747,red purple,130,7,71,xkcd
-#9e0168,red violet,158,1,104,xkcd
-#8c0034,red wine,140,0,52,xkcd
-#021bf9,rich blue,2,27,249,xkcd
-#720058,rich purple,114,0,88,xkcd
-#8af1fe,robinegg blue,138,241,254,xkcd
-#6dedfd,robins egg,109,237,253,xkcd
-#98eff9,robins egg blue,152,239,249,xkcd
-#fe86a4,rosa,254,134,164,xkcd
-#cf6275,rose,207,98,117,xkcd
-#f7879a,rose pink,247,135,154,xkcd
-#be013c,rose red,190,1,60,xkcd
-#f6688e,rosy pink,246,104,142,xkcd
-#ab1239,rouge,171,18,57,xkcd
-#0c1793,royal,12,23,147,xkcd
-#0504aa,royal blue,5,4,170,xkcd
-#4b006e,royal purple,75,0,110,xkcd
-#ca0147,ruby,202,1,71,xkcd
-#a13905,russet,161,57,5,xkcd
-#a83c09,rust,168,60,9,xkcd
-#8b3103,rust brown,139,49,3,xkcd
-#c45508,rust orange,196,85,8,xkcd
-#aa2704,rust red,170,39,4,xkcd
-#cd5909,rusty orange,205,89,9,xkcd
-#af2f0d,rusty red,175,47,13,xkcd
-#feb209,saffron,254,178,9,xkcd
-#87ae73,sage,135,174,115,xkcd
-#88b378,sage green,136,179,120,xkcd
-#ff796c,salmon,255,121,108,xkcd
-#fe7b7c,salmon pink,254,123,124,xkcd
-#e2ca76,sand,226,202,118,xkcd
-#cba560,sand brown,203,165,96,xkcd
-#c9ae74,sandstone,201,174,116,xkcd
-#f1da7a,sandy,241,218,122,xkcd
-#c4a661,sandy brown,196,166,97,xkcd
-#fce166,sand yellow,252,225,102,xkcd
-#fdee73,sandy yellow,253,238,115,xkcd
-#5c8b15,sap green,92,139,21,xkcd
-#2138ab,sapphire,33,56,171,xkcd
-#be0119,scarlet,190,1,25,xkcd
-#3c9992,sea,60,153,146,xkcd
-#047495,sea blue,4,116,149,xkcd
-#80f9ad,seafoam,128,249,173,xkcd
-#78d1b6,seafoam blue,120,209,182,xkcd
-#7af9ab,seafoam green,122,249,171,xkcd
-#53fca1,sea green,83,252,161,xkcd
-#18d17b,seaweed,24,209,123,xkcd
-#35ad6b,seaweed green,53,173,107,xkcd
-#985e2b,sepia,152,94,43,xkcd
-#01b44c,shamrock,1,180,76,xkcd
-#02c14d,shamrock green,2,193,77,xkcd
-#7f5f00,poop,127,95,0,xkcd
-#7b5804,poop brown,123,88,4,xkcd
-#758000,poop green,117,128,0,xkcd
-#fe02a2,shocking pink,254,2,162,xkcd
-#9db92c,sick green,157,185,44,xkcd
-#94b21c,sickly green,148,178,28,xkcd
-#d0e429,sickly yellow,208,228,41,xkcd
-#a9561e,sienna,169,86,30,xkcd
-#c5c9c7,silver,197,201,199,xkcd
-#82cafc,sky,130,202,252,xkcd
-#75bbfd,sky blue,117,187,253,xkcd
-#516572,slate,81,101,114,xkcd
-#5b7c99,slate blue,91,124,153,xkcd
-#658d6d,slate green,101,141,109,xkcd
-#59656d,slate grey,89,101,109,xkcd
-#99cc04,slime green,153,204,4,xkcd
-#acbb0d,snot,172,187,13,xkcd
-#9dc100,snot green,157,193,0,xkcd
-#6488ea,soft blue,100,136,234,xkcd
-#6fc276,soft green,111,194,118,xkcd
-#fdb0c0,soft pink,253,176,192,xkcd
-#a66fb5,soft purple,166,111,181,xkcd
-#1ef876,spearmint,30,248,118,xkcd
-#a9f971,spring green,169,249,113,xkcd
-#0a5f38,spruce,10,95,56,xkcd
-#f2ab15,squash,242,171,21,xkcd
-#738595,steel,115,133,149,xkcd
-#5a7d9a,steel blue,90,125,154,xkcd
-#6f828a,steel grey,111,130,138,xkcd
-#ada587,stone,173,165,135,xkcd
-#507b9c,stormy blue,80,123,156,xkcd
-#fcf679,straw,252,246,121,xkcd
-#fb2943,strawberry,251,41,67,xkcd
-#0c06f7,strong blue,12,6,247,xkcd
-#ff0789,strong pink,255,7,137,xkcd
-#ffc512,sunflower,255,197,18,xkcd
-#ffda03,sunflower yellow,255,218,3,xkcd
-#fff917,sunny yellow,255,249,23,xkcd
-#fffd37,sunshine yellow,255,253,55,xkcd
-#ffdf22,sun yellow,255,223,34,xkcd
-#698339,swamp,105,131,57,xkcd
-#748500,swamp green,116,133,0,xkcd
-#d1b26f,tan,209,178,111,xkcd
-#ab7e4c,tan brown,171,126,76,xkcd
-#ff9408,tangerine,255,148,8,xkcd
-#a9be70,tan green,169,190,112,xkcd
-#b9a281,taupe,185,162,129,xkcd
-#65ab7c,tea,101,171,124,xkcd
-#bdf8a3,tea green,189,248,163,xkcd
-#029386,teal,2,147,134,xkcd
-#01889f,teal blue,1,136,159,xkcd
-#25a36f,teal green,37,163,111,xkcd
-#24bca8,tealish,36,188,168,xkcd
-#0cdc73,tealish green,12,220,115,xkcd
-#cb6843,terracota,203,104,67,xkcd
-#c9643b,terracotta,201,100,59,xkcd
-#7bf2da,tiffany blue,123,242,218,xkcd
-#ef4026,tomato,239,64,38,xkcd
-#ec2d01,tomato red,236,45,1,xkcd
-#13bbaf,topaz,19,187,175,xkcd
-#c7ac7d,toupe,199,172,125,xkcd
-#61de2a,toxic green,97,222,42,xkcd
-#2a7e19,tree green,42,126,25,xkcd
-#010fcc,true blue,1,15,204,xkcd
-#089404,true green,8,148,4,xkcd
-#06c2ac,turquoise,6,194,172,xkcd
-#06b1c4,turquoise blue,6,177,196,xkcd
-#04f489,turquoise green,4,244,137,xkcd
-#75b84f,turtle green,117,184,79,xkcd
-#4e518b,twilight,78,81,139,xkcd
-#0a437a,twilight blue,10,67,122,xkcd
-#31668a,ugly blue,49,102,138,xkcd
-#7d7103,ugly brown,125,113,3,xkcd
-#7a9703,ugly green,122,151,3,xkcd
-#cd7584,ugly pink,205,117,132,xkcd
-#a442a0,ugly purple,164,66,160,xkcd
-#d0c101,ugly yellow,208,193,1,xkcd
-#2000b1,ultramarine,32,0,177,xkcd
-#1805db,ultramarine blue,24,5,219,xkcd
-#b26400,umber,178,100,0,xkcd
-#750851,velvet,117,8,81,xkcd
-#f4320c,vermillion,244,50,12,xkcd
-#000133,very dark blue,0,1,51,xkcd
-#1d0200,very dark brown,29,2,0,xkcd
-#062e03,very dark green,6,46,3,xkcd
-#2a0134,very dark purple,42,1,52,xkcd
-#d5ffff,very light blue,213,255,255,xkcd
-#d3b683,very light brown,211,182,131,xkcd
-#d1ffbd,very light green,209,255,189,xkcd
-#fff4f2,very light pink,255,244,242,xkcd
-#f6cefc,very light purple,246,206,252,xkcd
-#d6fffe,very pale blue,214,255,254,xkcd
-#cffdbc,very pale green,207,253,188,xkcd
-#0339f8,vibrant blue,3,57,248,xkcd
-#0add08,vibrant green,10,221,8,xkcd
-#ad03de,vibrant purple,173,3,222,xkcd
-#9a0eea,violet,154,14,234,xkcd
-#510ac9,violet blue,81,10,201,xkcd
-#fb5ffc,violet pink,251,95,252,xkcd
-#a50055,violet red,165,0,85,xkcd
-#1e9167,viridian,30,145,103,xkcd
-#152eff,vivid blue,21,46,255,xkcd
-#2fef10,vivid green,47,239,16,xkcd
-#9900fa,vivid purple,153,0,250,xkcd
-#a2a415,vomit,162,164,21,xkcd
-#89a203,vomit green,137,162,3,xkcd
-#c7c10c,vomit yellow,199,193,12,xkcd
-#4b57db,warm blue,75,87,219,xkcd
-#964e02,warm brown,150,78,2,xkcd
-#978a84,warm grey,151,138,132,xkcd
-#fb5581,warm pink,251,85,129,xkcd
-#952e8f,warm purple,149,46,143,xkcd
-#bcf5a6,washed out green,188,245,166,xkcd
-#0e87cc,water blue,14,135,204,xkcd
-#fd4659,watermelon,253,70,89,xkcd
-#3ae57f,weird green,58,229,127,xkcd
-#fbdd7e,wheat,251,221,126,xkcd
-#ffffff,white,255,255,255,xkcd
-#3778bf,windows blue,55,120,191,xkcd
-#80013f,wine,128,1,63,xkcd
-#7b0323,wine red,123,3,35,xkcd
-#20f986,winter green,32,249,134,xkcd
-#a87dc2,wisteria,168,125,194,xkcd
-#ffff14,yellow,255,255,20,xkcd
-#b79400,yellow brown,183,148,0,xkcd
-#bbf90f,yellow green,187,249,15,xkcd
-#faee66,yellowish,250,238,102,xkcd
-#9b7a01,yellowish brown,155,122,1,xkcd
-#b0dd16,yellowish green,176,221,22,xkcd
-#ffab0f,yellowish orange,255,171,15,xkcd
-#fcfc81,yellowish tan,252,252,129,xkcd
-#cb9d06,yellow ochre,203,157,6,xkcd
-#fcb001,yellow orange,252,176,1,xkcd
-#ffe36e,yellow tan,255,227,110,xkcd
-#ae8b0c,yellowy brown,174,139,12,xkcd
-#bff128,yellowy green,191,241,40,xkcd
+Hex,Name,Red,Green,Blue,Family,Link,Source
+#8ffe09,acid green,143,254,9,,,XKCD
+#bd6c48,adobe,189,108,72,,,XKCD
+#54ac68,algae,84,172,104,,,XKCD
+#21c36f,algae green,33,195,111,,,XKCD
+#070d0d,almostblack,7,13,13,,,XKCD
+#feb308,amber,254,179,8,,,XKCD
+#9b5fc0,amethyst,155,95,192,,,XKCD
+#6ecb3c,apple,110,203,60,,,XKCD
+#76cd26,apple green,118,205,38,,,XKCD
+#ffb16d,apricot,255,177,109,,,XKCD
+#13eac9,aqua,19,234,201,,,XKCD
+#02d8e9,aqua blue,2,216,233,,,XKCD
+#12e193,aqua green,18,225,147,,,XKCD
+#2ee8bb,aqua marine,46,232,187,,,XKCD
+#4b5d16,army green,75,93,22,,,XKCD
+#77ab56,asparagus,119,171,86,,,XKCD
+#3d0734,aubergine,61,7,52,,,XKCD
+#9a3001,auburn,154,48,1,,,XKCD
+#90b134,avocado,144,177,52,,,XKCD
+#87a922,avocado green,135,169,34,,,XKCD
+#1d5dec,azul,29,93,236,,,XKCD
+#069af3,azure,6,154,243,,,XKCD
+#a2cffe,baby blue,162,207,254,,,XKCD
+#8cff9e,baby green,140,255,158,,,XKCD
+#ffb7ce,baby pink,255,183,206,,,XKCD
+#ab9004,baby poo,171,144,4,,,XKCD
+#937c00,baby poop,147,124,0,,,XKCD
+#8f9805,baby poop green,143,152,5,,,XKCD
+#b6c406,baby puke green,182,196,6,,,XKCD
+#ca9bf7,baby purple,202,155,247,,,XKCD
+#ad900d,baby poop brown,173,144,13,,,XKCD
+#889717,baby poop green,136,151,23,,,XKCD
+#ffff7e,banana,255,255,126,,,XKCD
+#fafe4b,banana yellow,250,254,75,,,XKCD
+#fe46a5,barbie pink,254,70,165,,,XKCD
+#94ac02,barf green,148,172,2,,,XKCD
+#ac1db8,barney,172,29,184,,,XKCD
+#a00498,barney purple,160,4,152,,,XKCD
+#6b7c85,battleship grey,107,124,133,,,XKCD
+#e6daa6,beige,230,218,166,,,XKCD
+#990f4b,berry,153,15,75,,,XKCD
+#b5c306,bile,181,195,6,,,XKCD
+#000000,black,0,0,0,,,XKCD
+#afa88b,bland,175,168,139,,,XKCD
+#770001,blood,119,0,1,,,XKCD
+#fe4b03,blood orange,254,75,3,,,XKCD
+#980002,blood red,152,0,2,,,XKCD
+#0343df,blue,3,67,223,,,XKCD
+#464196,blue berry,70,65,150,,,XKCD
+#2242c7,blue blue,34,66,199,,,XKCD
+#0f9b8e,blue green,15,155,142,,,XKCD
+#85a3b2,blue grey,133,163,178,,,XKCD
+#5a06ef,blue purple,90,6,239,,,XKCD
+#5d06e9,blue violet,93,6,233,,,XKCD
+#533cc6,blue with a hint of purple,83,60,198,,,XKCD
+#2bb179,blue y green,43,177,121,,,XKCD
+#89a0b0,blue y grey,137,160,176,,,XKCD
+#6241c7,blue y purple,98,65,199,,,XKCD
+#2976bb,bluish,41,118,187,,,XKCD
+#10a674,bluish green,16,166,116,,,XKCD
+#748b97,bluish grey,116,139,151,,,XKCD
+#703be7,bluish purple,112,59,231,,,XKCD
+#5539cc,blurple,85,57,204,,,XKCD
+#f29e8e,blush,242,158,142,,,XKCD
+#fe828c,blush pink,254,130,140,,,XKCD
+#9bb53c,booger,155,181,60,,,XKCD
+#96b403,booger green,150,180,3,,,XKCD
+#7b002c,bordeaux,123,0,44,,,XKCD
+#63b365,boring green,99,179,101,,,XKCD
+#044a05,bottle green,4,74,5,,,XKCD
+#a03623,brick,160,54,35,,,XKCD
+#c14a09,brick orange,193,74,9,,,XKCD
+#8f1402,brick red,143,20,2,,,XKCD
+#0bf9ea,bright aqua,11,249,234,,,XKCD
+#0165fc,bright blue,1,101,252,,,XKCD
+#41fdfe,bright cyan,65,253,254,,,XKCD
+#01ff07,bright green,1,255,7,,,XKCD
+#c760ff,bright lavender,199,96,255,,,XKCD
+#26f7fd,bright light blue,38,247,253,,,XKCD
+#2dfe54,bright light green,45,254,84,,,XKCD
+#c95efb,bright lilac,201,94,251,,,XKCD
+#87fd05,bright lime,135,253,5,,,XKCD
+#65fe08,bright lime green,101,254,8,,,XKCD
+#ff08e8,bright magenta,255,8,232,,,XKCD
+#9cbb04,bright olive,156,187,4,,,XKCD
+#ff5b00,bright orange,255,91,0,,,XKCD
+#fe01b1,bright pink,254,1,177,,,XKCD
+#be03fd,bright purple,190,3,253,,,XKCD
+#ff000d,bright red,255,0,13,,,XKCD
+#05ffa6,bright seagreen,5,255,166,,,XKCD
+#02ccfe,bright sky blue,2,204,254,,,XKCD
+#01f9c6,bright teal,1,249,198,,,XKCD
+#0ffef9,bright turquoise,15,254,249,,,XKCD
+#ad0afd,bright violet,173,10,253,,,XKCD
+#fffd01,bright yellow,255,253,1,,,XKCD
+#9dff00,bright yellow green,157,255,0,,,XKCD
+#05480d,british racing green,5,72,13,,,XKCD
+#a87900,bronze,168,121,0,,,XKCD
+#653700,brown,101,55,0,,,XKCD
+#706c11,brown green,112,108,17,,,XKCD
+#8d8468,brown grey,141,132,104,,,XKCD
+#9c6d57,brownish,156,109,87,,,XKCD
+#6a6e09,brownish green,106,110,9,,,XKCD
+#86775f,brownish grey,134,119,95,,,XKCD
+#cb7723,brownish orange,203,119,35,,,XKCD
+#c27e79,brownish pink,194,126,121,,,XKCD
+#76424e,brownish purple,118,66,78,,,XKCD
+#9e3623,brownish red,158,54,35,,,XKCD
+#c9b003,brownish yellow,201,176,3,,,XKCD
+#b96902,brown orange,185,105,2,,,XKCD
+#922b05,brown red,146,43,5,,,XKCD
+#b29705,brown yellow,178,151,5,,,XKCD
+#6f6c0a,browny green,111,108,10,,,XKCD
+#ca6b02,browny orange,202,107,2,,,XKCD
+#7e4071,bruise,126,64,113,,,XKCD
+#ff6cb5,bubblegum,255,108,181,,,XKCD
+#ff69af,bubblegum pink,255,105,175,,,XKCD
+#fef69e,buff,254,246,158,,,XKCD
+#610023,burgundy,97,0,35,,,XKCD
+#c04e01,burnt orange,192,78,1,,,XKCD
+#9f2305,burnt red,159,35,5,,,XKCD
+#b75203,burntsiena,183,82,3,,,XKCD
+#b04e0f,burntsienna,176,78,15,,,XKCD
+#a0450e,burntumber,160,69,14,,,XKCD
+#d5ab09,burnt yellow,213,171,9,,,XKCD
+#6832e3,burple,104,50,227,,,XKCD
+#ffff81,butter,255,255,129,,,XKCD
+#fdb147,butterscotch,253,177,71,,,XKCD
+#fffd74,butter yellow,255,253,116,,,XKCD
+#4e7496,cadet blue,78,116,150,,,XKCD
+#c69f59,camel,198,159,89,,,XKCD
+#7f8f4e,camo,127,143,78,,,XKCD
+#526525,camo green,82,101,37,,,XKCD
+#4b6113,camouflage green,75,97,19,,,XKCD
+#fdff63,canary,253,255,99,,,XKCD
+#fffe40,canary yellow,255,254,64,,,XKCD
+#ff63e9,candy pink,255,99,233,,,XKCD
+#af6f09,caramel,175,111,9,,,XKCD
+#9d0216,carmine,157,2,22,,,XKCD
+#fd798f,carnation,253,121,143,,,XKCD
+#ff7fa7,carnation pink,255,127,167,,,XKCD
+#8ab8fe,carolina blue,138,184,254,,,XKCD
+#befdb7,celadon,190,253,183,,,XKCD
+#c1fd95,celery,193,253,149,,,XKCD
+#a5a391,cement,165,163,145,,,XKCD
+#de0c62,cerise,222,12,98,,,XKCD
+#0485d1,cerulean,4,133,209,,,XKCD
+#056eee,cerulean blue,5,110,238,,,XKCD
+#343837,charcoal,52,56,55,,,XKCD
+#3c4142,charcoal grey,60,65,66,,,XKCD
+#c1f80a,chartreuse,193,248,10,,,XKCD
+#cf0234,cherry,207,2,52,,,XKCD
+#f7022a,cherry red,247,2,42,,,XKCD
+#742802,chestnut,116,40,2,,,XKCD
+#3d1c02,chocolate,61,28,2,,,XKCD
+#411900,chocolate brown,65,25,0,,,XKCD
+#ac4f06,cinnamon,172,79,6,,,XKCD
+#680018,claret,104,0,24,,,XKCD
+#b66a50,clay,182,106,80,,,XKCD
+#b2713d,clay brown,178,113,61,,,XKCD
+#247afd,clear blue,36,122,253,,,XKCD
+#1e488f,cobalt,30,72,143,,,XKCD
+#030aa7,cobalt blue,3,10,167,,,XKCD
+#875f42,cocoa,135,95,66,,,XKCD
+#a6814c,coffee,166,129,76,,,XKCD
+#4984b8,cool blue,73,132,184,,,XKCD
+#33b864,cool green,51,184,100,,,XKCD
+#95a3a6,cool grey,149,163,166,,,XKCD
+#b66325,copper,182,99,37,,,XKCD
+#fc5a50,coral,252,90,80,,,XKCD
+#ff6163,coral pink,255,97,99,,,XKCD
+#6a79f7,cornflower,106,121,247,,,XKCD
+#5170d7,cornflower blue,81,112,215,,,XKCD
+#9e003a,cranberry,158,0,58,,,XKCD
+#ffffc2,cream,255,255,194,,,XKCD
+#ffffb6,creme,255,255,182,,,XKCD
+#8c000f,crimson,140,0,15,,,XKCD
+#fffd78,custard,255,253,120,,,XKCD
+#00ffff,cyan,0,255,255,,,XKCD
+#fedf08,dandelion,254,223,8,,,XKCD
+#1b2431,dark,27,36,49,,,XKCD
+#05696b,dark aqua,5,105,107,,,XKCD
+#017371,dark aquamarine,1,115,113,,,XKCD
+#ac9362,dark beige,172,147,98,,,XKCD
+#030764,dark blue,3,7,100,,,XKCD
+#005249,dark blue green,0,82,73,,,XKCD
+#1f3b4d,dark blue grey,31,59,77,,,XKCD
+#341c02,dark brown,52,28,2,,,XKCD
+#cf524e,dark coral,207,82,78,,,XKCD
+#fff39a,dark cream,255,243,154,,,XKCD
+#0a888a,dark cyan,10,136,138,,,XKCD
+#002d04,dark forest green,0,45,4,,,XKCD
+#9d0759,dark fuchsia,157,7,89,,,XKCD
+#b59410,dark gold,181,148,16,,,XKCD
+#388004,dark grass green,56,128,4,,,XKCD
+#054907,dark green,5,73,7,,,XKCD
+#1f6357,dark green blue,31,99,87,,,XKCD
+#363737,dark grey,54,55,55,,,XKCD
+#29465b,dark grey blue,41,70,91,,,XKCD
+#d90166,dark hot pink,217,1,102,,,XKCD
+#1f0954,dark indigo,31,9,84,,,XKCD
+#014182,darkish blue,1,65,130,,,XKCD
+#287c37,darkish green,40,124,55,,,XKCD
+#da467d,darkish pink,218,70,125,,,XKCD
+#751973,darkish purple,117,25,115,,,XKCD
+#a90308,darkish red,169,3,8,,,XKCD
+#9b8f55,dark khaki,155,143,85,,,XKCD
+#856798,dark lavender,133,103,152,,,XKCD
+#9c6da5,dark lilac,156,109,165,,,XKCD
+#84b701,dark lime,132,183,1,,,XKCD
+#7ebd01,dark lime green,126,189,1,,,XKCD
+#960056,dark magenta,150,0,86,,,XKCD
+#3c0008,dark maroon,60,0,8,,,XKCD
+#874c62,dark mauve,135,76,98,,,XKCD
+#48c072,dark mint,72,192,114,,,XKCD
+#20c073,dark mint green,32,192,115,,,XKCD
+#a88905,dark mustard,168,137,5,,,XKCD
+#000435,dark navy,0,4,53,,,XKCD
+#00022e,dark navy blue,0,2,46,,,XKCD
+#373e02,dark olive,55,62,2,,,XKCD
+#3c4d03,dark olive green,60,77,3,,,XKCD
+#c65102,dark orange,198,81,2,,,XKCD
+#56ae57,dark pastel green,86,174,87,,,XKCD
+#de7e5d,dark peach,222,126,93,,,XKCD
+#665fd1,dark periwinkle,102,95,209,,,XKCD
+#cb416b,dark pink,203,65,107,,,XKCD
+#3f012c,dark plum,63,1,44,,,XKCD
+#35063e,dark purple,53,6,62,,,XKCD
+#840000,dark red,132,0,0,,,XKCD
+#b5485d,dark rose,181,72,93,,,XKCD
+#02066f,dark royal blue,2,6,111,,,XKCD
+#598556,dark sage,89,133,86,,,XKCD
+#c85a53,dark salmon,200,90,83,,,XKCD
+#a88f59,dark sand,168,143,89,,,XKCD
+#1fb57a,dark seafoam,31,181,122,,,XKCD
+#3eaf76,dark seafoam green,62,175,118,,,XKCD
+#11875d,dark sea green,17,135,93,,,XKCD
+#448ee4,dark sky blue,68,142,228,,,XKCD
+#214761,dark slate blue,33,71,97,,,XKCD
+#af884a,dark tan,175,136,74,,,XKCD
+#7f684e,dark taupe,127,104,78,,,XKCD
+#014d4e,dark teal,1,77,78,,,XKCD
+#045c5a,dark turquoise,4,92,90,,,XKCD
+#34013f,dark violet,52,1,63,,,XKCD
+#d5b60a,dark yellow,213,182,10,,,XKCD
+#728f02,dark yellow green,114,143,2,,,XKCD
+#08787f,deep aqua,8,120,127,,,XKCD
+#040273,deep blue,4,2,115,,,XKCD
+#410200,deep brown,65,2,0,,,XKCD
+#02590f,deep green,2,89,15,,,XKCD
+#8d5eb7,deep lavender,141,94,183,,,XKCD
+#966ebd,deep lilac,150,110,189,,,XKCD
+#a0025c,deep magenta,160,2,92,,,XKCD
+#dc4d01,deep orange,220,77,1,,,XKCD
+#cb0162,deep pink,203,1,98,,,XKCD
+#36013f,deep purple,54,1,63,,,XKCD
+#9a0200,deep red,154,2,0,,,XKCD
+#c74767,deep rose,199,71,103,,,XKCD
+#015482,deep sea blue,1,84,130,,,XKCD
+#0d75f8,deep sky blue,13,117,248,,,XKCD
+#00555a,deep teal,0,85,90,,,XKCD
+#017374,deep turquoise,1,115,116,,,XKCD
+#490648,deep violet,73,6,72,,,XKCD
+#3b638c,denim,59,99,140,,,XKCD
+#3b5b92,denim blue,59,91,146,,,XKCD
+#ccad60,desert,204,173,96,,,XKCD
+#9f8303,diarrhea,159,131,3,,,XKCD
+#8a6e45,dirt,138,110,69,,,XKCD
+#836539,dirt brown,131,101,57,,,XKCD
+#3f829d,dirty blue,63,130,157,,,XKCD
+#667e2c,dirty green,102,126,44,,,XKCD
+#c87606,dirty orange,200,118,6,,,XKCD
+#ca7b80,dirty pink,202,123,128,,,XKCD
+#734a65,dirty purple,115,74,101,,,XKCD
+#cdc50a,dirty yellow,205,197,10,,,XKCD
+#3e82fc,dodger blue,62,130,252,,,XKCD
+#828344,drab,130,131,68,,,XKCD
+#749551,drab green,116,149,81,,,XKCD
+#4b0101,dried blood,75,1,1,,,XKCD
+#c3fbf4,duck egg blue,195,251,244,,,XKCD
+#49759c,dull blue,73,117,156,,,XKCD
+#876e4b,dull brown,135,110,75,,,XKCD
+#74a662,dull green,116,166,98,,,XKCD
+#d8863b,dull orange,216,134,59,,,XKCD
+#d5869d,dull pink,213,134,157,,,XKCD
+#84597e,dull purple,132,89,126,,,XKCD
+#bb3f3f,dull red,187,63,63,,,XKCD
+#5f9e8f,dull teal,95,158,143,,,XKCD
+#eedc5b,dull yellow,238,220,91,,,XKCD
+#4e5481,dusk,78,84,129,,,XKCD
+#26538d,dusk blue,38,83,141,,,XKCD
+#475f94,dusky blue,71,95,148,,,XKCD
+#cc7a8b,dusky pink,204,122,139,,,XKCD
+#895b7b,dusky purple,137,91,123,,,XKCD
+#ba6873,dusky rose,186,104,115,,,XKCD
+#b2996e,dust,178,153,110,,,XKCD
+#5a86ad,dusty blue,90,134,173,,,XKCD
+#76a973,dusty green,118,169,115,,,XKCD
+#ac86a8,dustylavender,172,134,168,,,XKCD
+#f0833a,dusty orange,240,131,58,,,XKCD
+#d58a94,dusty pink,213,138,148,,,XKCD
+#825f87,dusty purple,130,95,135,,,XKCD
+#b9484e,dusty red,185,72,78,,,XKCD
+#c0737a,dusty rose,192,115,122,,,XKCD
+#4c9085,dusty teal,76,144,133,,,XKCD
+#a2653e,earth,162,101,62,,,XKCD
+#8cfd7e,easter green,140,253,126,,,XKCD
+#c071fe,easter purple,192,113,254,,,XKCD
+#feffca,ecru,254,255,202,,,XKCD
+#380835,eggplant,56,8,53,,,XKCD
+#430541,eggplant purple,67,5,65,,,XKCD
+#fffcc4,eggshell,255,252,196,,,XKCD
+#c4fff7,eggshell blue,196,255,247,,,XKCD
+#0652ff,electric blue,6,82,255,,,XKCD
+#21fc0d,electric green,33,252,13,,,XKCD
+#a8ff04,electriclime,168,255,4,,,XKCD
+#ff0490,electric pink,255,4,144,,,XKCD
+#aa23ff,electric purple,170,35,255,,,XKCD
+#01a049,emerald,1,160,73,,,XKCD
+#028f1e,emerald green,2,143,30,,,XKCD
+#05472a,evergreen,5,71,42,,,XKCD
+#658cbb,faded blue,101,140,187,,,XKCD
+#7bb274,faded green,123,178,116,,,XKCD
+#f0944d,faded orange,240,148,77,,,XKCD
+#de9dac,faded pink,222,157,172,,,XKCD
+#916e99,faded purple,145,110,153,,,XKCD
+#d3494e,faded red,211,73,78,,,XKCD
+#feff7f,faded yellow,254,255,127,,,XKCD
+#cfaf7b,fawn,207,175,123,,,XKCD
+#63a950,fern,99,169,80,,,XKCD
+#548d44,fern green,84,141,68,,,XKCD
+#fe0002,fire engine red,254,0,2,,,XKCD
+#3c73a8,flat blue,60,115,168,,,XKCD
+#699d4c,flat green,105,157,76,,,XKCD
+#08ff08,fluorescent green,8,255,8,,,XKCD
+#0aff02,fluro green,10,255,2,,,XKCD
+#90fda9,foam green,144,253,169,,,XKCD
+#0b5509,forest,11,85,9,,,XKCD
+#06470c,forest green,6,71,12,,,XKCD
+#154406,forrest green,21,68,6,,,XKCD
+#436bad,french blue,67,107,173,,,XKCD
+#69d84f,fresh green,105,216,79,,,XKCD
+#58bc08,frog green,88,188,8,,,XKCD
+#ed0dd9,fuchsia,237,13,217,,,XKCD
+#dbb40c,gold,219,180,12,,,XKCD
+#f5bf03,golden,245,191,3,,,XKCD
+#b27a01,golden brown,178,122,1,,,XKCD
+#f9bc08,goldenrod,249,188,8,,,XKCD
+#fec615,golden yellow,254,198,21,,,XKCD
+#6c3461,grape,108,52,97,,,XKCD
+#fd5956,grapefruit,253,89,86,,,XKCD
+#5d1451,grape purple,93,20,81,,,XKCD
+#5cac2d,grass,92,172,45,,,XKCD
+#3f9b0b,grass green,63,155,11,,,XKCD
+#419c03,grassy green,65,156,3,,,XKCD
+#15b01a,green,21,176,26,,,XKCD
+#5edc1f,green apple,94,220,31,,,XKCD
+#01c08d,green blue,1,192,141,,,XKCD
+#544e03,green brown,84,78,3,,,XKCD
+#77926f,green grey,119,146,111,,,XKCD
+#40a368,greenish,64,163,104,,,XKCD
+#c9d179,greenish beige,201,209,121,,,XKCD
+#0b8b87,greenish blue,11,139,135,,,XKCD
+#696112,greenish brown,105,97,18,,,XKCD
+#2afeb7,greenish cyan,42,254,183,,,XKCD
+#96ae8d,greenish grey,150,174,141,,,XKCD
+#bccb7a,greenish tan,188,203,122,,,XKCD
+#32bf84,greenish teal,50,191,132,,,XKCD
+#00fbb0,greenish turquoise,0,251,176,,,XKCD
+#cdfd02,greenish yellow,205,253,2,,,XKCD
+#0cb577,green teal,12,181,119,,,XKCD
+#42b395,greeny blue,66,179,149,,,XKCD
+#696006,greeny brown,105,96,6,,,XKCD
+#b5ce08,green yellow,181,206,8,,,XKCD
+#7ea07a,greeny grey,126,160,122,,,XKCD
+#c6f808,greeny yellow,198,248,8,,,XKCD
+#929591,grey,146,149,145,,,XKCD
+#647d8e,grey blue,100,125,142,,,XKCD
+#7f7053,grey brown,127,112,83,,,XKCD
+#86a17d,grey green,134,161,125,,,XKCD
+#a8a495,greyish,168,164,149,,,XKCD
+#5e819d,greyish blue,94,129,157,,,XKCD
+#7a6a4f,greyish brown,122,106,79,,,XKCD
+#82a67d,greyish green,130,166,125,,,XKCD
+#c88d94,greyish pink,200,141,148,,,XKCD
+#887191,greyish purple,136,113,145,,,XKCD
+#719f91,greyish teal,113,159,145,,,XKCD
+#c3909b,grey pink,195,144,155,,,XKCD
+#826d8c,grey purple,130,109,140,,,XKCD
+#5e9b8a,grey teal,94,155,138,,,XKCD
+#a0bf16,gross green,160,191,22,,,XKCD
+#536267,gun metal,83,98,103,,,XKCD
+#8e7618,hazel,142,118,24,,,XKCD
+#a484ac,heather,164,132,172,,,XKCD
+#d94ff5,heliotrope,217,79,245,,,XKCD
+#1bfc06,highlighter green,27,252,6,,,XKCD
+#9be5aa,hospital green,155,229,170,,,XKCD
+#25ff29,hot green,37,255,41,,,XKCD
+#f504c9,hotmagenta,245,4,201,,,XKCD
+#ff028d,hot pink,255,2,141,,,XKCD
+#cb00f5,hot purple,203,0,245,,,XKCD
+#0b4008,hunter green,11,64,8,,,XKCD
+#d6fffa,ice,214,255,250,,,XKCD
+#d7fffe,ice blue,215,255,254,,,XKCD
+#8fae22,icky green,143,174,34,,,XKCD
+#850e04,indian red,133,14,4,,,XKCD
+#380282,indigo,56,2,130,,,XKCD
+#3a18b1,indigo blue,58,24,177,,,XKCD
+#6258c4,iris,98,88,196,,,XKCD
+#019529,irish green,1,149,41,,,XKCD
+#ffffcb,ivory,255,255,203,,,XKCD
+#1fa774,jade,31,167,116,,,XKCD
+#2baf6a,jade green,43,175,106,,,XKCD
+#048243,jungle green,4,130,67,,,XKCD
+#009337,kelley green,0,147,55,,,XKCD
+#02ab2e,kelly green,2,171,46,,,XKCD
+#5cb200,kermit green,92,178,0,,,XKCD
+#aeff6e,keylime,174,255,110,,,XKCD
+#aaa662,khaki,170,166,98,,,XKCD
+#728639,khaki green,114,134,57,,,XKCD
+#9cef43,kiwi,156,239,67,,,XKCD
+#8ee53f,kiwi green,142,229,63,,,XKCD
+#c79fef,lavender,199,159,239,,,XKCD
+#8b88f8,lavender blue,139,136,248,,,XKCD
+#dd85d7,lavender pink,221,133,215,,,XKCD
+#4da409,lawn green,77,164,9,,,XKCD
+#71aa34,leaf,113,170,52,,,XKCD
+#5ca904,leaf green,92,169,4,,,XKCD
+#51b73b,leafy green,81,183,59,,,XKCD
+#ac7434,leather,172,116,52,,,XKCD
+#fdff52,lemon,253,255,82,,,XKCD
+#adf802,lemon green,173,248,2,,,XKCD
+#bffe28,lemon lime,191,254,40,,,XKCD
+#fdff38,lemon yellow,253,255,56,,,XKCD
+#8fb67b,lichen,143,182,123,,,XKCD
+#8cffdb,light aqua,140,255,219,,,XKCD
+#7bfdc7,light aquamarine,123,253,199,,,XKCD
+#fffeb6,light beige,255,254,182,,,XKCD
+#7bc8f6,light blue,123,200,246,,,XKCD
+#7efbb3,light blue green,126,251,179,,,XKCD
+#b7c9e2,light blue grey,183,201,226,,,XKCD
+#76fda8,light bluish green,118,253,168,,,XKCD
+#53fe5c,light bright green,83,254,92,,,XKCD
+#ad8150,light brown,173,129,80,,,XKCD
+#a8415b,light burgundy,168,65,91,,,XKCD
+#acfffc,light cyan,172,255,252,,,XKCD
+#894585,light eggplant,137,69,133,,,XKCD
+#75fd63,lighter green,117,253,99,,,XKCD
+#a55af4,lighter purple,165,90,244,,,XKCD
+#4f9153,light forest green,79,145,83,,,XKCD
+#fddc5c,light gold,253,220,92,,,XKCD
+#9af764,light grass green,154,247,100,,,XKCD
+#76ff7b,light green,118,255,123,,,XKCD
+#56fca2,light green blue,86,252,162,,,XKCD
+#63f7b4,light greenish blue,99,247,180,,,XKCD
+#d8dcd6,light grey,216,220,214,,,XKCD
+#9dbcd4,light grey blue,157,188,212,,,XKCD
+#b7e1a1,light grey green,183,225,161,,,XKCD
+#6d5acf,light indigo,109,90,207,,,XKCD
+#3d7afd,lightish blue,61,122,253,,,XKCD
+#61e160,lightish green,97,225,96,,,XKCD
+#a552e6,lightish purple,165,82,230,,,XKCD
+#fe2f4a,lightish red,254,47,74,,,XKCD
+#e6f2a2,light khaki,230,242,162,,,XKCD
+#efc0fe,light lavendar,239,192,254,,,XKCD
+#dfc5fe,light lavender,223,197,254,,,XKCD
+#cafffb,light light blue,202,255,251,,,XKCD
+#c8ffb0,light light green,200,255,176,,,XKCD
+#edc8ff,light lilac,237,200,255,,,XKCD
+#aefd6c,light lime,174,253,108,,,XKCD
+#b9ff66,light lime green,185,255,102,,,XKCD
+#fa5ff7,light magenta,250,95,247,,,XKCD
+#a24857,light maroon,162,72,87,,,XKCD
+#c292a1,light mauve,194,146,161,,,XKCD
+#b6ffbb,light mint,182,255,187,,,XKCD
+#a6fbb2,light mint green,166,251,178,,,XKCD
+#a6c875,light moss green,166,200,117,,,XKCD
+#f7d560,light mustard,247,213,96,,,XKCD
+#155084,light navy,21,80,132,,,XKCD
+#2e5a88,light navy blue,46,90,136,,,XKCD
+#4efd54,light neon green,78,253,84,,,XKCD
+#acbf69,light olive,172,191,105,,,XKCD
+#a4be5c,light olive green,164,190,92,,,XKCD
+#fdaa48,light orange,253,170,72,,,XKCD
+#b2fba5,light pastel green,178,251,165,,,XKCD
+#ffd8b1,light peach,255,216,177,,,XKCD
+#c4fe82,light pea green,196,254,130,,,XKCD
+#c1c6fc,light periwinkle,193,198,252,,,XKCD
+#ffd1df,light pink,255,209,223,,,XKCD
+#9d5783,light plum,157,87,131,,,XKCD
+#bf77f6,light purple,191,119,246,,,XKCD
+#ff474c,light red,255,71,76,,,XKCD
+#ffc5cb,light rose,255,197,203,,,XKCD
+#3a2efe,light royal blue,58,46,254,,,XKCD
+#bcecac,light sage,188,236,172,,,XKCD
+#fea993,light salmon,254,169,147,,,XKCD
+#a0febf,light seafoam,160,254,191,,,XKCD
+#a7ffb5,light seafoam green,167,255,181,,,XKCD
+#98f6b0,light seagreen,152,246,176,,,XKCD
+#c6fcff,light sky blue,198,252,255,,,XKCD
+#fbeeac,light tan,251,238,172,,,XKCD
+#90e4c1,light teal,144,228,193,,,XKCD
+#7ef4cc,light turquoise,126,244,204,,,XKCD
+#b36ff6,light urple,179,111,246,,,XKCD
+#d6b4fc,light violet,214,180,252,,,XKCD
+#fffe7a,light yellow,255,254,122,,,XKCD
+#ccfd7f,light yellow green,204,253,127,,,XKCD
+#c2ff89,light yellowish green,194,255,137,,,XKCD
+#cea2fd,lilac,206,162,253,,,XKCD
+#c48efd,liliac,196,142,253,,,XKCD
+#aaff32,lime,170,255,50,,,XKCD
+#89fe05,lime green,137,254,5,,,XKCD
+#d0fe1d,lime yellow,208,254,29,,,XKCD
+#d5174e,lipstick,213,23,78,,,XKCD
+#c0022f,lipstick red,192,2,47,,,XKCD
+#efb435,macaroni and cheese,239,180,53,,,XKCD
+#c20078,magenta,194,0,120,,,XKCD
+#4a0100,mahogany,74,1,0,,,XKCD
+#f4d054,maize,244,208,84,,,XKCD
+#ffa62b,mango,255,166,43,,,XKCD
+#fffa86,manilla,255,250,134,,,XKCD
+#fcc006,marigold,252,192,6,,,XKCD
+#042e60,marine,4,46,96,,,XKCD
+#01386a,marine blue,1,56,106,,,XKCD
+#650021,maroon,101,0,33,,,XKCD
+#ae7181,mauve,174,113,129,,,XKCD
+#2c6fbb,medium blue,44,111,187,,,XKCD
+#7f5112,medium brown,127,81,18,,,XKCD
+#39ad48,medium green,57,173,72,,,XKCD
+#7d7f7c,medium grey,125,127,124,,,XKCD
+#f36196,medium pink,243,97,150,,,XKCD
+#9e43a2,medium purple,158,67,162,,,XKCD
+#ff7855,melon,255,120,85,,,XKCD
+#730039,merlot,115,0,57,,,XKCD
+#4f738e,metallic blue,79,115,142,,,XKCD
+#276ab3,mid blue,39,106,179,,,XKCD
+#50a747,mid green,80,167,71,,,XKCD
+#03012d,midnight,3,1,45,,,XKCD
+#020035,midnight blue,2,0,53,,,XKCD
+#280137,midnight purple,40,1,55,,,XKCD
+#667c3e,military green,102,124,62,,,XKCD
+#7f4e1e,milk chocolate,127,78,30,,,XKCD
+#9ffeb0,mint,159,254,176,,,XKCD
+#8fff9f,mint green,143,255,159,,,XKCD
+#0bf77d,minty green,11,247,125,,,XKCD
+#9d7651,mocha,157,118,81,,,XKCD
+#769958,moss,118,153,88,,,XKCD
+#658b38,moss green,101,139,56,,,XKCD
+#638b27,mossy green,99,139,39,,,XKCD
+#735c12,mud,115,92,18,,,XKCD
+#60460f,mud brown,96,70,15,,,XKCD
+#886806,muddy brown,136,104,6,,,XKCD
+#657432,muddy green,101,116,50,,,XKCD
+#bfac05,muddy yellow,191,172,5,,,XKCD
+#606602,mud green,96,102,2,,,XKCD
+#920a4e,mulberry,146,10,78,,,XKCD
+#6c7a0e,murky green,108,122,14,,,XKCD
+#ba9e88,mushroom,186,158,136,,,XKCD
+#ceb301,mustard,206,179,1,,,XKCD
+#ac7e04,mustard brown,172,126,4,,,XKCD
+#a8b504,mustard green,168,181,4,,,XKCD
+#d2bd0a,mustard yellow,210,189,10,,,XKCD
+#3b719f,muted blue,59,113,159,,,XKCD
+#5fa052,muted green,95,160,82,,,XKCD
+#d1768f,muted pink,209,118,143,,,XKCD
+#805b87,muted purple,128,91,135,,,XKCD
+#70b23f,nasty green,112,178,63,,,XKCD
+#01153e,navy,1,21,62,,,XKCD
+#001146,navy blue,0,17,70,,,XKCD
+#35530a,navy green,53,83,10,,,XKCD
+#04d9ff,neon blue,4,217,255,,,XKCD
+#0cff0c,neon green,12,255,12,,,XKCD
+#fe019a,neon pink,254,1,154,,,XKCD
+#bc13fe,neon purple,188,19,254,,,XKCD
+#ff073a,neon red,255,7,58,,,XKCD
+#cfff04,neon yellow,207,255,4,,,XKCD
+#107ab0,nice blue,16,122,176,,,XKCD
+#040348,night blue,4,3,72,,,XKCD
+#017b92,ocean,1,123,146,,,XKCD
+#03719c,ocean blue,3,113,156,,,XKCD
+#3d9973,ocean green,61,153,115,,,XKCD
+#bf9b0c,ocher,191,155,12,,,XKCD
+#bf9005,ochre,191,144,5,,,XKCD
+#c69c04,ocre,198,156,4,,,XKCD
+#5684ae,off blue,86,132,174,,,XKCD
+#6ba353,off green,107,163,83,,,XKCD
+#ffffe4,off white,255,255,228,,,XKCD
+#f1f33f,off yellow,241,243,63,,,XKCD
+#c77986,old pink,199,121,134,,,XKCD
+#c87f89,old rose,200,127,137,,,XKCD
+#6e750e,olive,110,117,14,,,XKCD
+#645403,olive brown,100,84,3,,,XKCD
+#6f7632,olivedrab,111,118,50,,,XKCD
+#677a04,olive green,103,122,4,,,XKCD
+#c2b709,olive yellow,194,183,9,,,XKCD
+#f97306,orange,249,115,6,,,XKCD
+#be6400,orange brown,190,100,0,,,XKCD
+#fd8d49,orange ish,253,141,73,,,XKCD
+#ff6f52,orange pink,255,111,82,,,XKCD
+#fe420f,orange red,254,66,15,,,XKCD
+#b16002,orangey brown,177,96,2,,,XKCD
+#ffad01,orange yellow,255,173,1,,,XKCD
+#fa4224,orangey red,250,66,36,,,XKCD
+#fdb915,orange y yellow,253,185,21,,,XKCD
+#fc824a,orangish,252,130,74,,,XKCD
+#b25f03,orangish brown,178,95,3,,,XKCD
+#f43605,orangish red,244,54,5,,,XKCD
+#c875c4,orchid,200,117,196,,,XKCD
+#fff9d0,pale,255,249,208,,,XKCD
+#b8ffeb,pale aqua,184,255,235,,,XKCD
+#d0fefe,pale blue,208,254,254,,,XKCD
+#b1916e,pale brown,177,145,110,,,XKCD
+#b7fffa,pale cyan,183,255,250,,,XKCD
+#fdde6c,pale gold,253,222,108,,,XKCD
+#c7fdb5,pale green,199,253,181,,,XKCD
+#fdfdfe,pale grey,253,253,254,,,XKCD
+#eecffe,palelavender,238,207,254,,,XKCD
+#b1fc99,pale light green,177,252,153,,,XKCD
+#e4cbff,pale lilac,228,203,255,,,XKCD
+#befd73,pale lime,190,253,115,,,XKCD
+#b1ff65,pale lime green,177,255,101,,,XKCD
+#d767ad,pale magenta,215,103,173,,,XKCD
+#fed0fc,pale mauve,254,208,252,,,XKCD
+#b9cc81,pale olive,185,204,129,,,XKCD
+#b1d27b,pale olive green,177,210,123,,,XKCD
+#ffa756,pale orange,255,167,86,,,XKCD
+#ffe5ad,palepeach,255,229,173,,,XKCD
+#ffcfdc,pale pink,255,207,220,,,XKCD
+#b790d4,pale purple,183,144,212,,,XKCD
+#d9544d,pale red,217,84,77,,,XKCD
+#fdc1c5,palerose,253,193,197,,,XKCD
+#ffb19a,pale salmon,255,177,154,,,XKCD
+#bdf6fe,pale sky blue,189,246,254,,,XKCD
+#82cbb2,pale teal,130,203,178,,,XKCD
+#a5fbd5,pale turquoise,165,251,213,,,XKCD
+#ceaefa,pale violet,206,174,250,,,XKCD
+#ffff84,pale yellow,255,255,132,,,XKCD
+#fefcaf,parchment,254,252,175,,,XKCD
+#a2bffe,pastel blue,162,191,254,,,XKCD
+#b0ff9d,pastel green,176,255,157,,,XKCD
+#ff964f,pastel orange,255,150,79,,,XKCD
+#ffbacd,pastel pink,255,186,205,,,XKCD
+#caa0ff,pastel purple,202,160,255,,,XKCD
+#db5856,pastel red,219,88,86,,,XKCD
+#fffe71,pastel yellow,255,254,113,,,XKCD
+#a4bf20,pea,164,191,32,,,XKCD
+#ffb07c,peach,255,176,124,,,XKCD
+#ff9a8a,peachy pink,255,154,138,,,XKCD
+#016795,peacock blue,1,103,149,,,XKCD
+#8eab12,pea green,142,171,18,,,XKCD
+#cbf85f,pear,203,248,95,,,XKCD
+#929901,pea soup,146,153,1,,,XKCD
+#94a617,pea soup green,148,166,23,,,XKCD
+#8e82fe,periwinkle,142,130,254,,,XKCD
+#8f99fb,periwinkle blue,143,153,251,,,XKCD
+#8f8ce7,perrywinkle,143,140,231,,,XKCD
+#005f6a,petrol,0,95,106,,,XKCD
+#e78ea5,pig pink,231,142,165,,,XKCD
+#2b5d34,pine,43,93,52,,,XKCD
+#0a481e,pine green,10,72,30,,,XKCD
+#ff81c0,pink,255,129,192,,,XKCD
+#d46a7e,pinkish,212,106,126,,,XKCD
+#b17261,pinkish brown,177,114,97,,,XKCD
+#c8aca9,pinkish grey,200,172,169,,,XKCD
+#ff724c,pinkish orange,255,114,76,,,XKCD
+#d648d7,pinkish purple,214,72,215,,,XKCD
+#f10c45,pinkish red,241,12,69,,,XKCD
+#d99b82,pinkish tan,217,155,130,,,XKCD
+#ef1de7,pink purple,239,29,231,,,XKCD
+#f5054f,pink red,245,5,79,,,XKCD
+#fc86aa,pinky,252,134,170,,,XKCD
+#c94cbe,pinky purple,201,76,190,,,XKCD
+#fc2647,pinky red,252,38,71,,,XKCD
+#ddd618,piss yellow,221,214,24,,,XKCD
+#c0fa8b,pistachio,192,250,139,,,XKCD
+#580f41,plum,88,15,65,,,XKCD
+#4e0550,plum purple,78,5,80,,,XKCD
+#40fd14,poison green,64,253,20,,,XKCD
+#8f7303,poo,143,115,3,,,XKCD
+#885f01,poo brown,136,95,1,,,XKCD
+#7f5e00,poop,127,94,0,,,XKCD
+#7a5901,poop brown,122,89,1,,,XKCD
+#6f7c00,poop green,111,124,0,,,XKCD
+#b1d1fc,powder blue,177,209,252,,,XKCD
+#ffb2d0,powder pink,255,178,208,,,XKCD
+#0804f9,primary blue,8,4,249,,,XKCD
+#004577,prussian blue,0,69,119,,,XKCD
+#a57e52,puce,165,126,82,,,XKCD
+#a5a502,puke,165,165,2,,,XKCD
+#947706,puke brown,148,119,6,,,XKCD
+#9aae07,puke green,154,174,7,,,XKCD
+#c2be0e,puke yellow,194,190,14,,,XKCD
+#e17701,pumpkin,225,119,1,,,XKCD
+#fb7d07,pumpkin orange,251,125,7,,,XKCD
+#0203e2,pure blue,2,3,226,,,XKCD
+#7e1e9c,purple,126,30,156,,,XKCD
+#5d21d0,purple blue,93,33,208,,,XKCD
+#673a3f,purple brown,103,58,63,,,XKCD
+#866f85,purple grey,134,111,133,,,XKCD
+#98568d,purpleish,152,86,141,,,XKCD
+#6140ef,purpleish blue,97,64,239,,,XKCD
+#df4ec8,purpleish pink,223,78,200,,,XKCD
+#d725de,purple pink,215,37,222,,,XKCD
+#990147,purple red,153,1,71,,,XKCD
+#8756e4,purpley,135,86,228,,,XKCD
+#5f34e7,purpley blue,95,52,231,,,XKCD
+#947e94,purpley grey,148,126,148,,,XKCD
+#c83cb9,purpley pink,200,60,185,,,XKCD
+#94568c,purplish,148,86,140,,,XKCD
+#601ef9,purplish blue,96,30,249,,,XKCD
+#6b4247,purplish brown,107,66,71,,,XKCD
+#7a687f,purplish grey,122,104,127,,,XKCD
+#ce5dae,purplish pink,206,93,174,,,XKCD
+#b0054b,purplish red,176,5,75,,,XKCD
+#983fb2,purply,152,63,178,,,XKCD
+#661aee,purply blue,102,26,238,,,XKCD
+#f075e6,purply pink,240,117,230,,,XKCD
+#beae8a,putty,190,174,138,,,XKCD
+#014600,racing green,1,70,0,,,XKCD
+#2cfa1f,radioactive green,44,250,31,,,XKCD
+#b00149,raspberry,176,1,73,,,XKCD
+#9a6200,rawsienna,154,98,0,,,XKCD
+#a75e09,rawumber,167,94,9,,,XKCD
+#d4ffff,really light blue,212,255,255,,,XKCD
+#e50000,red,229,0,0,,,XKCD
+#8b2e16,red brown,139,46,22,,,XKCD
+#c44240,red dish,196,66,64,,,XKCD
+#7f2b0a,red dish brown,127,43,10,,,XKCD
+#997570,red dish grey,153,117,112,,,XKCD
+#f8481c,red dish orange,248,72,28,,,XKCD
+#fe2c54,red dish pink,254,44,84,,,XKCD
+#910951,red dish purple,145,9,81,,,XKCD
+#6e1005,reddy brown,110,16,5,,,XKCD
+#fd3c06,red orange,253,60,6,,,XKCD
+#fa2a55,red pink,250,42,85,,,XKCD
+#820747,red purple,130,7,71,,,XKCD
+#9e0168,red violet,158,1,104,,,XKCD
+#8c0034,red wine,140,0,52,,,XKCD
+#021bf9,rich blue,2,27,249,,,XKCD
+#720058,rich purple,114,0,88,,,XKCD
+#8af1fe,robinegg blue,138,241,254,,,XKCD
+#6dedfd,robins egg,109,237,253,,,XKCD
+#98eff9,robins egg blue,152,239,249,,,XKCD
+#fe86a4,rosa,254,134,164,,,XKCD
+#cf6275,rose,207,98,117,,,XKCD
+#f7879a,rose pink,247,135,154,,,XKCD
+#be013c,rose red,190,1,60,,,XKCD
+#f6688e,rosy pink,246,104,142,,,XKCD
+#ab1239,rouge,171,18,57,,,XKCD
+#0c1793,royal,12,23,147,,,XKCD
+#0504aa,royal blue,5,4,170,,,XKCD
+#4b006e,royal purple,75,0,110,,,XKCD
+#ca0147,ruby,202,1,71,,,XKCD
+#a13905,russet,161,57,5,,,XKCD
+#a83c09,rust,168,60,9,,,XKCD
+#8b3103,rust brown,139,49,3,,,XKCD
+#c45508,rust orange,196,85,8,,,XKCD
+#aa2704,rust red,170,39,4,,,XKCD
+#cd5909,rusty orange,205,89,9,,,XKCD
+#af2f0d,rusty red,175,47,13,,,XKCD
+#feb209,saffron,254,178,9,,,XKCD
+#87ae73,sage,135,174,115,,,XKCD
+#88b378,sage green,136,179,120,,,XKCD
+#ff796c,salmon,255,121,108,,,XKCD
+#fe7b7c,salmon pink,254,123,124,,,XKCD
+#e2ca76,sand,226,202,118,,,XKCD
+#cba560,sand brown,203,165,96,,,XKCD
+#c9ae74,sandstone,201,174,116,,,XKCD
+#f1da7a,sandy,241,218,122,,,XKCD
+#c4a661,sandy brown,196,166,97,,,XKCD
+#fce166,sand yellow,252,225,102,,,XKCD
+#fdee73,sandy yellow,253,238,115,,,XKCD
+#5c8b15,sap green,92,139,21,,,XKCD
+#2138ab,sapphire,33,56,171,,,XKCD
+#be0119,scarlet,190,1,25,,,XKCD
+#3c9992,sea,60,153,146,,,XKCD
+#047495,sea blue,4,116,149,,,XKCD
+#80f9ad,seafoam,128,249,173,,,XKCD
+#78d1b6,seafoam blue,120,209,182,,,XKCD
+#7af9ab,seafoam green,122,249,171,,,XKCD
+#53fca1,sea green,83,252,161,,,XKCD
+#18d17b,seaweed,24,209,123,,,XKCD
+#35ad6b,seaweed green,53,173,107,,,XKCD
+#985e2b,sepia,152,94,43,,,XKCD
+#01b44c,shamrock,1,180,76,,,XKCD
+#02c14d,shamrock green,2,193,77,,,XKCD
+#7f5f00,poop,127,95,0,,,XKCD
+#7b5804,poop brown,123,88,4,,,XKCD
+#758000,poop green,117,128,0,,,XKCD
+#fe02a2,shocking pink,254,2,162,,,XKCD
+#9db92c,sick green,157,185,44,,,XKCD
+#94b21c,sickly green,148,178,28,,,XKCD
+#d0e429,sickly yellow,208,228,41,,,XKCD
+#a9561e,sienna,169,86,30,,,XKCD
+#c5c9c7,silver,197,201,199,,,XKCD
+#82cafc,sky,130,202,252,,,XKCD
+#75bbfd,sky blue,117,187,253,,,XKCD
+#516572,slate,81,101,114,,,XKCD
+#5b7c99,slate blue,91,124,153,,,XKCD
+#658d6d,slate green,101,141,109,,,XKCD
+#59656d,slate grey,89,101,109,,,XKCD
+#99cc04,slime green,153,204,4,,,XKCD
+#acbb0d,snot,172,187,13,,,XKCD
+#9dc100,snot green,157,193,0,,,XKCD
+#6488ea,soft blue,100,136,234,,,XKCD
+#6fc276,soft green,111,194,118,,,XKCD
+#fdb0c0,soft pink,253,176,192,,,XKCD
+#a66fb5,soft purple,166,111,181,,,XKCD
+#1ef876,spearmint,30,248,118,,,XKCD
+#a9f971,spring green,169,249,113,,,XKCD
+#0a5f38,spruce,10,95,56,,,XKCD
+#f2ab15,squash,242,171,21,,,XKCD
+#738595,steel,115,133,149,,,XKCD
+#5a7d9a,steel blue,90,125,154,,,XKCD
+#6f828a,steel grey,111,130,138,,,XKCD
+#ada587,stone,173,165,135,,,XKCD
+#507b9c,stormy blue,80,123,156,,,XKCD
+#fcf679,straw,252,246,121,,,XKCD
+#fb2943,strawberry,251,41,67,,,XKCD
+#0c06f7,strong blue,12,6,247,,,XKCD
+#ff0789,strong pink,255,7,137,,,XKCD
+#ffc512,sunflower,255,197,18,,,XKCD
+#ffda03,sunflower yellow,255,218,3,,,XKCD
+#fff917,sunny yellow,255,249,23,,,XKCD
+#fffd37,sunshine yellow,255,253,55,,,XKCD
+#ffdf22,sun yellow,255,223,34,,,XKCD
+#698339,swamp,105,131,57,,,XKCD
+#748500,swamp green,116,133,0,,,XKCD
+#d1b26f,tan,209,178,111,,,XKCD
+#ab7e4c,tan brown,171,126,76,,,XKCD
+#ff9408,tangerine,255,148,8,,,XKCD
+#a9be70,tan green,169,190,112,,,XKCD
+#b9a281,taupe,185,162,129,,,XKCD
+#65ab7c,tea,101,171,124,,,XKCD
+#bdf8a3,tea green,189,248,163,,,XKCD
+#029386,teal,2,147,134,,,XKCD
+#01889f,teal blue,1,136,159,,,XKCD
+#25a36f,teal green,37,163,111,,,XKCD
+#24bca8,tealish,36,188,168,,,XKCD
+#0cdc73,tealish green,12,220,115,,,XKCD
+#cb6843,terracota,203,104,67,,,XKCD
+#c9643b,terracotta,201,100,59,,,XKCD
+#7bf2da,tiffany blue,123,242,218,,,XKCD
+#ef4026,tomato,239,64,38,,,XKCD
+#ec2d01,tomato red,236,45,1,,,XKCD
+#13bbaf,topaz,19,187,175,,,XKCD
+#c7ac7d,toupe,199,172,125,,,XKCD
+#61de2a,toxic green,97,222,42,,,XKCD
+#2a7e19,tree green,42,126,25,,,XKCD
+#010fcc,true blue,1,15,204,,,XKCD
+#089404,true green,8,148,4,,,XKCD
+#06c2ac,turquoise,6,194,172,,,XKCD
+#06b1c4,turquoise blue,6,177,196,,,XKCD
+#04f489,turquoise green,4,244,137,,,XKCD
+#75b84f,turtle green,117,184,79,,,XKCD
+#4e518b,twilight,78,81,139,,,XKCD
+#0a437a,twilight blue,10,67,122,,,XKCD
+#31668a,ugly blue,49,102,138,,,XKCD
+#7d7103,ugly brown,125,113,3,,,XKCD
+#7a9703,ugly green,122,151,3,,,XKCD
+#cd7584,ugly pink,205,117,132,,,XKCD
+#a442a0,ugly purple,164,66,160,,,XKCD
+#d0c101,ugly yellow,208,193,1,,,XKCD
+#2000b1,ultramarine,32,0,177,,,XKCD
+#1805db,ultramarine blue,24,5,219,,,XKCD
+#b26400,umber,178,100,0,,,XKCD
+#750851,velvet,117,8,81,,,XKCD
+#f4320c,vermillion,244,50,12,,,XKCD
+#000133,very dark blue,0,1,51,,,XKCD
+#1d0200,very dark brown,29,2,0,,,XKCD
+#062e03,very dark green,6,46,3,,,XKCD
+#2a0134,very dark purple,42,1,52,,,XKCD
+#d5ffff,very light blue,213,255,255,,,XKCD
+#d3b683,very light brown,211,182,131,,,XKCD
+#d1ffbd,very light green,209,255,189,,,XKCD
+#fff4f2,very light pink,255,244,242,,,XKCD
+#f6cefc,very light purple,246,206,252,,,XKCD
+#d6fffe,very pale blue,214,255,254,,,XKCD
+#cffdbc,very pale green,207,253,188,,,XKCD
+#0339f8,vibrant blue,3,57,248,,,XKCD
+#0add08,vibrant green,10,221,8,,,XKCD
+#ad03de,vibrant purple,173,3,222,,,XKCD
+#9a0eea,violet,154,14,234,,,XKCD
+#510ac9,violet blue,81,10,201,,,XKCD
+#fb5ffc,violet pink,251,95,252,,,XKCD
+#a50055,violet red,165,0,85,,,XKCD
+#1e9167,viridian,30,145,103,,,XKCD
+#152eff,vivid blue,21,46,255,,,XKCD
+#2fef10,vivid green,47,239,16,,,XKCD
+#9900fa,vivid purple,153,0,250,,,XKCD
+#a2a415,vomit,162,164,21,,,XKCD
+#89a203,vomit green,137,162,3,,,XKCD
+#c7c10c,vomit yellow,199,193,12,,,XKCD
+#4b57db,warm blue,75,87,219,,,XKCD
+#964e02,warm brown,150,78,2,,,XKCD
+#978a84,warm grey,151,138,132,,,XKCD
+#fb5581,warm pink,251,85,129,,,XKCD
+#952e8f,warm purple,149,46,143,,,XKCD
+#bcf5a6,washed out green,188,245,166,,,XKCD
+#0e87cc,water blue,14,135,204,,,XKCD
+#fd4659,watermelon,253,70,89,,,XKCD
+#3ae57f,weird green,58,229,127,,,XKCD
+#fbdd7e,wheat,251,221,126,,,XKCD
+#ffffff,white,255,255,255,,,XKCD
+#3778bf,windows blue,55,120,191,,,XKCD
+#80013f,wine,128,1,63,,,XKCD
+#7b0323,wine red,123,3,35,,,XKCD
+#20f986,winter green,32,249,134,,,XKCD
+#a87dc2,wisteria,168,125,194,,,XKCD
+#ffff14,yellow,255,255,20,,,XKCD
+#b79400,yellow brown,183,148,0,,,XKCD
+#bbf90f,yellow green,187,249,15,,,XKCD
+#faee66,yellowish,250,238,102,,,XKCD
+#9b7a01,yellowish brown,155,122,1,,,XKCD
+#b0dd16,yellowish green,176,221,22,,,XKCD
+#ffab0f,yellowish orange,255,171,15,,,XKCD
+#fcfc81,yellowish tan,252,252,129,,,XKCD
+#cb9d06,yellow ochre,203,157,6,,,XKCD
+#fcb001,yellow orange,252,176,1,,,XKCD
+#ffe36e,yellow tan,255,227,110,,,XKCD
+#ae8b0c,yellowy brown,174,139,12,,,XKCD
+#bff128,yellowy green,191,241,40,,,XKCD

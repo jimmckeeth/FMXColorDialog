@@ -1,268 +1,268 @@
-Hex,Name,Red,Green,Blue,Source,Link,Family
-#ffb5ba,Vivid Pink,255,181,186,NBS-ISCC,,Pink
-#ea9399,Strong Pink,234,147,153,NBS-ISCC,,Pink
-#e4717a,Deep Pink,228,113,122,NBS-ISCC,,Pink
-#f9ccca,Light Pink,249,204,202,NBS-ISCC,,Pink
-#dea5a4,Moderate Pink,222,165,164,NBS-ISCC,,Pink
-#c08081,Dark Pink,192,128,129,NBS-ISCC,,Pink
-#ead8d7,Pale Pink,234,216,215,NBS-ISCC,,Pink
-#c4aead,Grayish Pink,196,174,173,NBS-ISCC,,Pink
-#eae3e1,Pinkish White,234,227,225,NBS-ISCC,,Pink
-#c1b6b3,Pinkish Gray,193,182,179,NBS-ISCC,,Pink
-#be0032,Vivid Red,190,0,50,NBS-ISCC,,Red
-#bc3f4a,Strong Red,188,63,74,NBS-ISCC,,Red
-#841b2d,Deep Red,132,27,45,NBS-ISCC,,Red
-#5c0923,Very Deep Red,92,9,35,NBS-ISCC,,Red
-#ab4e52,Moderate Red,171,78,82,NBS-ISCC,,Red
-#722f37,Dark Red,114,47,55,NBS-ISCC,,Red
-#3f1728,Very Dark Red,63,23,40,NBS-ISCC,,Red
-#ad8884,Light Grayish Red,173,136,132,NBS-ISCC,,Red
-#905d5d,Grayish Red,144,93,93,NBS-ISCC,,Red
-#543d3f,Dark Grayish Red,84,61,63,NBS-ISCC,,Red
-#2e1d21,Blackish Red,46,29,33,NBS-ISCC,,Red
-#8f817f,Reddish Gray,143,129,127,NBS-ISCC,,Red
-#5c504f,Dark Reddish Gray,92,80,79,NBS-ISCC,,Red
-#282022,Reddish Black,40,32,34,NBS-ISCC,,Red
-#ffb7a5,Vivid Yellowish Pink,255,183,165,NBS-ISCC,,Yellowish Pink
-#f99379,Strong Yellowish Pink,249,147,121,NBS-ISCC,,Yellowish Pink
-#e66761,Deep Yellowish Pink,230,103,97,NBS-ISCC,,Yellowish Pink
-#f4c2c2,Light Yellowish Pink,244,194,194,NBS-ISCC,,Yellowish Pink
-#d9a6a9,Moderate Yellowish Pink,217,166,169,NBS-ISCC,,Yellowish Pink
-#c48379,Dark Yellowish Pink,196,131,121,NBS-ISCC,,Yellowish Pink
-#ecd5c5,Pale Yellowish Pink,236,213,197,NBS-ISCC,,Yellowish Pink
-#c7ada3,Grayish Yellowish Pink,199,173,163,NBS-ISCC,,Yellowish Pink
-#c2ac99,Brownish Pink,194,172,153,NBS-ISCC,,Brownish Pink
-#e25822,Vivid Reddish Orange,226,88,34,NBS-ISCC,,Reddish Orange
-#d9603b,Strong Reddish Orange,217,96,59,NBS-ISCC,,Reddish Orange
-#aa381e,Deep Reddish Orange,170,56,30,NBS-ISCC,,Reddish Orange
-#cb6d51,Moderate Reddish Orange,203,109,81,NBS-ISCC,,Reddish Orange
-#9e4732,Dark Reddish Orange,158,71,50,NBS-ISCC,,Reddish Orange
-#b4745e,Grayish Reddish Orange,180,116,94,NBS-ISCC,,Reddish Orange
-#882d17,Strong Reddish Brown,136,45,23,NBS-ISCC,,Reddish Brown
-#56070c,Deep Reddish Brown,86,7,12,NBS-ISCC,,Reddish Brown
-#a87c6d,Light Reddish Brown,168,124,109,NBS-ISCC,,Reddish Brown
-#79443b,Moderate Reddish Brown,121,68,59,NBS-ISCC,,Reddish Brown
-#3e1d1e,Dark Reddish Brown,62,29,30,NBS-ISCC,,Reddish Brown
-#977f73,Light Grayish Reddish Brown,151,127,115,NBS-ISCC,,Reddish Brown
-#674c47,Grayish Reddish Brown,103,76,71,NBS-ISCC,,Reddish Brown
-#43302e,Dark Grayish Reddish Brown,67,48,46,NBS-ISCC,,Reddish Brown
-#f38400,Vivid Orange,243,132,0,NBS-ISCC,,Orange
-#fd943f,Brilliant Orange,253,148,63,NBS-ISCC,,Orange
-#ed872d,Strong Orange,237,135,45,NBS-ISCC,,Orange
-#be6516,Deep Orange,190,101,22,NBS-ISCC,,Orange
-#fab57f,Light Orange,250,181,127,NBS-ISCC,,Orange
-#d99058,Moderate Orange,217,144,88,NBS-ISCC,,Orange
-#ae6938,Brownish Orange,174,105,56,NBS-ISCC,,Brownish Orange
-#80461b,Strong Brown,128,70,27,NBS-ISCC,,Brown
-#593319,Deep Brown,89,51,25,NBS-ISCC,,Brown
-#a67b5b,Light Brown,166,123,91,NBS-ISCC,,Brown
-#6f4e37,Moderate Brown,111,78,55,NBS-ISCC,,Brown
-#422518,Dark Brown,66,37,24,NBS-ISCC,,Brown
-#958070,Light Grayish Brown,149,128,112,NBS-ISCC,,Brown
-#635147,Grayish Brown,99,81,71,NBS-ISCC,,Brown
-#3e322c,Dark Grayish Brown,62,50,44,NBS-ISCC,,Brown
-#8e8279,Light Brownish Gray,142,130,121,NBS-ISCC,,Brown
-#5b504f,Brownish Gray,91,80,79,NBS-ISCC,,Brown
-#28201c,Brownish Black,40,32,28,NBS-ISCC,,Brown
-#f6a600,Vivid Orange Yellow,246,166,0,NBS-ISCC,,Orange Yellow
-#ffc14f,Brilliant Orange Yellow,255,193,79,NBS-ISCC,,Orange Yellow
-#eaa221,Strong Orange Yellow,234,162,33,NBS-ISCC,,Orange Yellow
-#c98500,Deep Orange Yellow,201,133,0,NBS-ISCC,,Orange Yellow
-#fbc97f,Light Orange Yellow,251,201,127,NBS-ISCC,,Orange Yellow
-#e3a857,Moderate Orange Yellow,227,168,87,NBS-ISCC,,Orange Yellow
-#be8a3d,Dark Orange Yellow,190,138,61,NBS-ISCC,,Orange Yellow
-#fad6a5,Pale Orange Yellow,250,214,165,NBS-ISCC,,Orange Yellow
-#996515,Strong Yellowish Brown,153,101,21,NBS-ISCC,,Yellowish Brown
-#654522,Deep Yellowish Brown,101,69,34,NBS-ISCC,,Yellowish Brown
-#c19a6b,Light Yellowish Brown,193,154,107,NBS-ISCC,,Yellowish Brown
-#826644,Moderate Yellowish Brown,130,102,68,NBS-ISCC,,Yellowish Brown
-#4b3621,Dark Yellowish Brown,75,54,33,NBS-ISCC,,Yellowish Brown
-#ae9b82,Light Grayish Yellowish Brown,174,155,130,NBS-ISCC,,Yellowish Brown
-#7e6d5a,Grayish Yellowish Brown,126,109,90,NBS-ISCC,,Yellowish Brown
-#483c32,Dark Grayish Yellowish Brown,72,60,50,NBS-ISCC,,Yellowish Brown
-#f3c300,Vivid Yellow,243,195,0,NBS-ISCC,,Yellow
-#fada5e,Brilliant Yellow,250,218,94,NBS-ISCC,,Yellow
-#d4af37,Strong Yellow,212,175,55,NBS-ISCC,,Yellow
-#af8d13,Deep Yellow,175,141,19,NBS-ISCC,,Yellow
-#f8de7e,Light Yellow,248,222,126,NBS-ISCC,,Yellow
-#c9ae5d,Moderate Yellow,201,174,93,NBS-ISCC,,Yellow
-#ab9144,Dark Yellow,171,145,68,NBS-ISCC,,Yellow
-#f3e5ab,Pale Yellow,243,229,171,NBS-ISCC,,Yellow
-#c2b280,Grayish Yellow,194,178,128,NBS-ISCC,,Yellow
-#a18f60,Dark Grayish Yellow,161,143,96,NBS-ISCC,,Yellow
-#f0ead6,Yellowish White,240,234,214,NBS-ISCC,,Yellow
-#bfb8a5,Yellowish Gray,191,184,165,NBS-ISCC,,Yellow
-#967117,Light Olive Brown,150,113,23,NBS-ISCC,,Olive Brown
-#6c541e,Moderate Olive Brown,108,84,30,NBS-ISCC,,Olive Brown
-#3b3121,Dark Olive Brown,59,49,33,NBS-ISCC,,Olive Brown
-#dcd300,Vivid Greenish Yellow,220,211,0,NBS-ISCC,,Greenish Yellow
-#e9e450,Brilliant Greenish Yellow,233,228,80,NBS-ISCC,,Greenish Yellow
-#beb72e,Strong Greenish Yellow,190,183,46,NBS-ISCC,,Greenish Yellow
-#9b9400,Deep Greenish Yellow,155,148,0,NBS-ISCC,,Greenish Yellow
-#eae679,Light Greenish Yellow,234,230,121,NBS-ISCC,,Greenish Yellow
-#b9b459,Moderate Greenish Yellow,185,180,89,NBS-ISCC,,Greenish Yellow
-#98943e,Dark Greenish Yellow,152,148,62,NBS-ISCC,,Greenish Yellow
-#ebe8a4,Pale Greenish Yellow,235,232,164,NBS-ISCC,,Greenish Yellow
-#b9b57d,Grayish Greenish Yellow,185,181,125,NBS-ISCC,,Greenish Yellow
-#867e36,Light Olive,134,126,54,NBS-ISCC,,Olive
-#665d1e,Moderate Olive,102,93,30,NBS-ISCC,,Olive
-#403d21,Dark Olive,64,61,33,NBS-ISCC,,Olive
-#8c8767,Light Grayish Olive,140,135,103,NBS-ISCC,,Olive
-#5b5842,Grayish Olive,91,88,66,NBS-ISCC,,Olive
-#363527,Dark Grayish Olive,54,53,39,NBS-ISCC,,Olive
-#8a8776,Light Olive Gray,138,135,118,NBS-ISCC,,Olive
-#57554c,Olive Gray,87,85,76,NBS-ISCC,,Olive
-#25241d,Olive Black,37,36,29,NBS-ISCC,,Olive
-#8db600,Vivid Yellow Green,141,182,0,NBS-ISCC,,Yellow Green
-#bdda57,Brilliant Yellow Green,189,218,87,NBS-ISCC,,Yellow Green
-#7e9f2e,Strong Yellow Green,126,159,46,NBS-ISCC,,Yellow Green
-#467129,Deep Yellow Green,70,113,41,NBS-ISCC,,Yellow Green
-#c9dc89,Light Yellow Green,201,220,137,NBS-ISCC,,Yellow Green
-#8a9a5b,Moderate Yellow Green,138,154,91,NBS-ISCC,,Yellow Green
-#dadfb7,Pale Yellow Green,218,223,183,NBS-ISCC,,Yellow Green
-#8f9779,Grayish Yellow Green,143,151,121,NBS-ISCC,,Yellow Green
-#404f00,Strong Olive Green,64,79,0,NBS-ISCC,,Olive Green
-#232f00,Deep Olive Green,35,47,0,NBS-ISCC,,Olive Green
-#4a5d23,Moderate Olive Green,74,93,35,NBS-ISCC,,Olive Green
-#2b3d26,Dark Olive Green,43,61,38,NBS-ISCC,,Olive Green
-#515744,Grayish Olive Green,81,87,68,NBS-ISCC,,Olive Green
-#31362b,Dark Grayish Olive Green,49,54,43,NBS-ISCC,,Olive Green
-#27a64c,Vivid Yellowish Green,39,166,76,NBS-ISCC,,Yellowish Green
-#83d37d,Brilliant Yellowish Green,131,211,125,NBS-ISCC,,Yellowish Green
-#44944a,Strong Yellowish Green,68,148,74,NBS-ISCC,,Yellowish Green
-#00622d,Deep Yellowish Green,0,98,45,NBS-ISCC,,Yellowish Green
-#003118,Very Deep Yellowish Green,0,49,24,NBS-ISCC,,Yellowish Green
-#b6e5af,Very Light Yellowish Green,182,229,175,NBS-ISCC,,Yellowish Green
-#93c592,Light Yellowish Green,147,197,146,NBS-ISCC,,Yellowish Green
-#679267,Moderate Yellowish Green,103,146,103,NBS-ISCC,,Yellowish Green
-#355e3b,Dark Yellowish Green,53,94,59,NBS-ISCC,,Yellowish Green
-#173620,Very Dark Yellowish Green,23,54,32,NBS-ISCC,,Yellowish Green
-#008856,Vivid Green,0,136,86,NBS-ISCC,,Green
-#3eb489,Brilliant Green,62,180,137,NBS-ISCC,,Green
-#007959,Strong Green,0,121,89,NBS-ISCC,,Green
-#00543d,Deep Green,0,84,61,NBS-ISCC,,Green
-#8ed1b2,Very Light Green,142,209,178,NBS-ISCC,,Green
-#6aab8e,Light Green,106,171,142,NBS-ISCC,,Green
-#3b7861,Moderate Green,59,120,97,NBS-ISCC,,Green
-#1b4d3e,Dark Green,27,77,62,NBS-ISCC,,Green
-#1c352d,Very Dark Green,28,53,45,NBS-ISCC,,Green
-#c7e6d7,Very Pale Green,199,230,215,NBS-ISCC,,Green
-#8da399,Pale Green,141,163,153,NBS-ISCC,,Green
-#5e716a,Grayish Green,94,113,106,NBS-ISCC,,Green
-#3a4b47,Dark Grayish Green,58,75,71,NBS-ISCC,,Green
-#1a2421,Blackish Green,26,36,33,NBS-ISCC,,Green
-#dfede8,Greenish White,223,237,232,NBS-ISCC,,Green
-#b2beb5,Light Greenish Gray,178,190,181,NBS-ISCC,,Green
-#7d8984,Greenish Gray,125,137,132,NBS-ISCC,,Green
-#4e5755,Dark Greenish Gray,78,87,85,NBS-ISCC,,Green
-#1e2321,Greenish Black,30,35,33,NBS-ISCC,,Green
-#008882,Vivid Bluish Green,0,136,130,NBS-ISCC,,Bluish Green
-#00a693,Brilliant Bluish Green,0,166,147,NBS-ISCC,,Bluish Green
-#007a74,Strong Bluish Green,0,122,116,NBS-ISCC,,Bluish Green
-#00443f,Deep Bluish Green,0,68,63,NBS-ISCC,,Bluish Green
-#96ded1,Very Light Bluish Green,150,222,209,NBS-ISCC,,Bluish Green
-#66ada4,Light Bluish Green,102,173,164,NBS-ISCC,,Bluish Green
-#317873,Moderate Bluish Green,49,120,115,NBS-ISCC,,Bluish Green
-#004b49,Dark Bluish Green,0,75,73,NBS-ISCC,,Bluish Green
-#002a29,Very Dark Bluish Green,0,42,41,NBS-ISCC,,Bluish Green
-#0085a1,Vivid Greenish Blue,0,133,161,NBS-ISCC,,Greenish Blue
-#239eba,Brilliant Greenish Blue,35,158,186,NBS-ISCC,,Greenish Blue
-#007791,Strong Greenish Blue,0,119,145,NBS-ISCC,,Greenish Blue
-#2e8495,Deep Greenish Blue,46,132,149,NBS-ISCC,,Greenish Blue
-#9cd1dc,Very Light Greenish Blue,156,209,220,NBS-ISCC,,Greenish Blue
-#66aabc,Light Greenish Blue,102,170,188,NBS-ISCC,,Greenish Blue
-#367588,Moderate Greenish Blue,54,117,136,NBS-ISCC,,Greenish Blue
-#004958,Dark Greenish Blue,0,73,88,NBS-ISCC,,Greenish Blue
-#002e3b,Very Dark Greenish Blue,0,46,59,NBS-ISCC,,Greenish Blue
-#00a1c2,Vivid Blue,0,161,194,NBS-ISCC,,Blue
-#4997d0,Brilliant Blue,73,151,208,NBS-ISCC,,Blue
-#0067a5,Strong Blue,0,103,165,NBS-ISCC,,Blue
-#00416a,Deep Blue,0,65,106,NBS-ISCC,,Blue
-#a1caf1,Very Light Blue,161,202,241,NBS-ISCC,,Blue
-#70a3cc,Light Blue,112,163,204,NBS-ISCC,,Blue
-#436b95,Moderate Blue,67,107,149,NBS-ISCC,,Blue
-#00304e,Dark Blue,0,48,78,NBS-ISCC,,Blue
-#bcd4e6,Very Pale Blue,188,212,230,NBS-ISCC,,Blue
-#91a3b0,Pale Blue,145,163,176,NBS-ISCC,,Blue
-#536878,Grayish Blue,83,104,120,NBS-ISCC,,Blue
-#36454f,Dark Grayish Blue,54,69,79,NBS-ISCC,,Blue
-#202830,Blackish Blue,32,40,48,NBS-ISCC,,Blue
-#e9e9ed,Bluish White,233,233,237,NBS-ISCC,,Blue
-#b4bcc0,Light Bluish Gray,180,188,192,NBS-ISCC,,Blue
-#81878b,Bluish Gray,129,135,139,NBS-ISCC,,Blue
-#51585e,Dark Bluish Gray,81,88,94,NBS-ISCC,,Blue
-#202428,Bluish Black,32,36,40,NBS-ISCC,,Blue
-#30267a,Vivid Purplish Blue,48,38,122,NBS-ISCC,,Purplish Blue
-#6c79b8,Brilliant Purplish Blue,108,121,184,NBS-ISCC,,Purplish Blue
-#545aa7,Strong Purplish Blue,84,90,167,NBS-ISCC,,Purplish Blue
-#272458,Deep Purplish Blue,39,36,88,NBS-ISCC,,Purplish Blue
-#b3bce2,Very Light Purplish Blue,179,188,226,NBS-ISCC,,Purplish Blue
-#8791bf,Light Purplish Blue,135,145,191,NBS-ISCC,,Purplish Blue
-#4e5180,Moderate Purplish Blue,78,81,128,NBS-ISCC,,Purplish Blue
-#252440,Dark Purplish Blue,37,36,64,NBS-ISCC,,Purplish Blue
-#c0c8e1,Very Pale Purplish Blue,192,200,225,NBS-ISCC,,Purplish Blue
-#8c92ac,Pale Purplish Blue,140,146,172,NBS-ISCC,,Purplish Blue
-#4c516d,Grayish Purplish Blue,76,81,109,NBS-ISCC,,Purplish Blue
-#9065ca,Vivid Violet,144,101,202,NBS-ISCC,,Violet
-#7e73b8,Brilliant Violet,126,115,184,NBS-ISCC,,Violet
-#604e97,Strong Violet,96,78,151,NBS-ISCC,,Violet
-#32174d,Deep Violet,50,23,77,NBS-ISCC,,Violet
-#dcd0ff,Very Light Violet,220,208,255,NBS-ISCC,,Violet
-#8c82b6,Light Violet,140,130,182,NBS-ISCC,,Violet
-#604e81,Moderate Violet,96,78,129,NBS-ISCC,,Violet
-#2f2140,Dark Violet,47,33,64,NBS-ISCC,,Violet
-#c4c3dd,Very Pale Violet,196,195,221,NBS-ISCC,,Violet
-#9690ab,Pale Violet,150,144,171,NBS-ISCC,,Violet
-#554c69,Grayish Violet,85,76,105,NBS-ISCC,,Violet
-#9a4eae,Vivid Purple,154,78,174,NBS-ISCC,,Purple
-#d399e6,Brilliant Purple,211,153,230,NBS-ISCC,,Purple
-#875692,Strong Purple,135,86,146,NBS-ISCC,,Purple
-#602f6b,Deep Purple,96,47,107,NBS-ISCC,,Purple
-#401a4c,Very Deep Purple,64,26,76,NBS-ISCC,,Purple
-#d5badb,Very Light Purple,213,186,219,NBS-ISCC,,Purple
-#b695c0,Light Purple,182,149,192,NBS-ISCC,,Purple
-#86608e,Moderate Purple,134,96,142,NBS-ISCC,,Purple
-#563c5c,Dark Purple,86,60,92,NBS-ISCC,,Purple
-#301934,Very Dark Purple,48,25,52,NBS-ISCC,,Purple
-#d6cadd,Very Pale Purple,214,202,221,NBS-ISCC,,Purple
-#aa98a9,Pale Purple,170,152,169,NBS-ISCC,,Purple
-#796878,Grayish Purple,121,104,120,NBS-ISCC,,Purple
-#50404d,Dark Grayish Purple,80,64,77,NBS-ISCC,,Purple
-#291e29,Blackish Purple,41,30,41,NBS-ISCC,,Purple
-#e8e3e5,Purplish White,232,227,229,NBS-ISCC,,Purple
-#bfb9bd,Light Purplish Gray,191,185,189,NBS-ISCC,,Purple
-#8b8589,Purplish Gray,139,133,137,NBS-ISCC,,Purple
-#5d555b,Dark Purplish Gray,93,85,91,NBS-ISCC,,Purple
-#242124,Purplish Black,36,33,36,NBS-ISCC,,Purple
-#870074,Vivid Reddish Purple,135,0,116,NBS-ISCC,,Reddish Purple
-#9e4f88,Strong Reddish Purple,158,79,136,NBS-ISCC,,Reddish Purple
-#702963,Deep Reddish Purple,112,41,99,NBS-ISCC,,Reddish Purple
-#54194e,Very Deep Reddish Purple,84,25,78,NBS-ISCC,,Reddish Purple
-#b784a7,Light Reddish Purple,183,132,167,NBS-ISCC,,Reddish Purple
-#915c83,Moderate Reddish Purple,145,92,131,NBS-ISCC,,Reddish Purple
-#5d3954,Dark Reddish Purple,93,57,84,NBS-ISCC,,Reddish Purple
-#341731,Very Dark Reddish Purple,52,23,49,NBS-ISCC,,Reddish Purple
-#aa8a9e,Pale Reddish Purple,170,138,158,NBS-ISCC,,Reddish Purple
-#836479,Grayish Reddish Purple,131,100,121,NBS-ISCC,,Reddish Purple
-#ffc8d6,Brilliant Purplish Pink,255,200,214,NBS-ISCC,,Purplish Pink
-#e68fac,Strong Purplish Pink,230,143,172,NBS-ISCC,,Purplish Pink
-#de6fa1,Deep Purplish Pink,222,111,161,NBS-ISCC,,Purplish Pink
-#efbbcc,Light Purplish Pink,239,187,204,NBS-ISCC,,Purplish Pink
-#d597ae,Moderate Purplish Pink,213,151,174,NBS-ISCC,,Purplish Pink
-#c17e91,Dark Purplish Pink,193,126,145,NBS-ISCC,,Purplish Pink
-#e8ccd7,Pale Purplish Pink,232,204,215,NBS-ISCC,,Purplish Pink
-#c3a6b1,Grayish Purplish Pink,195,166,177,NBS-ISCC,,Purplish Pink
-#ce4676,Vivid Purplish Red,206,70,118,NBS-ISCC,,Purplish Red
-#b3446c,Strong Purplish Red,179,68,108,NBS-ISCC,,Purplish Red
-#78184a,Deep Purplish Red,120,24,74,NBS-ISCC,,Purplish Red
-#54133b,Very Deep Purplish Red,84,19,59,NBS-ISCC,,Purplish Red
-#a8516e,Moderate Purplish Red,168,81,110,NBS-ISCC,,Purplish Red
-#673147,Dark Purplish Red,103,49,71,NBS-ISCC,,Purplish Red
-#38152c,Very Dark Purplish Red,56,21,44,NBS-ISCC,,Purplish Red
-#af868e,Light Grayish Purplish Red,175,134,142,NBS-ISCC,,Purplish Red
-#915f6d,Grayish Purplish Red,145,95,109,NBS-ISCC,,Purplish Red
-#f2f3f4,White,242,243,244,NBS-ISCC,,Neutral
-#b9b8b5,Light Gray,185,184,181,NBS-ISCC,,Neutral
-#848482,Medium Gray,132,132,130,NBS-ISCC,,Neutral
-#555555,Dark Gray,85,85,85,NBS-ISCC,,Neutral
-#222222,Black,34,34,34,NBS-ISCC,,Neutral
+Hex,Name,Red,Green,Blue,Family,Link,Source
+#ffb5ba,Vivid Pink,255,181,186,Pink,,NBS-ISCC
+#ea9399,Strong Pink,234,147,153,Pink,,NBS-ISCC
+#e4717a,Deep Pink,228,113,122,Pink,,NBS-ISCC
+#f9ccca,Light Pink,249,204,202,Pink,,NBS-ISCC
+#dea5a4,Moderate Pink,222,165,164,Pink,,NBS-ISCC
+#c08081,Dark Pink,192,128,129,Pink,,NBS-ISCC
+#ead8d7,Pale Pink,234,216,215,Pink,,NBS-ISCC
+#c4aead,Grayish Pink,196,174,173,Pink,,NBS-ISCC
+#eae3e1,Pinkish White,234,227,225,Pink,,NBS-ISCC
+#c1b6b3,Pinkish Gray,193,182,179,Pink,,NBS-ISCC
+#be0032,Vivid Red,190,0,50,Red,,NBS-ISCC
+#bc3f4a,Strong Red,188,63,74,Red,,NBS-ISCC
+#841b2d,Deep Red,132,27,45,Red,,NBS-ISCC
+#5c0923,Very Deep Red,92,9,35,Red,,NBS-ISCC
+#ab4e52,Moderate Red,171,78,82,Red,,NBS-ISCC
+#722f37,Dark Red,114,47,55,Red,,NBS-ISCC
+#3f1728,Very Dark Red,63,23,40,Red,,NBS-ISCC
+#ad8884,Light Grayish Red,173,136,132,Red,,NBS-ISCC
+#905d5d,Grayish Red,144,93,93,Red,,NBS-ISCC
+#543d3f,Dark Grayish Red,84,61,63,Red,,NBS-ISCC
+#2e1d21,Blackish Red,46,29,33,Red,,NBS-ISCC
+#8f817f,Reddish Gray,143,129,127,Red,,NBS-ISCC
+#5c504f,Dark Reddish Gray,92,80,79,Red,,NBS-ISCC
+#282022,Reddish Black,40,32,34,Red,,NBS-ISCC
+#ffb7a5,Vivid Yellowish Pink,255,183,165,Yellowish Pink,,NBS-ISCC
+#f99379,Strong Yellowish Pink,249,147,121,Yellowish Pink,,NBS-ISCC
+#e66761,Deep Yellowish Pink,230,103,97,Yellowish Pink,,NBS-ISCC
+#f4c2c2,Light Yellowish Pink,244,194,194,Yellowish Pink,,NBS-ISCC
+#d9a6a9,Moderate Yellowish Pink,217,166,169,Yellowish Pink,,NBS-ISCC
+#c48379,Dark Yellowish Pink,196,131,121,Yellowish Pink,,NBS-ISCC
+#ecd5c5,Pale Yellowish Pink,236,213,197,Yellowish Pink,,NBS-ISCC
+#c7ada3,Grayish Yellowish Pink,199,173,163,Yellowish Pink,,NBS-ISCC
+#c2ac99,Brownish Pink,194,172,153,Brownish Pink,,NBS-ISCC
+#e25822,Vivid Reddish Orange,226,88,34,Reddish Orange,,NBS-ISCC
+#d9603b,Strong Reddish Orange,217,96,59,Reddish Orange,,NBS-ISCC
+#aa381e,Deep Reddish Orange,170,56,30,Reddish Orange,,NBS-ISCC
+#cb6d51,Moderate Reddish Orange,203,109,81,Reddish Orange,,NBS-ISCC
+#9e4732,Dark Reddish Orange,158,71,50,Reddish Orange,,NBS-ISCC
+#b4745e,Grayish Reddish Orange,180,116,94,Reddish Orange,,NBS-ISCC
+#882d17,Strong Reddish Brown,136,45,23,Reddish Brown,,NBS-ISCC
+#56070c,Deep Reddish Brown,86,7,12,Reddish Brown,,NBS-ISCC
+#a87c6d,Light Reddish Brown,168,124,109,Reddish Brown,,NBS-ISCC
+#79443b,Moderate Reddish Brown,121,68,59,Reddish Brown,,NBS-ISCC
+#3e1d1e,Dark Reddish Brown,62,29,30,Reddish Brown,,NBS-ISCC
+#977f73,Light Grayish Reddish Brown,151,127,115,Reddish Brown,,NBS-ISCC
+#674c47,Grayish Reddish Brown,103,76,71,Reddish Brown,,NBS-ISCC
+#43302e,Dark Grayish Reddish Brown,67,48,46,Reddish Brown,,NBS-ISCC
+#f38400,Vivid Orange,243,132,0,Orange,,NBS-ISCC
+#fd943f,Brilliant Orange,253,148,63,Orange,,NBS-ISCC
+#ed872d,Strong Orange,237,135,45,Orange,,NBS-ISCC
+#be6516,Deep Orange,190,101,22,Orange,,NBS-ISCC
+#fab57f,Light Orange,250,181,127,Orange,,NBS-ISCC
+#d99058,Moderate Orange,217,144,88,Orange,,NBS-ISCC
+#ae6938,Brownish Orange,174,105,56,Brownish Orange,,NBS-ISCC
+#80461b,Strong Brown,128,70,27,Brown,,NBS-ISCC
+#593319,Deep Brown,89,51,25,Brown,,NBS-ISCC
+#a67b5b,Light Brown,166,123,91,Brown,,NBS-ISCC
+#6f4e37,Moderate Brown,111,78,55,Brown,,NBS-ISCC
+#422518,Dark Brown,66,37,24,Brown,,NBS-ISCC
+#958070,Light Grayish Brown,149,128,112,Brown,,NBS-ISCC
+#635147,Grayish Brown,99,81,71,Brown,,NBS-ISCC
+#3e322c,Dark Grayish Brown,62,50,44,Brown,,NBS-ISCC
+#8e8279,Light Brownish Gray,142,130,121,Brown,,NBS-ISCC
+#5b504f,Brownish Gray,91,80,79,Brown,,NBS-ISCC
+#28201c,Brownish Black,40,32,28,Brown,,NBS-ISCC
+#f6a600,Vivid Orange Yellow,246,166,0,Orange Yellow,,NBS-ISCC
+#ffc14f,Brilliant Orange Yellow,255,193,79,Orange Yellow,,NBS-ISCC
+#eaa221,Strong Orange Yellow,234,162,33,Orange Yellow,,NBS-ISCC
+#c98500,Deep Orange Yellow,201,133,0,Orange Yellow,,NBS-ISCC
+#fbc97f,Light Orange Yellow,251,201,127,Orange Yellow,,NBS-ISCC
+#e3a857,Moderate Orange Yellow,227,168,87,Orange Yellow,,NBS-ISCC
+#be8a3d,Dark Orange Yellow,190,138,61,Orange Yellow,,NBS-ISCC
+#fad6a5,Pale Orange Yellow,250,214,165,Orange Yellow,,NBS-ISCC
+#996515,Strong Yellowish Brown,153,101,21,Yellowish Brown,,NBS-ISCC
+#654522,Deep Yellowish Brown,101,69,34,Yellowish Brown,,NBS-ISCC
+#c19a6b,Light Yellowish Brown,193,154,107,Yellowish Brown,,NBS-ISCC
+#826644,Moderate Yellowish Brown,130,102,68,Yellowish Brown,,NBS-ISCC
+#4b3621,Dark Yellowish Brown,75,54,33,Yellowish Brown,,NBS-ISCC
+#ae9b82,Light Grayish Yellowish Brown,174,155,130,Yellowish Brown,,NBS-ISCC
+#7e6d5a,Grayish Yellowish Brown,126,109,90,Yellowish Brown,,NBS-ISCC
+#483c32,Dark Grayish Yellowish Brown,72,60,50,Yellowish Brown,,NBS-ISCC
+#f3c300,Vivid Yellow,243,195,0,Yellow,,NBS-ISCC
+#fada5e,Brilliant Yellow,250,218,94,Yellow,,NBS-ISCC
+#d4af37,Strong Yellow,212,175,55,Yellow,,NBS-ISCC
+#af8d13,Deep Yellow,175,141,19,Yellow,,NBS-ISCC
+#f8de7e,Light Yellow,248,222,126,Yellow,,NBS-ISCC
+#c9ae5d,Moderate Yellow,201,174,93,Yellow,,NBS-ISCC
+#ab9144,Dark Yellow,171,145,68,Yellow,,NBS-ISCC
+#f3e5ab,Pale Yellow,243,229,171,Yellow,,NBS-ISCC
+#c2b280,Grayish Yellow,194,178,128,Yellow,,NBS-ISCC
+#a18f60,Dark Grayish Yellow,161,143,96,Yellow,,NBS-ISCC
+#f0ead6,Yellowish White,240,234,214,Yellow,,NBS-ISCC
+#bfb8a5,Yellowish Gray,191,184,165,Yellow,,NBS-ISCC
+#967117,Light Olive Brown,150,113,23,Olive Brown,,NBS-ISCC
+#6c541e,Moderate Olive Brown,108,84,30,Olive Brown,,NBS-ISCC
+#3b3121,Dark Olive Brown,59,49,33,Olive Brown,,NBS-ISCC
+#dcd300,Vivid Greenish Yellow,220,211,0,Greenish Yellow,,NBS-ISCC
+#e9e450,Brilliant Greenish Yellow,233,228,80,Greenish Yellow,,NBS-ISCC
+#beb72e,Strong Greenish Yellow,190,183,46,Greenish Yellow,,NBS-ISCC
+#9b9400,Deep Greenish Yellow,155,148,0,Greenish Yellow,,NBS-ISCC
+#eae679,Light Greenish Yellow,234,230,121,Greenish Yellow,,NBS-ISCC
+#b9b459,Moderate Greenish Yellow,185,180,89,Greenish Yellow,,NBS-ISCC
+#98943e,Dark Greenish Yellow,152,148,62,Greenish Yellow,,NBS-ISCC
+#ebe8a4,Pale Greenish Yellow,235,232,164,Greenish Yellow,,NBS-ISCC
+#b9b57d,Grayish Greenish Yellow,185,181,125,Greenish Yellow,,NBS-ISCC
+#867e36,Light Olive,134,126,54,Olive,,NBS-ISCC
+#665d1e,Moderate Olive,102,93,30,Olive,,NBS-ISCC
+#403d21,Dark Olive,64,61,33,Olive,,NBS-ISCC
+#8c8767,Light Grayish Olive,140,135,103,Olive,,NBS-ISCC
+#5b5842,Grayish Olive,91,88,66,Olive,,NBS-ISCC
+#363527,Dark Grayish Olive,54,53,39,Olive,,NBS-ISCC
+#8a8776,Light Olive Gray,138,135,118,Olive,,NBS-ISCC
+#57554c,Olive Gray,87,85,76,Olive,,NBS-ISCC
+#25241d,Olive Black,37,36,29,Olive,,NBS-ISCC
+#8db600,Vivid Yellow Green,141,182,0,Yellow Green,,NBS-ISCC
+#bdda57,Brilliant Yellow Green,189,218,87,Yellow Green,,NBS-ISCC
+#7e9f2e,Strong Yellow Green,126,159,46,Yellow Green,,NBS-ISCC
+#467129,Deep Yellow Green,70,113,41,Yellow Green,,NBS-ISCC
+#c9dc89,Light Yellow Green,201,220,137,Yellow Green,,NBS-ISCC
+#8a9a5b,Moderate Yellow Green,138,154,91,Yellow Green,,NBS-ISCC
+#dadfb7,Pale Yellow Green,218,223,183,Yellow Green,,NBS-ISCC
+#8f9779,Grayish Yellow Green,143,151,121,Yellow Green,,NBS-ISCC
+#404f00,Strong Olive Green,64,79,0,Olive Green,,NBS-ISCC
+#232f00,Deep Olive Green,35,47,0,Olive Green,,NBS-ISCC
+#4a5d23,Moderate Olive Green,74,93,35,Olive Green,,NBS-ISCC
+#2b3d26,Dark Olive Green,43,61,38,Olive Green,,NBS-ISCC
+#515744,Grayish Olive Green,81,87,68,Olive Green,,NBS-ISCC
+#31362b,Dark Grayish Olive Green,49,54,43,Olive Green,,NBS-ISCC
+#27a64c,Vivid Yellowish Green,39,166,76,Yellowish Green,,NBS-ISCC
+#83d37d,Brilliant Yellowish Green,131,211,125,Yellowish Green,,NBS-ISCC
+#44944a,Strong Yellowish Green,68,148,74,Yellowish Green,,NBS-ISCC
+#00622d,Deep Yellowish Green,0,98,45,Yellowish Green,,NBS-ISCC
+#003118,Very Deep Yellowish Green,0,49,24,Yellowish Green,,NBS-ISCC
+#b6e5af,Very Light Yellowish Green,182,229,175,Yellowish Green,,NBS-ISCC
+#93c592,Light Yellowish Green,147,197,146,Yellowish Green,,NBS-ISCC
+#679267,Moderate Yellowish Green,103,146,103,Yellowish Green,,NBS-ISCC
+#355e3b,Dark Yellowish Green,53,94,59,Yellowish Green,,NBS-ISCC
+#173620,Very Dark Yellowish Green,23,54,32,Yellowish Green,,NBS-ISCC
+#008856,Vivid Green,0,136,86,Green,,NBS-ISCC
+#3eb489,Brilliant Green,62,180,137,Green,,NBS-ISCC
+#007959,Strong Green,0,121,89,Green,,NBS-ISCC
+#00543d,Deep Green,0,84,61,Green,,NBS-ISCC
+#8ed1b2,Very Light Green,142,209,178,Green,,NBS-ISCC
+#6aab8e,Light Green,106,171,142,Green,,NBS-ISCC
+#3b7861,Moderate Green,59,120,97,Green,,NBS-ISCC
+#1b4d3e,Dark Green,27,77,62,Green,,NBS-ISCC
+#1c352d,Very Dark Green,28,53,45,Green,,NBS-ISCC
+#c7e6d7,Very Pale Green,199,230,215,Green,,NBS-ISCC
+#8da399,Pale Green,141,163,153,Green,,NBS-ISCC
+#5e716a,Grayish Green,94,113,106,Green,,NBS-ISCC
+#3a4b47,Dark Grayish Green,58,75,71,Green,,NBS-ISCC
+#1a2421,Blackish Green,26,36,33,Green,,NBS-ISCC
+#dfede8,Greenish White,223,237,232,Green,,NBS-ISCC
+#b2beb5,Light Greenish Gray,178,190,181,Green,,NBS-ISCC
+#7d8984,Greenish Gray,125,137,132,Green,,NBS-ISCC
+#4e5755,Dark Greenish Gray,78,87,85,Green,,NBS-ISCC
+#1e2321,Greenish Black,30,35,33,Green,,NBS-ISCC
+#008882,Vivid Bluish Green,0,136,130,Bluish Green,,NBS-ISCC
+#00a693,Brilliant Bluish Green,0,166,147,Bluish Green,,NBS-ISCC
+#007a74,Strong Bluish Green,0,122,116,Bluish Green,,NBS-ISCC
+#00443f,Deep Bluish Green,0,68,63,Bluish Green,,NBS-ISCC
+#96ded1,Very Light Bluish Green,150,222,209,Bluish Green,,NBS-ISCC
+#66ada4,Light Bluish Green,102,173,164,Bluish Green,,NBS-ISCC
+#317873,Moderate Bluish Green,49,120,115,Bluish Green,,NBS-ISCC
+#004b49,Dark Bluish Green,0,75,73,Bluish Green,,NBS-ISCC
+#002a29,Very Dark Bluish Green,0,42,41,Bluish Green,,NBS-ISCC
+#0085a1,Vivid Greenish Blue,0,133,161,Greenish Blue,,NBS-ISCC
+#239eba,Brilliant Greenish Blue,35,158,186,Greenish Blue,,NBS-ISCC
+#007791,Strong Greenish Blue,0,119,145,Greenish Blue,,NBS-ISCC
+#2e8495,Deep Greenish Blue,46,132,149,Greenish Blue,,NBS-ISCC
+#9cd1dc,Very Light Greenish Blue,156,209,220,Greenish Blue,,NBS-ISCC
+#66aabc,Light Greenish Blue,102,170,188,Greenish Blue,,NBS-ISCC
+#367588,Moderate Greenish Blue,54,117,136,Greenish Blue,,NBS-ISCC
+#004958,Dark Greenish Blue,0,73,88,Greenish Blue,,NBS-ISCC
+#002e3b,Very Dark Greenish Blue,0,46,59,Greenish Blue,,NBS-ISCC
+#00a1c2,Vivid Blue,0,161,194,Blue,,NBS-ISCC
+#4997d0,Brilliant Blue,73,151,208,Blue,,NBS-ISCC
+#0067a5,Strong Blue,0,103,165,Blue,,NBS-ISCC
+#00416a,Deep Blue,0,65,106,Blue,,NBS-ISCC
+#a1caf1,Very Light Blue,161,202,241,Blue,,NBS-ISCC
+#70a3cc,Light Blue,112,163,204,Blue,,NBS-ISCC
+#436b95,Moderate Blue,67,107,149,Blue,,NBS-ISCC
+#00304e,Dark Blue,0,48,78,Blue,,NBS-ISCC
+#bcd4e6,Very Pale Blue,188,212,230,Blue,,NBS-ISCC
+#91a3b0,Pale Blue,145,163,176,Blue,,NBS-ISCC
+#536878,Grayish Blue,83,104,120,Blue,,NBS-ISCC
+#36454f,Dark Grayish Blue,54,69,79,Blue,,NBS-ISCC
+#202830,Blackish Blue,32,40,48,Blue,,NBS-ISCC
+#e9e9ed,Bluish White,233,233,237,Blue,,NBS-ISCC
+#b4bcc0,Light Bluish Gray,180,188,192,Blue,,NBS-ISCC
+#81878b,Bluish Gray,129,135,139,Blue,,NBS-ISCC
+#51585e,Dark Bluish Gray,81,88,94,Blue,,NBS-ISCC
+#202428,Bluish Black,32,36,40,Blue,,NBS-ISCC
+#30267a,Vivid Purplish Blue,48,38,122,Purplish Blue,,NBS-ISCC
+#6c79b8,Brilliant Purplish Blue,108,121,184,Purplish Blue,,NBS-ISCC
+#545aa7,Strong Purplish Blue,84,90,167,Purplish Blue,,NBS-ISCC
+#272458,Deep Purplish Blue,39,36,88,Purplish Blue,,NBS-ISCC
+#b3bce2,Very Light Purplish Blue,179,188,226,Purplish Blue,,NBS-ISCC
+#8791bf,Light Purplish Blue,135,145,191,Purplish Blue,,NBS-ISCC
+#4e5180,Moderate Purplish Blue,78,81,128,Purplish Blue,,NBS-ISCC
+#252440,Dark Purplish Blue,37,36,64,Purplish Blue,,NBS-ISCC
+#c0c8e1,Very Pale Purplish Blue,192,200,225,Purplish Blue,,NBS-ISCC
+#8c92ac,Pale Purplish Blue,140,146,172,Purplish Blue,,NBS-ISCC
+#4c516d,Grayish Purplish Blue,76,81,109,Purplish Blue,,NBS-ISCC
+#9065ca,Vivid Violet,144,101,202,Violet,,NBS-ISCC
+#7e73b8,Brilliant Violet,126,115,184,Violet,,NBS-ISCC
+#604e97,Strong Violet,96,78,151,Violet,,NBS-ISCC
+#32174d,Deep Violet,50,23,77,Violet,,NBS-ISCC
+#dcd0ff,Very Light Violet,220,208,255,Violet,,NBS-ISCC
+#8c82b6,Light Violet,140,130,182,Violet,,NBS-ISCC
+#604e81,Moderate Violet,96,78,129,Violet,,NBS-ISCC
+#2f2140,Dark Violet,47,33,64,Violet,,NBS-ISCC
+#c4c3dd,Very Pale Violet,196,195,221,Violet,,NBS-ISCC
+#9690ab,Pale Violet,150,144,171,Violet,,NBS-ISCC
+#554c69,Grayish Violet,85,76,105,Violet,,NBS-ISCC
+#9a4eae,Vivid Purple,154,78,174,Purple,,NBS-ISCC
+#d399e6,Brilliant Purple,211,153,230,Purple,,NBS-ISCC
+#875692,Strong Purple,135,86,146,Purple,,NBS-ISCC
+#602f6b,Deep Purple,96,47,107,Purple,,NBS-ISCC
+#401a4c,Very Deep Purple,64,26,76,Purple,,NBS-ISCC
+#d5badb,Very Light Purple,213,186,219,Purple,,NBS-ISCC
+#b695c0,Light Purple,182,149,192,Purple,,NBS-ISCC
+#86608e,Moderate Purple,134,96,142,Purple,,NBS-ISCC
+#563c5c,Dark Purple,86,60,92,Purple,,NBS-ISCC
+#301934,Very Dark Purple,48,25,52,Purple,,NBS-ISCC
+#d6cadd,Very Pale Purple,214,202,221,Purple,,NBS-ISCC
+#aa98a9,Pale Purple,170,152,169,Purple,,NBS-ISCC
+#796878,Grayish Purple,121,104,120,Purple,,NBS-ISCC
+#50404d,Dark Grayish Purple,80,64,77,Purple,,NBS-ISCC
+#291e29,Blackish Purple,41,30,41,Purple,,NBS-ISCC
+#e8e3e5,Purplish White,232,227,229,Purple,,NBS-ISCC
+#bfb9bd,Light Purplish Gray,191,185,189,Purple,,NBS-ISCC
+#8b8589,Purplish Gray,139,133,137,Purple,,NBS-ISCC
+#5d555b,Dark Purplish Gray,93,85,91,Purple,,NBS-ISCC
+#242124,Purplish Black,36,33,36,Purple,,NBS-ISCC
+#870074,Vivid Reddish Purple,135,0,116,Reddish Purple,,NBS-ISCC
+#9e4f88,Strong Reddish Purple,158,79,136,Reddish Purple,,NBS-ISCC
+#702963,Deep Reddish Purple,112,41,99,Reddish Purple,,NBS-ISCC
+#54194e,Very Deep Reddish Purple,84,25,78,Reddish Purple,,NBS-ISCC
+#b784a7,Light Reddish Purple,183,132,167,Reddish Purple,,NBS-ISCC
+#915c83,Moderate Reddish Purple,145,92,131,Reddish Purple,,NBS-ISCC
+#5d3954,Dark Reddish Purple,93,57,84,Reddish Purple,,NBS-ISCC
+#341731,Very Dark Reddish Purple,52,23,49,Reddish Purple,,NBS-ISCC
+#aa8a9e,Pale Reddish Purple,170,138,158,Reddish Purple,,NBS-ISCC
+#836479,Grayish Reddish Purple,131,100,121,Reddish Purple,,NBS-ISCC
+#ffc8d6,Brilliant Purplish Pink,255,200,214,Purplish Pink,,NBS-ISCC
+#e68fac,Strong Purplish Pink,230,143,172,Purplish Pink,,NBS-ISCC
+#de6fa1,Deep Purplish Pink,222,111,161,Purplish Pink,,NBS-ISCC
+#efbbcc,Light Purplish Pink,239,187,204,Purplish Pink,,NBS-ISCC
+#d597ae,Moderate Purplish Pink,213,151,174,Purplish Pink,,NBS-ISCC
+#c17e91,Dark Purplish Pink,193,126,145,Purplish Pink,,NBS-ISCC
+#e8ccd7,Pale Purplish Pink,232,204,215,Purplish Pink,,NBS-ISCC
+#c3a6b1,Grayish Purplish Pink,195,166,177,Purplish Pink,,NBS-ISCC
+#ce4676,Vivid Purplish Red,206,70,118,Purplish Red,,NBS-ISCC
+#b3446c,Strong Purplish Red,179,68,108,Purplish Red,,NBS-ISCC
+#78184a,Deep Purplish Red,120,24,74,Purplish Red,,NBS-ISCC
+#54133b,Very Deep Purplish Red,84,19,59,Purplish Red,,NBS-ISCC
+#a8516e,Moderate Purplish Red,168,81,110,Purplish Red,,NBS-ISCC
+#673147,Dark Purplish Red,103,49,71,Purplish Red,,NBS-ISCC
+#38152c,Very Dark Purplish Red,56,21,44,Purplish Red,,NBS-ISCC
+#af868e,Light Grayish Purplish Red,175,134,142,Purplish Red,,NBS-ISCC
+#915f6d,Grayish Purplish Red,145,95,109,Purplish Red,,NBS-ISCC
+#f2f3f4,White,242,243,244,Neutral,,NBS-ISCC
+#b9b8b5,Light Gray,185,184,181,Neutral,,NBS-ISCC
+#848482,Medium Gray,132,132,130,Neutral,,NBS-ISCC
+#555555,Dark Gray,85,85,85,Neutral,,NBS-ISCC
+#222222,Black,34,34,34,Neutral,,NBS-ISCC

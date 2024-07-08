@@ -1,141 +1,141 @@
-Hex,Name,Red,Green,Blue,Source,Link,Family
-#000080,Navy,0,0,128,web colors,https://en.wikipedia.org/wiki/Navy_blue,Blue
-#00008B,Dark Blue,0,0,139,web colors,https://en.wikipedia.org/wiki/Shades_of_blue#Dark_blue,Blue
-#0000CD,Medium Blue,0,0,205,web colors,https://en.wikipedia.org/wiki/Shades_of_blue#Medium_blue,Blue
-#0000FF,Blue,0,0,255,web colors,https://en.wikipedia.org/wiki/Blue,Blue
-#00BFFF,Deep Sky Blue,0,191,255,web colors,https://en.wikipedia.org/wiki/Deep_sky_blue,Blue
-#191970,Midnight Blue,25,25,112,web colors,https://en.wikipedia.org/wiki/Midnight_blue,Blue
-#1E90FF,Dodger Blue,30,144,255,web colors,https://en.wikipedia.org/wiki/Dodger_blue,Blue
-#4169e1,Royal Blue,65,105,225,web colors,https://en.wikipedia.org/wiki/Royal_blue,Blue
-#4682B4,Steel Blue,70,130,180,web colors,https://en.wikipedia.org/wiki/Steel_blue,Blue
-#6495ED,Cornflower Blue,100,149,237,web colors,https://en.wikipedia.org/wiki/Cornflower_blue,Blue
-#87CEEB,Sky Blue,135,206,235,web colors,https://en.wikipedia.org/wiki/Sky_blue,Blue
-#87CEFA,Light Sky Blue,135,206,250,web colors,https://en.wikipedia.org/wiki/Sky_blue#Light_sky_blue,Blue
-#ADD8E6,Light Blue,173,216,230,web colors,https://en.wikipedia.org/wiki/Shades_of_blue#Light_blue,Blue
-#B0C4DE,Light Steel Blue,176,196,222,web colors,https://en.wikipedia.org/wiki/Steel_blue#Light_steel_blue,Blue
-#B0E0E6,Powder Blue,176,224,230,web colors,https://en.wikipedia.org/wiki/Powder_blue,Blue
-#800000,Maroon,128,0,0,web colors,https://en.wikipedia.org/wiki/Maroon,Brown
-#8B4513,Saddle Brown,139,69,19,web colors,https://en.wikipedia.org/wiki/Shades_of_brown#Saddle_Brown,Brown
-#A0522D,Sienna,160,82,45,web colors,https://en.wikipedia.org/wiki/Sienna#Sienna_(X11_colour),Brown
-#A52A2A,Brown,165,42,42,web colors,"https://en.wikipedia.org/wiki/Shades_of_brown#Red-brown_(web_color_""brown"")",Brown
-#B8860B,Dark Goldenrod,184,134,11,web colors,https://en.wikipedia.org/wiki/Dark_goldenrod,Brown
-#BC8F8F,Rosy Brown,188,143,143,web colors,https://en.wikipedia.org/wiki/Rose_(color)#Rosy_brown,Brown
-#CD853F,Peru,205,133,63,web colors,https://en.wikipedia.org/wiki/Shades_of_brown#Peru,Brown
-#D2691E,Chocolate,210,105,30,web colors,https://en.wikipedia.org/wiki/Chocolate_(color)#Variations_of_chocolate,Brown
-#D2B48C,Tan,210,180,140,web colors,https://en.wikipedia.org/wiki/Tan_(color),Brown
-#DAA520,Goldenrod,218,165,32,web colors,https://en.wikipedia.org/wiki/Goldenrod_(color),Brown
-#DEB887,Burlywood,222,184,135,web colors,https://en.wikipedia.org/wiki/Burl,Brown
-#F4A460,Sandy Brown,244,164,96,web colors,https://en.wikipedia.org/wiki/Shades_of_brown#Sandy_brown,Brown
-#F5DEB3,Wheat,245,222,179,web colors,https://en.wikipedia.org/wiki/Wheat_(color),Brown
-#FFDEAD,Navajo White,255,222,173,web colors,https://en.wikipedia.org/wiki/Navajo_white,Brown
-#FFE4C4,Bisque,255,228,196,web colors,https://en.wikipedia.org/wiki/Bisque_(food),Brown
-#FFEBCD,Blanched Almond,255,235,205,web colors,https://en.wikipedia.org/wiki/Almond_meal,Brown
-#FFF8DC,Cornsilk,255,248,220,web colors,https://en.wikipedia.org/wiki/Shades_of_white#Cornsilk,Brown
-#008080,Teal,0,128,128,web colors,https://en.wikipedia.org/wiki/Teal,Cyan
-#008B8B,Dark Cyan,0,139,139,web colors,https://en.wikipedia.org/wiki/Cyan#Dark_cyan,Cyan
-#00CED1,Dark Turquoise,0,206,209,web colors,https://en.wikipedia.org/wiki/Turquoise_(color)#Dark_turquoise,Cyan
-#00FFFF,Aqua,0,255,255,web colors,https://en.wikipedia.org/wiki/Aqua_(color),Cyan
-#00FFFF,Cyan,0,255,255,web colors,https://en.wikipedia.org/wiki/Aqua_(color),Cyan
-#20B2AA,Light Sea Green,32,178,170,web colors,https://en.wikipedia.org/wiki/Shades_of_cyan#Light_sea_green,Cyan
-#40E0D0,Turquoise,64,224,208,web colors,https://en.wikipedia.org/wiki/Turquoise_(color),Cyan
-#48D1CC,Medium Turquoise,72,209,204,web colors,https://en.wikipedia.org/wiki/Turquoise_(color)#Medium_turquoise,Cyan
-#5F9EA0,Cadet Blue,95,158,160,web colors,https://en.wikipedia.org/wiki/Cadet_grey#Cadet_blue,Cyan
-#7FFFD4,Aquamarine,127,255,212,web colors,https://en.wikipedia.org/wiki/Aquamarine_(color),Cyan
-#AFEEEE,Pale Turquoise,175,238,238,web colors,https://en.wikipedia.org/wiki/Turquoise_(color)#Light_turquoise,Cyan
-#E0FFFF,Light Cyan,224,255,255,web colors,https://en.wikipedia.org/wiki/Shades_of_cyan#Light_cyan,Cyan
-#000000,Black,0,0,0,web colors,https://en.wikipedia.org/wiki/Black,Gray and black
-#2F4F4F,Dark Slate Gray,47,79,79,web colors,https://en.wikipedia.org/wiki/Slate_gray#Dark_slate_gray,Gray and black
-#696969,Dim Gray,105,105,105,web colors,https://en.wikipedia.org/wiki/Shades_of_gray#Dim_gray,Gray and black
-#708090,Slate Gray,112,128,144,web colors,https://en.wikipedia.org/wiki/Slate_grey,Gray and black
-#778899,Light Slate Gray,119,136,153,web colors,https://en.wikipedia.org/wiki/Slate_gray#Light_slate_gray,Gray and black
-#808080,Gray,128,128,128,web colors,https://en.wikipedia.org/wiki/Grey,Gray and black
-#A9A9A9,Dark Gray,169,169,169,web colors,https://en.wikipedia.org/wiki/Grey#Web_colors,Gray and black
-#C0C0C0,Silver,192,192,192,web colors,https://en.wikipedia.org/wiki/Silver_(color),Gray and black
-#D3D3D3,Light Gray,211,211,211,web colors,https://en.wikipedia.org/wiki/Grey#Web_colors,Gray and black
-#DCDCDC,Gainsboro,220,220,220,web colors,https://en.wikipedia.org/wiki/Shades_of_gray#Chart_of_computer_web_color_grays,Gray and black
-#006400,Dark Green,0,100,0,web colors,https://en.wikipedia.org/wiki/Shades_of_green#X11_green,Green
-#008000,Green,0,128,0,web colors,https://en.wikipedia.org/wiki/Shades_of_green#Computer_web_color_greens,Green
-#00FA9A,Medium Spring Green,0,250,154,web colors,https://en.wikipedia.org/wiki/Spring_green_(color)#Medium_spring_green,Green
-#00FF00,Lime,0,255,0,web colors,https://en.wikipedia.org/wiki/Shades_of_green#Computer_web_color_greens,Green
-#00FF7F,Spring Green,0,255,127,web colors,https://en.wikipedia.org/wiki/Spring_green_(color),Green
-#228B22,Forest Green,34,139,34,web colors,https://en.wikipedia.org/wiki/Shades_of_green#Forest_green,Green
-#2E8B57,Sea Green,46,139,87,web colors,https://en.wikipedia.org/wiki/Spring_green#Sea_green,Green
-#32CD32,Lime Green,50,205,50,web colors,https://en.wikipedia.org/wiki/Lime_(color)#Lime_green,Green
-#3CB371,Medium Sea Green,60,179,113,web colors,https://en.wikipedia.org/wiki/Spring_green_(color)#Medium_sea_green,Green
-#556B2F,Dark Olive Green,85,107,47,web colors,https://en.wikipedia.org/wiki/Olive_(color)#Dark_olive_green,Green
-#66CDAA,Medium Aquamarine,102,205,170,web colors,https://en.wikipedia.org/wiki/Aquamarine_(color)#Medium_aquamarine,Green
-#6B8E23,Olive Drab,107,142,35,web colors,https://en.wikipedia.org/wiki/Olive_drab,Green
-#7CFC00,Lawn Green,124,252,0,web colors,https://en.wikipedia.org/wiki/Chartreuse_(color)#Lawn_green,Green
-#7FFF00,Chartreuse,127,255,0,web colors,https://en.wikipedia.org/wiki/Chartreuse_(color),Green
-#808000,Olive,128,128,0,web colors,https://en.wikipedia.org/wiki/Olive_(color),Green
-#8FBC8F,Dark Sea Green,143,188,143,web colors,https://en.wikipedia.org/wiki/Spring_green#Sea_green,Green
-#90EE90,Light Green,144,238,144,web colors,https://en.wikipedia.org/wiki/Shades_of_green#Light_green,Green
-#98FB98,Pale Green,152,251,152,web colors,https://en.wikipedia.org/wiki/Shades_of_green#Pale_green,Green
-#9ACD32,Yellow Green,154,205,50,web colors,https://en.wikipedia.org/wiki/Yellow-green,Green
-#ADFF2F,Green Yellow,173,255,47,web colors,https://en.wikipedia.org/wiki/Chartreuse_(color)#Green-yellow,Green
-#FF4500,Orange Red,255,69,0,web colors,https://en.wikipedia.org/wiki/Vermilion_(color)#Orange-red,Orange
-#FF6347,Tomato,255,99,71,web colors,https://en.wikipedia.org/wiki/Tomato_(color),Orange
-#FF7F50,Coral,255,127,80,web colors,https://en.wikipedia.org/wiki/Coral_(color),Orange
-#FF8C00,Dark Orange,255,140,0,web colors,https://en.wikipedia.org/wiki/Dark_orange_(colour),Orange
-#FFA500,Orange,255,165,0,web colors,https://en.wikipedia.org/wiki/Shades_of_orange#Orange_(web_color),Orange
-#C71585,Medium Violet Red,199,21,133,web colors,https://en.wikipedia.org/wiki/Red-violet#Red-violet,Pink
-#DB7093,Pale Violet Red,219,112,147,web colors,https://en.wikipedia.org/wiki/Pale_red-violet,Pink
-#FF1493,Deep Pink,255,20,147,web colors,https://en.wikipedia.org/wiki/Shades_of_pink#Deep_pink,Pink
-#FF69B4,Hot Pink,255,105,180,web colors,https://en.wikipedia.org/wiki/Hot_pink,Pink
-#FFB6C1,Light Pink,255,182,193,web colors,https://en.wikipedia.org/wiki/Light_pink,Pink
-#FFC0CB,Pink,255,192,203,web colors,https://en.wikipedia.org/wiki/Pink,Pink
-#483D8B,Dark Slate Blue,72,61,139,web colors,https://en.wikipedia.org/wiki/Slate_Blue_(color),"Purple, violet, and magenta"
-#4B0082,Indigo,75,0,130,web colors,https://en.wikipedia.org/wiki/Indigo,"Purple, violet, and magenta"
-#6A5ACD,Slate Blue,106,90,205,web colors,https://en.wikipedia.org/wiki/Slate_Blue_(color),"Purple, violet, and magenta"
-#7B68EE,Medium Slate Blue,123,104,238,web colors,https://en.wikipedia.org/wiki/Slate_Blue_(color),"Purple, violet, and magenta"
-#800080,Purple,128,0,128,web colors,https://en.wikipedia.org/wiki/Purple,"Purple, violet, and magenta"
-#8A2BE2,Blue Violet,138,43,226,web colors,https://en.wikipedia.org/wiki/Indigo,"Purple, violet, and magenta"
-#8B008B,Dark Magenta,139,0,139,web colors,https://en.wikipedia.org/wiki/Shades_of_magenta#Dark_magenta,"Purple, violet, and magenta"
-#9370DB,Medium Purple,147,112,219,web colors,https://en.wikipedia.org/wiki/Shades_of_purple#Medium_purple_(X11),"Purple, violet, and magenta"
-#9400D3,Dark Violet,148,0,211,web colors,https://en.wikipedia.org/wiki/Violet_(color),"Purple, violet, and magenta"
-#9932CC,Dark Orchid,153,50,204,web colors,https://en.wikipedia.org/wiki/Orchid_(color)#Dark_orchid,"Purple, violet, and magenta"
-#BA55D3,Medium Orchid,186,85,211,web colors,https://en.wikipedia.org/wiki/Orchid_(color)#Wild_orchid,"Purple, violet, and magenta"
-#D8BFD8,Thistle,216,191,216,web colors,https://en.wikipedia.org/wiki/Shades_of_purple#Thistle,"Purple, violet, and magenta"
-#DA70D6,Orchid,218,112,214,web colors,https://en.wikipedia.org/wiki/Orchid_(color),"Purple, violet, and magenta"
-#DDA0DD,Plum,221,160,221,web colors,https://en.wikipedia.org/wiki/Plum_(color)#Pale_plum,"Purple, violet, and magenta"
-#E6E6FA,Lavender,230,230,250,web colors,https://en.wikipedia.org/wiki/Lavender_(color),"Purple, violet, and magenta"
-#EE82EE,Violet,238,130,238,web colors,https://en.wikipedia.org/wiki/Violet_(color),"Purple, violet, and magenta"
-#FF00FF,Fuchsia,255,0,255,web colors,https://en.wikipedia.org/wiki/Fuchsia_(color),"Purple, violet, and magenta"
-#FF00FF,Magenta,255,0,255,web colors,https://en.wikipedia.org/wiki/Fuchsia_(color),"Purple, violet, and magenta"
-#8B0000,Dark Red,139,0,0,web colors,https://en.wikipedia.org/wiki/Maroon_(color)#Dark_red,Red
-#B22222,Firebrick,178,34,34,web colors,https://en.wikipedia.org/wiki/Scarlet_(color)#Fire_brick,Red
-#CD5C5C,Indian Red,205,92,92,web colors,https://en.wikipedia.org/wiki/Indian_red_(color),Red
-#DC143C,Crimson,220,20,60,web colors,https://en.wikipedia.org/wiki/Crimson,Red
-#E9967A,Dark Salmon,233,150,122,web colors,https://en.wikipedia.org/wiki/Dark_salmon,Red
-#F08080,Light Coral,240,128,128,web colors,https://en.wikipedia.org/wiki/Light_Coral,Red
-#FA8072,Salmon,250,128,114,web colors,https://en.wikipedia.org/wiki/Salmon_(color),Red
-#FF0000,Red,255,0,0,web colors,https://en.wikipedia.org/wiki/Red,Red
-#FFA07A,Light Salmon,255,160,122,web colors,https://en.wikipedia.org/wiki/Salmon_(color)#Light_salmon,Red
-#F0F8FF,Alice Blue,240,248,255,web colors,https://en.wikipedia.org/wiki/Alice_blue,White
-#F0FFF0,Honeydew,240,255,240,web colors,https://en.wikipedia.org/wiki/Spring_green#Honeydew,White
-#F0FFFF,Azure,240,255,255,web colors,https://en.wikipedia.org/wiki/Azure_(color),White
-#F5F5DC,Beige,245,245,220,web colors,https://en.wikipedia.org/wiki/Beige,White
-#F5F5F5,White Smoke,245,245,245,web colors,https://en.wikipedia.org/wiki/Shades_of_white#White_smoke,White
-#F5FFFA,Mint Cream,245,255,250,web colors,https://en.wikipedia.org/wiki/Spring_green#Mint_cream,White
-#F8F8FF,Ghost White,248,248,255,web colors,https://en.wikipedia.org/wiki/Shades_of_white#Ghost_white,White
-#FAEBD7,Antique White,250,235,215,web colors,https://en.wikipedia.org/wiki/Antique_white,White
-#FAF0E6,Linen,250,240,230,web colors,https://en.wikipedia.org/wiki/Shades_of_white#Linen,White
-#FDF5E6,Old Lace,253,245,230,web colors,https://en.wikipedia.org/wiki/Shades_of_white#Old_lace,White
-#FFE4E1,Misty Rose,255,228,225,web colors,https://en.wikipedia.org/wiki/Rose_(color)#Misty_rose,White
-#FFF0F5,Lavender Blush,255,240,245,web colors,https://en.wikipedia.org/wiki/Lavender_(color)#Lavender_blush,White
-#FFF5EE,Seashell,255,245,238,web colors,https://en.wikipedia.org/wiki/Seashell_(color),White
-#FFFAF0,Floral White,255,250,240,web colors,https://en.wikipedia.org/wiki/Shades_of_white#Floral_white,White
-#FFFAFA,Snow,255,250,250,web colors,https://en.wikipedia.org/wiki/Shades_of_white#Snow,White
-#FFFFF0,Ivory,255,255,240,web colors,https://en.wikipedia.org/wiki/Ivory_(color),White
-#FFFFFF,White,255,255,255,web colors,https://en.wikipedia.org/wiki/White,White
-#BDB76B,Dark Khaki,189,183,107,web colors,https://en.wikipedia.org/wiki/Khaki_(color)#Web_color_dark_khaki,Yellow
-#EEE8AA,Pale Goldenrod,238,232,170,web colors,https://en.wikipedia.org/wiki/Goldenrod_(color)#Pale_goldenrod,Yellow
-#F0E68C,Khaki,240,230,140,web colors,https://en.wikipedia.org/wiki/Khaki,Yellow
-#FAFAD2,Light Goldenrod Yellow,250,250,210,web colors,https://en.wikipedia.org/wiki/Goldenrod_(color)#Light_goldenrod,Yellow
-#FFD700,Gold,255,215,0,web colors,https://en.wikipedia.org/wiki/Gold_(color),Yellow
-#FFDAB9,Peach Puff,255,218,185,web colors,https://en.wikipedia.org/wiki/Peach_(color)#Peach_puff,Yellow
-#FFE4B5,Moccasin,255,228,181,web colors,https://en.wikipedia.org/wiki/Shades_of_yellow#Moccasin,Yellow
-#FFEFD5,Papaya Whip,255,239,213,web colors,https://en.wikipedia.org/wiki/Shades_of_orange#Papaya_whip,Yellow
-#FFFACD,Lemon Chiffon,255,250,205,web colors,https://en.wikipedia.org/wiki/Lemon_(color)#Lemon_chiffon,Yellow
-#FFFF00,Yellow,255,255,0,web colors,https://en.wikipedia.org/wiki/Yellow,Yellow
-#FFFFE0,Light Yellow,255,255,224,web colors,https://en.wikipedia.org/wiki/Shades_of_yellow#Light_yellow,Yellow
+Hex,Name,Red,Green,Blue,Family,Link,Source
+#000080,Navy,0,0,128,Blue,https://en.wikipedia.org/wiki/Navy_blue,web colors
+#00008B,Dark Blue,0,0,139,Blue,https://en.wikipedia.org/wiki/Shades_of_blue#Dark_blue,web colors
+#0000CD,Medium Blue,0,0,205,Blue,https://en.wikipedia.org/wiki/Shades_of_blue#Medium_blue,web colors
+#0000FF,Blue,0,0,255,Blue,https://en.wikipedia.org/wiki/Blue,web colors
+#00BFFF,Deep Sky Blue,0,191,255,Blue,https://en.wikipedia.org/wiki/Deep_sky_blue,web colors
+#191970,Midnight Blue,25,25,112,Blue,https://en.wikipedia.org/wiki/Midnight_blue,web colors
+#1E90FF,Dodger Blue,30,144,255,Blue,https://en.wikipedia.org/wiki/Dodger_blue,web colors
+#4169e1,Royal Blue,65,105,225,Blue,https://en.wikipedia.org/wiki/Royal_blue,web colors
+#4682B4,Steel Blue,70,130,180,Blue,https://en.wikipedia.org/wiki/Steel_blue,web colors
+#6495ED,Cornflower Blue,100,149,237,Blue,https://en.wikipedia.org/wiki/Cornflower_blue,web colors
+#87CEEB,Sky Blue,135,206,235,Blue,https://en.wikipedia.org/wiki/Sky_blue,web colors
+#87CEFA,Light Sky Blue,135,206,250,Blue,https://en.wikipedia.org/wiki/Sky_blue#Light_sky_blue,web colors
+#ADD8E6,Light Blue,173,216,230,Blue,https://en.wikipedia.org/wiki/Shades_of_blue#Light_blue,web colors
+#B0C4DE,Light Steel Blue,176,196,222,Blue,https://en.wikipedia.org/wiki/Steel_blue#Light_steel_blue,web colors
+#B0E0E6,Powder Blue,176,224,230,Blue,https://en.wikipedia.org/wiki/Powder_blue,web colors
+#800000,Maroon,128,0,0,Brown,https://en.wikipedia.org/wiki/Maroon,web colors
+#8B4513,Saddle Brown,139,69,19,Brown,https://en.wikipedia.org/wiki/Shades_of_brown#Saddle_Brown,web colors
+#A0522D,Sienna,160,82,45,Brown,https://en.wikipedia.org/wiki/Sienna#Sienna_(X11_colour),web colors
+#A52A2A,Brown,165,42,42,Brown,"https://en.wikipedia.org/wiki/Shades_of_brown#Red-brown_(web_color_""brown"")",web colors
+#B8860B,Dark Goldenrod,184,134,11,Brown,https://en.wikipedia.org/wiki/Dark_goldenrod,web colors
+#BC8F8F,Rosy Brown,188,143,143,Brown,https://en.wikipedia.org/wiki/Rose_(color)#Rosy_brown,web colors
+#CD853F,Peru,205,133,63,Brown,https://en.wikipedia.org/wiki/Shades_of_brown#Peru,web colors
+#D2691E,Chocolate,210,105,30,Brown,https://en.wikipedia.org/wiki/Chocolate_(color)#Variations_of_chocolate,web colors
+#D2B48C,Tan,210,180,140,Brown,https://en.wikipedia.org/wiki/Tan_(color),web colors
+#DAA520,Goldenrod,218,165,32,Brown,https://en.wikipedia.org/wiki/Goldenrod_(color),web colors
+#DEB887,Burlywood,222,184,135,Brown,https://en.wikipedia.org/wiki/Burl,web colors
+#F4A460,Sandy Brown,244,164,96,Brown,https://en.wikipedia.org/wiki/Shades_of_brown#Sandy_brown,web colors
+#F5DEB3,Wheat,245,222,179,Brown,https://en.wikipedia.org/wiki/Wheat_(color),web colors
+#FFDEAD,Navajo White,255,222,173,Brown,https://en.wikipedia.org/wiki/Navajo_white,web colors
+#FFE4C4,Bisque,255,228,196,Brown,https://en.wikipedia.org/wiki/Bisque_(food),web colors
+#FFEBCD,Blanched Almond,255,235,205,Brown,https://en.wikipedia.org/wiki/Almond_meal,web colors
+#FFF8DC,Cornsilk,255,248,220,Brown,https://en.wikipedia.org/wiki/Shades_of_white#Cornsilk,web colors
+#008080,Teal,0,128,128,Cyan,https://en.wikipedia.org/wiki/Teal,web colors
+#008B8B,Dark Cyan,0,139,139,Cyan,https://en.wikipedia.org/wiki/Cyan#Dark_cyan,web colors
+#00CED1,Dark Turquoise,0,206,209,Cyan,https://en.wikipedia.org/wiki/Turquoise_(color)#Dark_turquoise,web colors
+#00FFFF,Aqua,0,255,255,Cyan,https://en.wikipedia.org/wiki/Aqua_(color),web colors
+#00FFFF,Cyan,0,255,255,Cyan,https://en.wikipedia.org/wiki/Aqua_(color),web colors
+#20B2AA,Light Sea Green,32,178,170,Cyan,https://en.wikipedia.org/wiki/Shades_of_cyan#Light_sea_green,web colors
+#40E0D0,Turquoise,64,224,208,Cyan,https://en.wikipedia.org/wiki/Turquoise_(color),web colors
+#48D1CC,Medium Turquoise,72,209,204,Cyan,https://en.wikipedia.org/wiki/Turquoise_(color)#Medium_turquoise,web colors
+#5F9EA0,Cadet Blue,95,158,160,Cyan,https://en.wikipedia.org/wiki/Cadet_grey#Cadet_blue,web colors
+#7FFFD4,Aquamarine,127,255,212,Cyan,https://en.wikipedia.org/wiki/Aquamarine_(color),web colors
+#AFEEEE,Pale Turquoise,175,238,238,Cyan,https://en.wikipedia.org/wiki/Turquoise_(color)#Light_turquoise,web colors
+#E0FFFF,Light Cyan,224,255,255,Cyan,https://en.wikipedia.org/wiki/Shades_of_cyan#Light_cyan,web colors
+#000000,Black,0,0,0,Gray and black,https://en.wikipedia.org/wiki/Black,web colors
+#2F4F4F,Dark Slate Gray,47,79,79,Gray and black,https://en.wikipedia.org/wiki/Slate_gray#Dark_slate_gray,web colors
+#696969,Dim Gray,105,105,105,Gray and black,https://en.wikipedia.org/wiki/Shades_of_gray#Dim_gray,web colors
+#708090,Slate Gray,112,128,144,Gray and black,https://en.wikipedia.org/wiki/Slate_grey,web colors
+#778899,Light Slate Gray,119,136,153,Gray and black,https://en.wikipedia.org/wiki/Slate_gray#Light_slate_gray,web colors
+#808080,Gray,128,128,128,Gray and black,https://en.wikipedia.org/wiki/Grey,web colors
+#A9A9A9,Dark Gray,169,169,169,Gray and black,https://en.wikipedia.org/wiki/Grey#Web_colors,web colors
+#C0C0C0,Silver,192,192,192,Gray and black,https://en.wikipedia.org/wiki/Silver_(color),web colors
+#D3D3D3,Light Gray,211,211,211,Gray and black,https://en.wikipedia.org/wiki/Grey#Web_colors,web colors
+#DCDCDC,Gainsboro,220,220,220,Gray and black,https://en.wikipedia.org/wiki/Shades_of_gray#Chart_of_computer_web_color_grays,web colors
+#006400,Dark Green,0,100,0,Green,https://en.wikipedia.org/wiki/Shades_of_green#X11_green,web colors
+#008000,Green,0,128,0,Green,https://en.wikipedia.org/wiki/Shades_of_green#Computer_web_color_greens,web colors
+#00FA9A,Medium Spring Green,0,250,154,Green,https://en.wikipedia.org/wiki/Spring_green_(color)#Medium_spring_green,web colors
+#00FF00,Lime,0,255,0,Green,https://en.wikipedia.org/wiki/Shades_of_green#Computer_web_color_greens,web colors
+#00FF7F,Spring Green,0,255,127,Green,https://en.wikipedia.org/wiki/Spring_green_(color),web colors
+#228B22,Forest Green,34,139,34,Green,https://en.wikipedia.org/wiki/Shades_of_green#Forest_green,web colors
+#2E8B57,Sea Green,46,139,87,Green,https://en.wikipedia.org/wiki/Spring_green#Sea_green,web colors
+#32CD32,Lime Green,50,205,50,Green,https://en.wikipedia.org/wiki/Lime_(color)#Lime_green,web colors
+#3CB371,Medium Sea Green,60,179,113,Green,https://en.wikipedia.org/wiki/Spring_green_(color)#Medium_sea_green,web colors
+#556B2F,Dark Olive Green,85,107,47,Green,https://en.wikipedia.org/wiki/Olive_(color)#Dark_olive_green,web colors
+#66CDAA,Medium Aquamarine,102,205,170,Green,https://en.wikipedia.org/wiki/Aquamarine_(color)#Medium_aquamarine,web colors
+#6B8E23,Olive Drab,107,142,35,Green,https://en.wikipedia.org/wiki/Olive_drab,web colors
+#7CFC00,Lawn Green,124,252,0,Green,https://en.wikipedia.org/wiki/Chartreuse_(color)#Lawn_green,web colors
+#7FFF00,Chartreuse,127,255,0,Green,https://en.wikipedia.org/wiki/Chartreuse_(color),web colors
+#808000,Olive,128,128,0,Green,https://en.wikipedia.org/wiki/Olive_(color),web colors
+#8FBC8F,Dark Sea Green,143,188,143,Green,https://en.wikipedia.org/wiki/Spring_green#Sea_green,web colors
+#90EE90,Light Green,144,238,144,Green,https://en.wikipedia.org/wiki/Shades_of_green#Light_green,web colors
+#98FB98,Pale Green,152,251,152,Green,https://en.wikipedia.org/wiki/Shades_of_green#Pale_green,web colors
+#9ACD32,Yellow Green,154,205,50,Green,https://en.wikipedia.org/wiki/Yellow-green,web colors
+#ADFF2F,Green Yellow,173,255,47,Green,https://en.wikipedia.org/wiki/Chartreuse_(color)#Green-yellow,web colors
+#FF4500,Orange Red,255,69,0,Orange,https://en.wikipedia.org/wiki/Vermilion_(color)#Orange-red,web colors
+#FF6347,Tomato,255,99,71,Orange,https://en.wikipedia.org/wiki/Tomato_(color),web colors
+#FF7F50,Coral,255,127,80,Orange,https://en.wikipedia.org/wiki/Coral_(color),web colors
+#FF8C00,Dark Orange,255,140,0,Orange,https://en.wikipedia.org/wiki/Dark_orange_(colour),web colors
+#FFA500,Orange,255,165,0,Orange,https://en.wikipedia.org/wiki/Shades_of_orange#Orange_(web_color),web colors
+#C71585,Medium Violet Red,199,21,133,Pink,https://en.wikipedia.org/wiki/Red-violet#Red-violet,web colors
+#DB7093,Pale Violet Red,219,112,147,Pink,https://en.wikipedia.org/wiki/Pale_red-violet,web colors
+#FF1493,Deep Pink,255,20,147,Pink,https://en.wikipedia.org/wiki/Shades_of_pink#Deep_pink,web colors
+#FF69B4,Hot Pink,255,105,180,Pink,https://en.wikipedia.org/wiki/Hot_pink,web colors
+#FFB6C1,Light Pink,255,182,193,Pink,https://en.wikipedia.org/wiki/Light_pink,web colors
+#FFC0CB,Pink,255,192,203,Pink,https://en.wikipedia.org/wiki/Pink,web colors
+#483D8B,Dark Slate Blue,72,61,139,"Purple, violet, and magenta",https://en.wikipedia.org/wiki/Slate_Blue_(color),web colors
+#4B0082,Indigo,75,0,130,"Purple, violet, and magenta",https://en.wikipedia.org/wiki/Indigo,web colors
+#6A5ACD,Slate Blue,106,90,205,"Purple, violet, and magenta",https://en.wikipedia.org/wiki/Slate_Blue_(color),web colors
+#7B68EE,Medium Slate Blue,123,104,238,"Purple, violet, and magenta",https://en.wikipedia.org/wiki/Slate_Blue_(color),web colors
+#800080,Purple,128,0,128,"Purple, violet, and magenta",https://en.wikipedia.org/wiki/Purple,web colors
+#8A2BE2,Blue Violet,138,43,226,"Purple, violet, and magenta",https://en.wikipedia.org/wiki/Indigo,web colors
+#8B008B,Dark Magenta,139,0,139,"Purple, violet, and magenta",https://en.wikipedia.org/wiki/Shades_of_magenta#Dark_magenta,web colors
+#9370DB,Medium Purple,147,112,219,"Purple, violet, and magenta",https://en.wikipedia.org/wiki/Shades_of_purple#Medium_purple_(X11),web colors
+#9400D3,Dark Violet,148,0,211,"Purple, violet, and magenta",https://en.wikipedia.org/wiki/Violet_(color),web colors
+#9932CC,Dark Orchid,153,50,204,"Purple, violet, and magenta",https://en.wikipedia.org/wiki/Orchid_(color)#Dark_orchid,web colors
+#BA55D3,Medium Orchid,186,85,211,"Purple, violet, and magenta",https://en.wikipedia.org/wiki/Orchid_(color)#Wild_orchid,web colors
+#D8BFD8,Thistle,216,191,216,"Purple, violet, and magenta",https://en.wikipedia.org/wiki/Shades_of_purple#Thistle,web colors
+#DA70D6,Orchid,218,112,214,"Purple, violet, and magenta",https://en.wikipedia.org/wiki/Orchid_(color),web colors
+#DDA0DD,Plum,221,160,221,"Purple, violet, and magenta",https://en.wikipedia.org/wiki/Plum_(color)#Pale_plum,web colors
+#E6E6FA,Lavender,230,230,250,"Purple, violet, and magenta",https://en.wikipedia.org/wiki/Lavender_(color),web colors
+#EE82EE,Violet,238,130,238,"Purple, violet, and magenta",https://en.wikipedia.org/wiki/Violet_(color),web colors
+#FF00FF,Fuchsia,255,0,255,"Purple, violet, and magenta",https://en.wikipedia.org/wiki/Fuchsia_(color),web colors
+#FF00FF,Magenta,255,0,255,"Purple, violet, and magenta",https://en.wikipedia.org/wiki/Fuchsia_(color),web colors
+#8B0000,Dark Red,139,0,0,Red,https://en.wikipedia.org/wiki/Maroon_(color)#Dark_red,web colors
+#B22222,Firebrick,178,34,34,Red,https://en.wikipedia.org/wiki/Scarlet_(color)#Fire_brick,web colors
+#CD5C5C,Indian Red,205,92,92,Red,https://en.wikipedia.org/wiki/Indian_red_(color),web colors
+#DC143C,Crimson,220,20,60,Red,https://en.wikipedia.org/wiki/Crimson,web colors
+#E9967A,Dark Salmon,233,150,122,Red,https://en.wikipedia.org/wiki/Dark_salmon,web colors
+#F08080,Light Coral,240,128,128,Red,https://en.wikipedia.org/wiki/Light_Coral,web colors
+#FA8072,Salmon,250,128,114,Red,https://en.wikipedia.org/wiki/Salmon_(color),web colors
+#FF0000,Red,255,0,0,Red,https://en.wikipedia.org/wiki/Red,web colors
+#FFA07A,Light Salmon,255,160,122,Red,https://en.wikipedia.org/wiki/Salmon_(color)#Light_salmon,web colors
+#F0F8FF,Alice Blue,240,248,255,White,https://en.wikipedia.org/wiki/Alice_blue,web colors
+#F0FFF0,Honeydew,240,255,240,White,https://en.wikipedia.org/wiki/Spring_green#Honeydew,web colors
+#F0FFFF,Azure,240,255,255,White,https://en.wikipedia.org/wiki/Azure_(color),web colors
+#F5F5DC,Beige,245,245,220,White,https://en.wikipedia.org/wiki/Beige,web colors
+#F5F5F5,White Smoke,245,245,245,White,https://en.wikipedia.org/wiki/Shades_of_white#White_smoke,web colors
+#F5FFFA,Mint Cream,245,255,250,White,https://en.wikipedia.org/wiki/Spring_green#Mint_cream,web colors
+#F8F8FF,Ghost White,248,248,255,White,https://en.wikipedia.org/wiki/Shades_of_white#Ghost_white,web colors
+#FAEBD7,Antique White,250,235,215,White,https://en.wikipedia.org/wiki/Antique_white,web colors
+#FAF0E6,Linen,250,240,230,White,https://en.wikipedia.org/wiki/Shades_of_white#Linen,web colors
+#FDF5E6,Old Lace,253,245,230,White,https://en.wikipedia.org/wiki/Shades_of_white#Old_lace,web colors
+#FFE4E1,Misty Rose,255,228,225,White,https://en.wikipedia.org/wiki/Rose_(color)#Misty_rose,web colors
+#FFF0F5,Lavender Blush,255,240,245,White,https://en.wikipedia.org/wiki/Lavender_(color)#Lavender_blush,web colors
+#FFF5EE,Seashell,255,245,238,White,https://en.wikipedia.org/wiki/Seashell_(color),web colors
+#FFFAF0,Floral White,255,250,240,White,https://en.wikipedia.org/wiki/Shades_of_white#Floral_white,web colors
+#FFFAFA,Snow,255,250,250,White,https://en.wikipedia.org/wiki/Shades_of_white#Snow,web colors
+#FFFFF0,Ivory,255,255,240,White,https://en.wikipedia.org/wiki/Ivory_(color),web colors
+#FFFFFF,White,255,255,255,White,https://en.wikipedia.org/wiki/White,web colors
+#BDB76B,Dark Khaki,189,183,107,Yellow,https://en.wikipedia.org/wiki/Khaki_(color)#Web_color_dark_khaki,web colors
+#EEE8AA,Pale Goldenrod,238,232,170,Yellow,https://en.wikipedia.org/wiki/Goldenrod_(color)#Pale_goldenrod,web colors
+#F0E68C,Khaki,240,230,140,Yellow,https://en.wikipedia.org/wiki/Khaki,web colors
+#FAFAD2,Light Goldenrod Yellow,250,250,210,Yellow,https://en.wikipedia.org/wiki/Goldenrod_(color)#Light_goldenrod,web colors
+#FFD700,Gold,255,215,0,Yellow,https://en.wikipedia.org/wiki/Gold_(color),web colors
+#FFDAB9,Peach Puff,255,218,185,Yellow,https://en.wikipedia.org/wiki/Peach_(color)#Peach_puff,web colors
+#FFE4B5,Moccasin,255,228,181,Yellow,https://en.wikipedia.org/wiki/Shades_of_yellow#Moccasin,web colors
+#FFEFD5,Papaya Whip,255,239,213,Yellow,https://en.wikipedia.org/wiki/Shades_of_orange#Papaya_whip,web colors
+#FFFACD,Lemon Chiffon,255,250,205,Yellow,https://en.wikipedia.org/wiki/Lemon_(color)#Lemon_chiffon,web colors
+#FFFF00,Yellow,255,255,0,Yellow,https://en.wikipedia.org/wiki/Yellow,web colors
+#FFFFE0,Light Yellow,255,255,224,Yellow,https://en.wikipedia.org/wiki/Shades_of_yellow#Light_yellow,web colors
