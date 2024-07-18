@@ -1,5 +1,6 @@
 DROP TABLE IF EXISTS colors;
 CREATE TABLE colors(
+    idx INTEGER PRIMARY KEY AUTOINCREMENT,
     hex NVARCHAR,
     name NVARCHAR, 
     red SMALLINT,
@@ -10,9 +11,11 @@ CREATE TABLE colors(
     source NVARCHAR,
     ID NVARCHAR,
     hue SINGLE,
-    Saturation SINGLE,
-    Luminance SINGLE,
-    Cyan SINGLE,
-    Magenta SINGLE,
-    Yellow SINGLE,
-    Key SINGLE);
+    saturation SINGLE,
+    luminance SINGLE,
+    cyan SINGLE,
+    magenta SINGLE,
+    yellow SINGLE,
+    key SINGLE);
+
+insert into colors (null, hex, name, red, green, blue, family, link, source) select * from colors_old;

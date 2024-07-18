@@ -3,7 +3,7 @@ unit Jim.Color.Palettes;
 interface
 
 uses
-  System.UITypes, FMX.Graphics, System.SysUtils;
+  System.UITypes, System.SysUtils;
 
 type
   TPaletteType = (ptAnalogous, ptTriad, ptSplitComplementary, ptQuad, ptRectangle, ptComplementary, ptAll);
@@ -13,9 +13,8 @@ type
     FColors: TArray<TAlphaColor>;
     FColorCount: Integer;
     FPaletteType: TPaletteType;
-    procedure SetBaseColor(const Value: TAlphaColor);
     function GetColor(Index: Integer): TAlphaColor;
-    procedure UpdatePalette;
+    procedure GeneratePalatte(const Base: TAlphaColor);
   public
     constructor Create(AColor: TAlphaColor; AType: TPaletteType);
     property Colors[Index: Integer]: TAlphaColor read GetColor; default;
@@ -100,13 +99,7 @@ begin
     FColorCount := 3; // Default to 3 colors if unspecified
   end;
   SetLength(FColors, FColorCount);
-  SetBaseColor(AColor);
-end;
-
-procedure TColorPalette.SetBaseColor(const Value: TAlphaColor);
-begin
-  FColors[0] := Value;
-  UpdatePalette;
+  GeneratePalatte(AColor);
 end;
 
 function TColorPalette.GetColor(Index: Integer): TAlphaColor;
@@ -117,7 +110,7 @@ begin
     raise ERangeError.CreateFmt('Color index (%d) out of bounds', [Index]);
 end;
 
-procedure TColorPalette.UpdatePalette;
+procedure TColorPalette.GeneratePalatte(const Base: TAlphaColor);
 var
   H, S, L: Single;
   I, Count: Integer;

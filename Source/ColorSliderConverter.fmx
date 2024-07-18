@@ -72,7 +72,6 @@ object Form1: TForm1
       KeyboardType = NumberPad
       ReturnKeyType = Default
       StyledSettings = [Family, Size, Style, FontColor]
-      ValueType = Integer
       OnChange = ColorTrackChange
     end
     object Layout1: TLayout
@@ -98,7 +97,6 @@ object Form1: TForm1
         KeyboardType = NumberPad
         ReturnKeyType = Default
         StyledSettings = [Family, Size, Style, FontColor]
-        ValueType = Integer
         OnChange = ColorTrackChange
       end
       object HSLSaturation: TGradientTrackSpin
@@ -118,7 +116,6 @@ object Form1: TForm1
         KeyboardType = NumberPad
         ReturnKeyType = Default
         StyledSettings = [Family, Size, Style, FontColor]
-        ValueType = Integer
         OnChange = ColorTrackChange
         ColorEnd = claRed
         ColorBegin = claBlue
@@ -140,7 +137,6 @@ object Form1: TForm1
         KeyboardType = NumberPad
         ReturnKeyType = Default
         StyledSettings = [Family, Size, Style, FontColor]
-        ValueType = Integer
         OnChange = ColorTrackChange
       end
       object Layout2: TLayout
@@ -206,7 +202,6 @@ object Form1: TForm1
         KeyboardType = NumberPad
         ReturnKeyType = Default
         StyledSettings = [Family, Size, Style, FontColor]
-        ValueType = Integer
         OnChange = ColorTrackChange
         ColorEnd = claBlack
         ColorBegin = claWhite
@@ -255,7 +250,6 @@ object Form1: TForm1
         KeyboardType = NumberPad
         ReturnKeyType = Default
         StyledSettings = [Family, Size, Style, FontColor]
-        ValueType = Integer
         OnChange = ColorTrackChange
         ColorEnd = claAqua
         ColorBegin = claBlack
@@ -277,7 +271,6 @@ object Form1: TForm1
         KeyboardType = NumberPad
         ReturnKeyType = Default
         StyledSettings = [Family, Size, Style, FontColor]
-        ValueType = Integer
         OnChange = ColorTrackChange
         ColorEnd = claFuchsia
         ColorBegin = claBlack
@@ -299,7 +292,6 @@ object Form1: TForm1
         KeyboardType = NumberPad
         ReturnKeyType = Default
         StyledSettings = [Family, Size, Style, FontColor]
-        ValueType = Integer
         OnChange = ColorTrackChange
         ColorEnd = claYellow
         ColorBegin = claBlack
@@ -323,13 +315,11 @@ object Form1: TForm1
         TabOrder = 3
         TextWidth = 70.000000000000000000
         Text = 'Red'
-        Max = 255.000000000000000000
         Value = 254.000000000000000000
         ReadOnly = False
         KeyboardType = NumberPad
         ReturnKeyType = Default
         StyledSettings = [Family, Size, Style, FontColor]
-        ValueType = Integer
         OnChange = ColorTrackChange
         ColorEnd = claRed
         ColorBegin = claBlack
@@ -345,12 +335,10 @@ object Form1: TForm1
         TabOrder = 2
         TextWidth = 70.000000000000000000
         Text = 'Green'
-        Max = 255.000000000000000000
         ReadOnly = False
         KeyboardType = NumberPad
         ReturnKeyType = Default
         StyledSettings = [Family, Size, Style, FontColor]
-        ValueType = Integer
         OnChange = ColorTrackChange
         ColorEnd = claGreen
         ColorBegin = claBlack
@@ -366,12 +354,10 @@ object Form1: TForm1
         TabOrder = 1
         TextWidth = 70.000000000000000000
         Text = 'Blue'
-        Max = 255.000000000000000000
         ReadOnly = False
         KeyboardType = NumberPad
         ReturnKeyType = Default
         StyledSettings = [Family, Size, Style, FontColor]
-        ValueType = Integer
         OnChange = ColorTrackChange
         ColorEnd = claBlue
         ColorBegin = claBlack

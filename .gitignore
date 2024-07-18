@@ -74,3 +74,6 @@ modules/
 */Win32/Release/
 */Win64/Release/
 *.vlb
+*.db-shm
+*.db-wal
+/data/Bit-n-Black-Colors

@@ -1,0 +1,89 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Grid1: TGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 24.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 561.000000000000000000
+    Size.Height = 169.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 541.000000000000000000
+    Viewport.Height = 128.000000000000000000
+  end
+  object BindSourceDB1: TBindSourceDB
+    ScopeMappings = <>
+    Left = 304
+    Top = 224
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 124
+    Top = 221
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <
+        item
+          MemberName = 'hex'
+        end
+        item
+          MemberName = 'name'
+        end
+        item
+          MemberName = 'red'
+        end
+        item
+          MemberName = 'green'
+        end
+        item
+          MemberName = 'blue'
+        end
+        item
+          MemberName = 'family'
+        end
+        item
+          MemberName = 'link'
+        end
+        item
+          MemberName = 'source'
+        end
+        item
+          MemberName = 'ID'
+        end
+        item
+          MemberName = 'hue'
+        end
+        item
+          MemberName = 'saturation'
+        end
+        item
+          MemberName = 'luminance'
+        end
+        item
+          MemberName = 'cyan'
+        end
+        item
+          MemberName = 'magenta'
+        end
+        item
+          MemberName = 'yellow'
+        end
+        item
+          MemberName = 'key'
+        end>
+    end
+  end
+end

@@ -1,0 +1,115 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 373
+  ClientWidth = 445
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Circle1: TCircle
+    Fill.Kind = Gradient
+    Fill.Gradient.Points = <
+      item
+        Color = claBlack
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = claWhite
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.Style = Radial
+    Position.X = 20.000000000000000000
+    Position.Y = 102.000000000000000000
+    Size.Width = 210.000000000000000000
+    Size.Height = 210.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object HueTrackBar1: THueTrackBar
+    Align = Top
+    CanParentFocus = True
+    Orientation = Horizontal
+    Margins.Left = 17.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 17.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 17.000000000000000000
+    Position.Y = 35.000000000000000000
+    Size.Width = 411.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Value = 0.000000000000000000
+    OnChange = HueTrackBar1Change
+  end
+  object GradientEdit1: TGradientEdit
+    Align = Top
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 10.000000000000000000
+    Size.Width = 425.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    OnChange = GradientEdit1Change
+  end
+  object ListBox1: TListBox
+    Position.X = 238.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 187.000000000000000000
+    Size.Height = 281.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    OnClick = ListBox1Change
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 183.000000000000000000
+    Viewport.Height = 277.000000000000000000
+  end
+  object Button1: TButton
+    Position.X = 137.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 76.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Button1'
+    TextSettings.Trimming = None
+    OnClick = Button1Click
+  end
+  object SpinBox1: TSpinBox
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Cursor = crIBeam
+    Value = 7.000000000000000000
+    Position.X = 29.000000000000000000
+    Position.Y = 72.000000000000000000
+    OnChange = SpinBox1Change
+  end
+  object rbRadial: TRadioButton
+    Position.X = 44.000000000000000000
+    Position.Y = 334.000000000000000000
+    Size.Width = 77.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'Radial'
+    OnChange = rbRadialChange
+  end
+  object rbLinear: TRadioButton
+    Position.X = 129.000000000000000000
+    Position.Y = 334.000000000000000000
+    Size.Width = 77.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = 'Linear'
+    OnChange = rbRadialChange
+  end
+end

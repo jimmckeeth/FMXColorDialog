@@ -12,6 +12,9 @@
         <Projects Include="Tests\ColorUtilTests.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="data\ColorBrowser\ColorBrowser.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -47,14 +50,23 @@
     <Target Name="ColorUtilTests:Make">
         <MSBuild Projects="Tests\ColorUtilTests.dproj" Targets="Make"/>
     </Target>
+    <Target Name="ColorBrowser">
+        <MSBuild Projects="data\ColorBrowser\ColorBrowser.dproj"/>
+    </Target>
+    <Target Name="ColorBrowser:Clean">
+        <MSBuild Projects="data\ColorBrowser\ColorBrowser.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ColorBrowser:Make">
+        <MSBuild Projects="data\ColorBrowser\ColorBrowser.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="FMXColorEditors;FMXColorDialogSample;ColorUtilTests"/>
+        <CallTarget Targets="FMXColorEditors;FMXColorDialogSample;ColorUtilTests;ColorBrowser"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="FMXColorEditors:Clean;FMXColorDialogSample:Clean;ColorUtilTests:Clean"/>
+        <CallTarget Targets="FMXColorEditors:Clean;FMXColorDialogSample:Clean;ColorUtilTests:Clean;ColorBrowser:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="FMXColorEditors:Make;FMXColorDialogSample:Make;ColorUtilTests:Make"/>
+        <CallTarget Targets="FMXColorEditors:Make;FMXColorDialogSample:Make;ColorUtilTests:Make;ColorBrowser:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

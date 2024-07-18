@@ -11,15 +11,17 @@ unit CMYKutil;
 
 interface
 
-uses SysUtils, FMX.Graphics, System.UITypes;
+uses SysUtils, System.UITypes;
 
 type
   TCMYKColor = record
+  private
     C: Single;
     M: Single;
     Y: Single;
     K: Single;
     A: Single;
+  public
     property Cyan: Single read C write C;
     property Magenta: Single read M write M;
     property Yellow: Single read Y write Y;
