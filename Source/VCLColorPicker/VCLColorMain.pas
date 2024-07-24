@@ -70,14 +70,14 @@ end;
 procedure TForm2.FormShow(Sender: TObject);
 begin
   FPalette := TColorPalette.Create(
-    TColorRec.ColorToRGB( pnlColor.Color ),
+    ColorToAlphaColor( pnlColor.Color ),
     TPaletteType(rdPalette.ItemIndex));
 end;
 
 procedure TForm2.paintPalettePaint(Sender: TObject);
 begin
   FPalette := TColorPalette.Create(
-    TColorRec.ColorToRGB( pnlColor.Color ),
+    ColorToAlphaColor( pnlColor.Color ),
     TPaletteType(rdPalette.ItemIndex));
 
   var w := paintPalette.Width div (FPalette.ColorCount-1);
@@ -86,8 +86,7 @@ begin
   for var i := 1 to max do
   begin
     var ac := FPalette.Colors[i];
-    TAlphaColorRec(ac).A := 0;
-    var c := TColorRec.ColorToRGB(ac);
+    var c := AlphaColorToColor(ac);
     cnvs.Brush.Color := c;
     if i = max then
       cnvs.Rectangle((i-1)*w, 0, paintPalette.Width, paintPalette.Height)
@@ -99,16 +98,18 @@ end;
 procedure TForm2.paintShadePaint(Sender: TObject);
 begin
   var h, s, l: Single;
-  RGBtoHSL( TColorRec.ColorToRGB(pnlColor.Color), h, s, l );
+
+  h := tbHue.Position/tbHue.Max;
+  s := tbSat.Position/tbSat.Max;
+  l := tbLum.Position/tbLum.Max;
 
   var cnvs := paintShade.Canvas;
-  var wt := paintShade.Width;
+  var wt := paintShade.Width div 10;
   var ht := paintShade.Height;
   for var i := 0 to 9 do
   begin
     var c := HSLtoRGB(h, s, i/9);
-    TAlphaColorRec(c).A := 0;
-    cnvs.Brush.Color := RGBtoBGR(c);
+    cnvs.Brush.Color := AlphaColorToColor(c);
     cnvs.Rectangle(i*wt, 0, i*wt+wt, ht);
   end;
 end;
@@ -126,7 +127,7 @@ begin
   c.B := tbBlue.Position;
   pnlColor.Color := c.Color;
 
-  var ac := c.ColorToRGB(c.Color);
+  var ac := ColorToAlphaColor(c.Color);
   var h,s,l: Single;
 
   RGBtoHSL(ac, h, s, l);
@@ -147,14 +148,11 @@ begin
   lblHue.Caption := tbHue.Position.ToString;
   lblSat.Caption := tbSat.Position.ToString;
   lblLum.Caption := tbLum.Position.ToString;
-  var c := RGBtoBGR(HSLToRGB(
+  var c := AlphaColorToColor(HSLToRGB(
     tbHue.Position/tbHue.Max,
     tbSat.Position/tbSat.Max,
     tbLum.Position/tbLum.Max));
-  TColorRec(c).A := 0;
   pnlColor.Color := c;
-
-  c := TColorRec.ColorToRGB(c);
 
   try
     FUpdating := True;

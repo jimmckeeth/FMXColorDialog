@@ -13,18 +13,25 @@ type
       2: (HiWord, LoWord: Word);
       3: (B, G, R, A: System.Byte);
   end;
+  TBGRA = record
+    case Cardinal of
+      0: (Color: TColor);
+      2: (HiWord, LoWord: Word);
+      3: (R, G, B, A: System.Byte);
+  end;
 
   TColorPalette = record
   private
     FColors: TArray<TAlphaColor>;
     FColorCount: Integer;
     FPaletteType: TPaletteType;
-    procedure SetBaseColor(const Value: TAlphaColor);
     function GetColor(Index: Integer): TAlphaColor;
-    procedure UpdatePalette;
+    function GetBGRColor(Index: Integer): TColor;
+    procedure CreatePalette(const BaseColor: TAlphaColor);
   public
     constructor Create(AColor: TAlphaColor; AType: TPaletteType);
     property Colors[Index: Integer]: TAlphaColor read GetColor; default;
+    property BGRColors[Index: Integer]: TColor read GetBGRColor;
     property ColorCount: Integer read FColorCount;
     property PaletteType: TPaletteType read FPaletteType;
   end;
@@ -37,10 +44,35 @@ function GetQuadPalette(AColor: TAlphaColor): TColorPalette;
 function GetRectanglePalette(AColor: TAlphaColor): TColorPalette;
 function GetSplitComplementaryPalette(AColor: TAlphaColor): TColorPalette;
 
+function AlphaColorToColor(AlphaColor: TAlphaColor): TColor;
+function ColorToAlphaColor(Color: TColor): TAlphaColor;
+function ColorToIntColor(Color: TColor): Longint;
+
 implementation
 
 uses
   System.UIConsts;
+
+function ColorToIntColor(Color: TColor): Longint;
+begin
+  Result := Longint(ColorToAlphaColor(Color));
+end;
+
+function AlphaColorToColor(AlphaColor: TAlphaColor): TColor;
+begin
+  TBGRA(Result).R := TRGBA(Alphacolor).R;
+  TBGRA(Result).G := TRGBA(Alphacolor).G;
+  TBGRA(Result).B := TRGBA(Alphacolor).B;
+  TBGRA(Result).A := 0;
+end;
+
+function ColorToAlphaColor(Color: TColor): TAlphaColor;
+begin
+  TRGBA(Result).R := TBGRA(Color).R;
+  TRGBA(Result).G := TBGRA(Color).G;
+  TRGBA(Result).B := TBGRA(Color).B;
+  TRGBA(Result).A := 255;
+end;
 
 function GetComplementaryColor(AColor: TAlphaColor): TAlphaColor;
 var
@@ -106,13 +138,12 @@ begin
     FColorCount := 3; // Default to 3 colors if unspecified
   end;
   SetLength(FColors, FColorCount);
-  SetBaseColor(AColor);
+  CreatePalette(AColor);
 end;
 
-procedure TColorPalette.SetBaseColor(const Value: TAlphaColor);
+function TColorPalette.GetBGRColor(Index: Integer): TColor;
 begin
-  FColors[0] := Value;
-  UpdatePalette;
+  Result := AlphaColorToColor(GetColor(Index));
 end;
 
 function TColorPalette.GetColor(Index: Integer): TAlphaColor;
@@ -123,7 +154,7 @@ begin
     raise ERangeError.CreateFmt('Color index (%d) out of bounds', [Index]);
 end;
 
-procedure TColorPalette.UpdatePalette;
+procedure TColorPalette.CreatePalette(const BaseColor: TAlphaColor);
 var
   H, S, L: Single;
   I, Count: Integer;
@@ -139,6 +170,7 @@ var
   end;
 
 begin
+  FColors[0] := BaseColor;
   RGBToHSL(FColors[0], H, S, L);
 
   I := 0;
@@ -186,21 +218,21 @@ begin
       var Hue: Single;
 
       TempPalette := TColorPalette.Create(FColors[0], ptAnalogous);
-      for Count := 0 to TempPalette.ColorCount - 1 do
+      for Count := 0 to pred(TempPalette.ColorCount) do
       begin
         RGBToHSL(TempPalette.Colors[Count], Hue, S, L);
         AddColor(Hue);
       end;
 
       TempPalette := TColorPalette.Create(FColors[0], ptTriad);
-      for Count := 0 to TempPalette.ColorCount - 1 do
+      for Count := 0 to pred(TempPalette.ColorCount) do
       begin
         RGBToHSL(TempPalette.Colors[Count], Hue, S, L);
         AddColor(Hue);
       end;
 
       TempPalette := TColorPalette.Create(FColors[0], ptSplitComplementary);
-      for Count := 0 to TempPalette.ColorCount - 1 do
+      for Count := 0 to pred(TempPalette.ColorCount) do
       begin
         RGBToHSL(TempPalette.Colors[Count], Hue, S, L);
         AddColor(Hue);
@@ -214,14 +246,14 @@ begin
       end;
 
       TempPalette := TColorPalette.Create(FColors[0], ptRectangle);
-      for Count := 0 to TempPalette.ColorCount - 1 do
+      for Count := 0 to pred(TempPalette.ColorCount) do
       begin
         RGBToHSL(TempPalette.Colors[Count], Hue, S, L);
         AddColor(Hue);
       end;
 
       TempPalette := TColorPalette.Create(FColors[0], ptComplementary);
-      for Count := 0 to TempPalette.ColorCount - 1 do
+      for Count := 0 to pred(TempPalette.ColorCount) do
       begin
         RGBToHSL(TempPalette.Colors[Count], Hue, S, L);
         AddColor(Hue);
@@ -231,10 +263,10 @@ begin
       var UniqueColors: TArray<TAlphaColor>;
       SetLength(UniqueColors, FColorCount);
       var UniqueCount: Integer := 0;
-      for Count := 0 to I - 1 do
+      for Count := 0 to pred(I) do
       begin
         var Found: Boolean := False;
-        for var J: Integer := 0 to UniqueCount - 1 do
+        for var J: Integer := 0 to pred(UniqueCount) do
         begin
           if UniqueColors[J] = FColors[Count] then
           begin
@@ -257,5 +289,8 @@ begin
 
   SetLength(FColors, I);
 end;
+
+initialization
+  System.UITypes.TColorRec.ColorToRGB := ColorToIntColor;
 
 end.

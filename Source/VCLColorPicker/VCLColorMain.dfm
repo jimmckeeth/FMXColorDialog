@@ -168,7 +168,7 @@ object Form2: TForm2
   object pnlColor: TPanel
     Left = 368
     Top = 8
-    Width = 167
+    Width = 202
     Height = 159
     Caption = ' '
     Color = clRed
@@ -177,7 +177,7 @@ object Form2: TForm2
     object paintPalette: TPaintBox
       Left = 1
       Top = 133
-      Width = 165
+      Width = 200
       Height = 25
       Align = alBottom
       OnPaint = paintPalettePaint
@@ -185,13 +185,13 @@ object Form2: TForm2
     object paintShade: TPaintBox
       Left = 1
       Top = 1
-      Width = 165
+      Width = 200
       Height = 25
       Align = alTop
       OnPaint = paintShadePaint
     end
     object paintTone: TPaintBox
-      Left = 141
+      Left = 176
       Top = 26
       Width = 25
       Height = 107
@@ -211,7 +211,7 @@ object Form2: TForm2
     Width = 166
     Height = 191
     Caption = 'Palette'
-    ItemIndex = 3
+    ItemIndex = 6
     Items.Strings = (
       'Analogous'
       'Triad'
