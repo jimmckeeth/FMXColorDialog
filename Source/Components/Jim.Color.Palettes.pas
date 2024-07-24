@@ -7,14 +7,21 @@ uses
 
 type
   TPaletteType = (ptAnalogous, ptTriad, ptSplitComplementary, ptQuad, ptRectangle, ptComplementary, ptAll);
+  TRGBA = record
+    case Cardinal of
+      0: (Color: TAlphaColor);
+      2: (HiWord, LoWord: Word);
+      3: (B, G, R, A: System.Byte);
+  end;
 
   TColorPalette = record
   private
     FColors: TArray<TAlphaColor>;
     FColorCount: Integer;
     FPaletteType: TPaletteType;
+    procedure SetBaseColor(const Value: TAlphaColor);
     function GetColor(Index: Integer): TAlphaColor;
-    procedure GeneratePalatte(const Base: TAlphaColor);
+    procedure UpdatePalette;
   public
     constructor Create(AColor: TAlphaColor; AType: TPaletteType);
     property Colors[Index: Integer]: TAlphaColor read GetColor; default;
@@ -99,7 +106,13 @@ begin
     FColorCount := 3; // Default to 3 colors if unspecified
   end;
   SetLength(FColors, FColorCount);
-  GeneratePalatte(AColor);
+  SetBaseColor(AColor);
+end;
+
+procedure TColorPalette.SetBaseColor(const Value: TAlphaColor);
+begin
+  FColors[0] := Value;
+  UpdatePalette;
 end;
 
 function TColorPalette.GetColor(Index: Integer): TAlphaColor;
@@ -110,7 +123,7 @@ begin
     raise ERangeError.CreateFmt('Color index (%d) out of bounds', [Index]);
 end;
 
-procedure TColorPalette.GeneratePalatte(const Base: TAlphaColor);
+procedure TColorPalette.UpdatePalette;
 var
   H, S, L: Single;
   I, Count: Integer;
@@ -236,6 +249,7 @@ begin
         end;
       end;
       SetLength(UniqueColors, UniqueCount);
+      FColorCount := UniqueCount;
       FColors := UniqueColors;
       I := UniqueCount;
     end;

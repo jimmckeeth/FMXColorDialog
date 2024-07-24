@@ -27,7 +27,7 @@ implementation
 
 {$R *.fmx}
 
-function CoordinateToIndex(x, y, w, h, offset: Integer): Integer;
+function CoordinateToIndex(x, y, w, h: Integer; offset: Integer = 0): Integer;
 var
   innerW, innerH: Integer;
 begin
@@ -66,8 +66,8 @@ end;
 procedure TForm4.SkPaintBox1Draw(ASender: TObject;
   const ACanvas: ISkCanvas; const ADest: TRectF; const AOpacity: Single);
 begin
-  var outerSteps := 3;
-  var maxSteps := 4;
+  var lastSteps := 4;
+  var maxSteps := 1;
 
   var paint: ISkPaint := TSkPaint.Create;
   var font: ISkFont := TSkFont.Create;
@@ -75,17 +75,25 @@ begin
   paint.AntiAlias := True;
   paint.Color := TAlphaColors.Black;
 
-  for var i := 1 to (maxSteps) do
+  var dest := ADest;
+
+  for var i := 0 to (maxSteps) do
   begin
-    var step := outerSteps + (outerSteps * (i-1) * (i-1));
-    var segWidth := (ADest.Width) / step;
-    var segHeight := (ADest.Height) / step;
-    var offset := (i-1)*(i-1);
-    var segments := (step - offset * 2) * 4 - 4;
-    for var x := 0 to step - 1 do
-      for var y := 0 to step - 1 do
+    if i>0 then
+    begin
+      Dest.Width := dest.Width - dest.Width / 10;
+      dest.Height := dest.Height - dest.Height / 10;
+      dest.Left := dest.Left + 5;
+      dest.Top := dest.Top + 5;
+    end;
+    var divisions := lastSteps + lastSteps*i;
+    var segWidth := (Dest.Width) / divisions;
+    var segHeight := (Dest.Height) / divisions;
+    var segments := (divisions) * 4 - 4;
+    for var x := 0 to divisions - 1 do
+      for var y := 0 to divisions - 1 do
       begin
-        var hueStep := CoordinateToIndex(x,y, step, step, offset);
+        var hueStep := CoordinateToIndex(x,y, divisions, divisions);
         if hueStep <> -1 then
         begin
           var topLeft := TPointF.Create(x * segWidth, y * segHeight);

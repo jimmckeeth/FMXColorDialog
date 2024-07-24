@@ -7,14 +7,12 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Ani,
   FMX.Edit, FMX.EditBox, FMX.SpinBox, FMX.StdCtrls, System.UIConsts,
   FMX.Controls.Presentation, FMX.Layouts, FMX.Colors, Jim.FMX.TrackAndSpin,
-  Data.Bind.EngExt, Fmx.Bind.DBEngExt, System.Rtti,
-  System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.Components,
-  FMX.ListBox,
-  Jim.Color.Palettes, System.Math.Vectors, FMX.Controls3D, FMX.Layers3D,
-  FMX.Objects;
+  Data.Bind.EngExt, Fmx.Bind.DBEngExt, System.Rtti, System.Bindings.Outputs,
+  Fmx.Bind.Editors, Data.Bind.Components, FMX.ListBox, Jim.Color.Palettes,
+  System.Math.Vectors, FMX.Controls3D, FMX.Layers3D, FMX.Objects;
 
 type
-  TForm1 = class(TForm)
+  TfrmSlideConverter = class(TForm)
     RGBRed: TGradientTrackSpin;
     RGBGreen: TGradientTrackSpin;
     RGBBlue: TGradientTrackSpin;
@@ -86,7 +84,7 @@ type
   end;
 
 var
-  Form1: TForm1;
+  frmSlideConverter: TfrmSlideConverter;
 
 implementation
 
@@ -95,7 +93,7 @@ uses
 
 {$R *.fmx}
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TfrmSlideConverter.Button1Click(Sender: TObject);
 begin
   case random(3) of
     0:
@@ -126,25 +124,25 @@ begin
   end;
 end;
 
-procedure TForm1.ColorComplementaryDblClick(Sender: TObject);
+procedure TfrmSlideConverter.ColorComplementaryDblClick(Sender: TObject);
 begin
   ColorBox1.Color := (Sender as TShape).Fill.Color;
   UpdateUI;
 end;
 
-procedure TForm1.ColorListBox1Change(Sender: TObject);
+procedure TfrmSlideConverter.ColorListBox1Change(Sender: TObject);
 begin
   ColorBox1.Color := ColorListBox1.Color;
   UpdateUI;
 end;
 
-procedure TForm1.ColorSplit1DblClick(Sender: TObject);
+procedure TfrmSlideConverter.ColorSplit1DblClick(Sender: TObject);
 begin
   ColorBox1.Color := (Sender as TColorBox).Color;
   UpdateUI;
 end;
 
-procedure TForm1.ColorTrackChange(Sender: TObject);
+procedure TfrmSlideConverter.ColorTrackChange(Sender: TObject);
 begin
   if Updating then exit;
   Updating := True;
@@ -180,20 +178,20 @@ begin
   end;
 end;
 
-procedure TForm1.FormCreate(Sender: TObject);
+procedure TfrmSlideConverter.FormCreate(Sender: TObject);
 begin
   Updating := False;
   UpdateUI;
 end;
 
-procedure TForm1.RGBStringChangeTracking(Sender: TObject);
+procedure TfrmSlideConverter.RGBStringChangeTracking(Sender: TObject);
 begin
   ColorBox1.Color := StringToAlphaColor(RGBString.Text);
   UpdateUI;
 
 end;
 
-procedure TForm1.RGBVisibleBtnClick(Sender: TObject);
+procedure TfrmSlideConverter.RGBVisibleBtnClick(Sender: TObject);
 begin
   if RGBVisibleBtn.StyleLookup = 'arrowdowntoolbutton' then
   begin
@@ -208,7 +206,7 @@ begin
 
 end;
 
-procedure TForm1.UpdateCMYK;
+procedure TfrmSlideConverter.UpdateCMYK;
 begin
   var RGBColor := ColorBox1.Color;
 
@@ -232,7 +230,7 @@ begin
   end;
 end;
 
-procedure TForm1.UpdateHSL;
+procedure TfrmSlideConverter.UpdateHSL;
 begin
   var H, S, L: Single;
   RGBtoHSL(ColorBox1.Color, H, S, L);
@@ -246,7 +244,7 @@ begin
   HSLString.Text := Format('(%.0f, %.0f%%, %.0f%%)',[H*360, S*100, L*100]);
 end;
 
-procedure TForm1.UpdateRGB;
+procedure TfrmSlideConverter.UpdateRGB;
 begin
   var RGBColor := ColorBox1.Color;
   RGBRed.Value := TAlphaColorRec(RGBColor).R;
@@ -257,7 +255,7 @@ begin
     Trunc(RGBGreen.Value), Trunc(RGBBlue.Value)]);
 end;
 
-procedure TForm1.UpdateUI;
+procedure TfrmSlideConverter.UpdateUI;
 begin
   UpdateRGB;
   UpdateHSL;

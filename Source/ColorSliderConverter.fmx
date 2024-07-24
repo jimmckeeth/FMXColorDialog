@@ -1,4 +1,4 @@
-object Form1: TForm1
+object frmSlideConverter: TfrmSlideConverter
   Left = 0
   Top = 0
   Caption = 'Jim'#39's Overengineered Color Picker'
@@ -67,7 +67,7 @@ object Form1: TForm1
       TextWidth = 70.000000000000000000
       Text = 'Alpha'
       Max = 100.000000000000000000
-      Value = 1.000000000000000000
+      Value = 100.000000000000000000
       ReadOnly = False
       KeyboardType = NumberPad
       ReturnKeyType = Default
@@ -111,7 +111,7 @@ object Form1: TForm1
         TextWidth = 70.000000000000000000
         Text = 'Saturation'
         Max = 100.000000000000000000
-        Value = 1.000000000000000000
+        Value = 100.000000000000000000
         ReadOnly = False
         KeyboardType = NumberPad
         ReturnKeyType = Default

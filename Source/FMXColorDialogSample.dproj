@@ -276,7 +276,7 @@
         <DCCReference Include="X11ColorData.pas"/>
         <DCCReference Include="HTMLColorData.pas"/>
         <DCCReference Include="ColorSliderConverter.pas">
-            <Form>Form1</Form>
+            <Form>frmSlideConverter</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="Components\Jim.FMX.TrackAndSpin.pas"/>
