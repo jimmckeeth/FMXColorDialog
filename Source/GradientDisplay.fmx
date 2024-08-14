@@ -1,9 +1,9 @@
-object Form2: TForm2
+object frmGradientDisplay: TfrmGradientDisplay
   Left = 0
   Top = 0
-  Caption = 'Form2'
-  ClientHeight = 373
-  ClientWidth = 445
+  Caption = 'Gradient Display'
+  ClientHeight = 404
+  ClientWidth = 442
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -21,8 +21,8 @@ object Form2: TForm2
         Offset = 1.000000000000000000
       end>
     Fill.Gradient.Style = Radial
-    Position.X = 20.000000000000000000
-    Position.Y = 102.000000000000000000
+    Position.X = 17.000000000000000000
+    Position.Y = 134.000000000000000000
     Size.Width = 210.000000000000000000
     Size.Height = 210.000000000000000000
     Size.PlatformDefault = False
@@ -36,8 +36,8 @@ object Form2: TForm2
     Margins.Right = 17.000000000000000000
     Margins.Bottom = 5.000000000000000000
     Position.X = 17.000000000000000000
-    Position.Y = 35.000000000000000000
-    Size.Width = 411.000000000000000000
+    Position.Y = 65.000000000000000000
+    Size.Width = 408.000000000000000000
     Size.Height = 19.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 2
@@ -51,35 +51,36 @@ object Form2: TForm2
     Margins.Right = 10.000000000000000000
     Position.X = 10.000000000000000000
     Position.Y = 10.000000000000000000
-    Size.Width = 425.000000000000000000
-    Size.Height = 20.000000000000000000
+    Size.Width = 422.000000000000000000
+    Size.Height = 50.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
     OnChange = GradientEdit1Change
   end
   object ListBox1: TListBox
-    Position.X = 238.000000000000000000
-    Position.Y = 72.000000000000000000
+    Position.X = 235.000000000000000000
+    Position.Y = 134.000000000000000000
     Size.Width = 187.000000000000000000
-    Size.Height = 281.000000000000000000
+    Size.Height = 251.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 3
     OnClick = ListBox1Change
+    OnDblClick = ListBox1DblClick
     DisableFocusEffect = True
     DefaultItemStyles.ItemStyle = ''
     DefaultItemStyles.GroupHeaderStyle = ''
     DefaultItemStyles.GroupFooterStyle = ''
     Viewport.Width = 183.000000000000000000
-    Viewport.Height = 277.000000000000000000
+    Viewport.Height = 247.000000000000000000
   end
   object Button1: TButton
-    Position.X = 137.000000000000000000
-    Position.Y = 72.000000000000000000
+    Position.X = 134.000000000000000000
+    Position.Y = 104.000000000000000000
     Size.Width = 76.000000000000000000
     Size.Height = 22.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 4
-    Text = 'Button1'
+    Text = 'Hue'
     TextSettings.Trimming = None
     OnClick = Button1Click
   end
@@ -88,13 +89,13 @@ object Form2: TForm2
     TabOrder = 5
     Cursor = crIBeam
     Value = 7.000000000000000000
-    Position.X = 29.000000000000000000
-    Position.Y = 72.000000000000000000
+    Position.X = 26.000000000000000000
+    Position.Y = 104.000000000000000000
     OnChange = SpinBox1Change
   end
   object rbRadial: TRadioButton
-    Position.X = 44.000000000000000000
-    Position.Y = 334.000000000000000000
+    Position.X = 41.000000000000000000
+    Position.Y = 366.000000000000000000
     Size.Width = 77.000000000000000000
     Size.Height = 19.000000000000000000
     Size.PlatformDefault = False
@@ -103,13 +104,35 @@ object Form2: TForm2
     OnChange = rbRadialChange
   end
   object rbLinear: TRadioButton
-    Position.X = 129.000000000000000000
-    Position.Y = 334.000000000000000000
+    Position.X = 126.000000000000000000
+    Position.Y = 366.000000000000000000
     Size.Width = 77.000000000000000000
     Size.Height = 19.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 7
     Text = 'Linear'
     OnChange = rbRadialChange
+  end
+  object Button2: TButton
+    Position.X = 235.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 67.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = 'Newton'
+    TextSettings.Trimming = None
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Position.X = 310.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 67.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Text = 'Modern'
+    TextSettings.Trimming = None
+    OnClick = Button3Click
   end
 end

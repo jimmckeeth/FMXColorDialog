@@ -26,6 +26,7 @@ type
   public
     constructor Create(AOwner: TComponent); override;
     destructor Destroy; override;
+  published
     property BeginColor: TAlphaColor read GetBeginColor write SetBeginColor;
     property EndColor: TAlphaColor read GetEndColor write SetEndColor;
   end;

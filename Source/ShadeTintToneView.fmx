@@ -1,0 +1,145 @@
+object frmShadeTintTone: TfrmShadeTintTone
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Hue: THueTrackBar
+    Align = Top
+    CanParentFocus = True
+    Orientation = Horizontal
+    Size.Width = 640.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    OnChange = HueChange
+  end
+  object Layout1: TLayout
+    Align = Left
+    Position.Y = 19.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 461.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object Label1: TLabel
+      Align = Top
+      Size.Width = 73.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'Shade'
+      TabOrder = 2
+    end
+    object Label2: TLabel
+      Align = Top
+      Position.Y = 98.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'Tone'
+      TabOrder = 1
+    end
+    object Label3: TLabel
+      Align = Top
+      Position.Y = 49.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'Tint'
+      TabOrder = 0
+    end
+  end
+  object Layout2: TLayout
+    Align = Client
+    Size.Width = 567.000000000000000000
+    Size.Height = 461.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object PaintShade: TSkPaintBox
+      Align = Top
+      Size.Width = 567.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      OnDraw = PaintShadeDraw
+    end
+    object PaintTone: TSkPaintBox
+      Align = Top
+      Position.Y = 100.000000000000000000
+      Size.Width = 567.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      OnDraw = PaintToneDraw
+    end
+    object PaintTint: TSkPaintBox
+      Align = Top
+      Position.Y = 50.000000000000000000
+      Size.Width = 567.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      OnDraw = PaintTintDraw
+    end
+    object SpinBox1: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      Cursor = crIBeam
+      Value = 5.000000000000000000
+      Position.X = 72.000000000000000000
+      Position.Y = 158.000000000000000000
+      OnChange = SpinBox1Change
+    end
+    object Rectangle1: TRectangle
+      Position.Y = 150.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object ListBox1: TListBox
+      Position.X = 8.000000000000000000
+      Position.Y = 224.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 200.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 109.000000000000000000
+      Viewport.Height = 196.000000000000000000
+    end
+    object ListBox2: TListBox
+      Position.X = 129.000000000000000000
+      Position.Y = 224.000000000000000000
+      Size.Width = 96.000000000000000000
+      Size.Height = 200.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 92.000000000000000000
+      Viewport.Height = 196.000000000000000000
+    end
+    object ListBox3: TListBox
+      Position.X = 233.000000000000000000
+      Position.Y = 224.000000000000000000
+      Size.Width = 96.000000000000000000
+      Size.Height = 200.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 92.000000000000000000
+      Viewport.Height = 196.000000000000000000
+    end
+  end
+end

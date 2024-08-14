@@ -1,9 +1,9 @@
-object SkGradientView: TSkGradientView
+object frmSkGradientView: TfrmSkGradientView
   Left = 0
   Top = 0
-  Caption = 'Form3'
-  ClientHeight = 480
-  ClientWidth = 640
+  Caption = 'Skia Gradient Color Picker'
+  ClientHeight = 512
+  ClientWidth = 512
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -13,72 +13,91 @@ object SkGradientView: TSkGradientView
   object SkPaintBox1: TSkPaintBox
     Align = Client
     HitTest = True
-    Size.Width = 640.000000000000000000
-    Size.Height = 480.000000000000000000
+    Size.Width = 512.000000000000000000
+    Size.Height = 512.000000000000000000
     Size.PlatformDefault = False
     OnMouseDown = SkPaintBox1MouseDown
     OnMouseMove = SkPaintBox1MouseMove
     OnResize = SkPaintBox1Resize
     OnDraw = SkPaintBox1Draw
-    object rbSaturation: TRadioButton
-      IsChecked = True
-      Position.X = 8.000000000000000000
-      Position.Y = 8.000000000000000000
-      Size.Width = 105.000000000000000000
-      Size.Height = 19.000000000000000000
+    object Layout1: TLayout
+      Align = Client
+      Size.Width = 512.000000000000000000
+      Size.Height = 512.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
-      Text = 'Saturation'
-      OnChange = rbLuminanceInvChange
-    end
-    object rbLuminance: TRadioButton
-      Position.X = 8.000000000000000000
-      Position.Y = 31.000000000000000000
-      Size.Width = 105.000000000000000000
-      Size.Height = 19.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 1
-      Text = 'Light'
-      OnChange = rbLuminanceInvChange
-    end
-    object rbLuminanceInv: TRadioButton
-      Position.X = 8.000000000000000000
-      Position.Y = 54.000000000000000000
-      Size.Width = 105.000000000000000000
-      Size.Height = 19.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 3
-      Text = 'Dark'
-      OnChange = rbLuminanceInvChange
-    end
-    object rbNone: TRadioButton
-      Position.X = 8.000000000000000000
-      Position.Y = 78.000000000000000000
-      Size.Width = 105.000000000000000000
-      Size.Height = 19.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 2
-      Text = 'None'
-      OnChange = rbLuminanceInvChange
-    end
-    object edRGB: TEdit
-      Touch.InteractiveGestures = [LongTap, DoubleTap]
-      Anchors = [akTop, akRight]
-      TabOrder = 4
-      TextSettings.HorzAlign = Center
-      Position.X = 532.000000000000000000
-      Position.Y = 8.000000000000000000
-    end
-    object lbHSL: TLabel
-      Anchors = [akTop, akRight]
-      Position.X = 532.000000000000000000
-      Position.Y = 38.000000000000000000
-      Size.Width = 100.000000000000000000
-      Size.Height = 17.000000000000000000
-      Size.PlatformDefault = False
-      TextSettings.HorzAlign = Center
-      Text = 'HSL'
-      TabOrder = 5
+      object Button1: TButton
+        Anchors = [akRight, akBottom]
+        Position.X = 424.000000000000000000
+        Position.Y = 472.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Button1'
+        TextSettings.Trimming = None
+        OnClick = Button1Click
+      end
+      object edRGB: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akTop, akRight]
+        TabOrder = 6
+        TextSettings.HorzAlign = Center
+        Position.X = 404.000000000000000000
+        Position.Y = 8.000000000000000000
+      end
+      object lbHSL: TLabel
+        Anchors = [akTop, akRight]
+        Position.X = 404.000000000000000000
+        Position.Y = 38.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'RGB'
+        TabOrder = 7
+      end
+      object rbLuminance: TRadioButton
+        Position.X = 8.000000000000000000
+        Position.Y = 26.000000000000000000
+        Size.Width = 105.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Light'
+        OnChange = rbLuminanceInvChange
+      end
+      object rbLuminanceInv: TRadioButton
+        Position.X = 8.000000000000000000
+        Position.Y = 46.000000000000000000
+        Size.Width = 105.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'Dark'
+        OnChange = rbLuminanceInvChange
+      end
+      object rbNone: TRadioButton
+        Position.X = 8.000000000000000000
+        Position.Y = 66.000000000000000000
+        Size.Width = 105.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'None'
+        OnChange = rbLuminanceInvChange
+      end
+      object rbSaturation: TRadioButton
+        IsChecked = True
+        Position.X = 8.000000000000000000
+        Position.Y = 6.000000000000000000
+        Size.Width = 105.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Saturation'
+        OnChange = rbLuminanceInvChange
+      end
     end
     object Circle1: TCircle
       HitTest = False
@@ -87,6 +106,14 @@ object SkGradientView: TSkGradientView
       Size.Width = 10.000000000000000000
       Size.Height = 10.000000000000000000
       Size.PlatformDefault = False
+    end
+    object PalettePaintBox: TSkPaintBox
+      Align = Client
+      Size.Width = 512.000000000000000000
+      Size.Height = 512.000000000000000000
+      Size.PlatformDefault = False
+      Visible = False
+      OnDraw = PalettePaintBoxDraw
     end
   end
 end

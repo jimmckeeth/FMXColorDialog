@@ -9,7 +9,7 @@ uses
   FMX.Layouts, FMX.ListBox, FMX.Edit, FMX.Objects;
 
 type
-  TSkGradientView = class(TForm)
+  TfrmSkGradientView = class(TForm)
     SkPaintBox1: TSkPaintBox;
     rbSaturation: TRadioButton;
     rbLuminance: TRadioButton;
@@ -18,6 +18,9 @@ type
     edRGB: TEdit;
     lbHSL: TLabel;
     Circle1: TCircle;
+    PalettePaintBox: TSkPaintBox;
+    Button1: TButton;
+    Layout1: TLayout;
     procedure SkPaintBox1Draw(ASender: TObject; const ACanvas: ISkCanvas;
       const ADest: TRectF; const AOpacity: Single);
     procedure rbLuminanceInvChange(Sender: TObject);
@@ -28,17 +31,24 @@ type
     procedure SkPaintBox1MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure SkPaintBox1Resize(Sender: TObject);
+    procedure PalettePaintBoxDraw(ASender: TObject;
+      const ACanvas: ISkCanvas; const ADest: TRectF;
+      const AOpacity: Single);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
     FBitmap: TBitmap;
-    procedure GetColor(X,Y: Single);
+    function GetColor(X, Y: Single): TAlphaColor;
     procedure UpdateColorMap;
+    procedure MoveCircle(x, y: Single);
+    procedure DrawCircle(ACanvas: ISkCanvas; center, origin: TPointF;
+      Theta: Single);
   public
     { Public declarations }
   end;
 
 var
-  SkGradientView: TSkGradientView;
+  frmSkGradientView: TfrmSkGradientView;
 
 implementation
 
@@ -63,40 +73,124 @@ begin
     ];
 end;
 
-procedure TSkGradientView.FormCreate(Sender: TObject);
+function IsPointInCircle(x, y, Width, Height: single): Boolean;
 begin
-  //
+  // Calculate the center of the rectangle
+  var Cx := Width/2;
+  var Cy := Height/2;
+
+  // Calculate the radius of the circle
+  var R := Min(Cx, Cy);
+
+  // Calculate the distance from the point to the center of the circle
+  var Distance := Sqrt(Sqr(x - Cx) + Sqr(y - Cy));
+
+  // Determine if the point is within the circle
+  Result := Distance <= R;
 end;
 
-procedure TSkGradientView.FormDestroy(Sender: TObject);
+function GetRotatedPoint(StartPoint, Center: TPointF; Radius, Theta: Single): TPointF;
+var
+  AngleRad, CurrentAngle, NewAngle: Single;
+  Distance: Single;
+begin
+  // Calculate the distance from StartPoint to Center
+  Distance := Sqrt(Sqr(StartPoint.X - Center.X) + Sqr(StartPoint.Y - Center.Y));
+
+  // Calculate the current angle (in radians) of StartPoint relative to Center
+  CurrentAngle := ArcTan2(StartPoint.Y - Center.Y, StartPoint.X - Center.X);
+
+  // Convert Theta to radians and calculate the new angle
+  AngleRad := Theta * Pi / 180;
+  NewAngle := CurrentAngle + AngleRad;
+
+  // Calculate the new coordinates based on the new angle and distance
+  Result.X := Center.X + Distance * Cos(NewAngle);
+  Result.Y := Center.Y + Distance * Sin(NewAngle);
+end;
+
+
+procedure TfrmSkGradientView.FormCreate(Sender: TObject);
+begin
+  PalettePaintBox.Visible := True;
+  PalettePaintBox.BringToFront;
+end;
+
+procedure TfrmSkGradientView.FormDestroy(Sender: TObject);
 begin
   FBitmap.Free;
 end;
 
-procedure TSkGradientView.GetColor(X, Y: Single);
+function TfrmSkGradientView.GetColor(X, Y: Single): TAlphaColor;
 begin
+  Result := TAlphaColors.Red;
+  if not Assigned(FBitmap) then exit;
+
   var vBitMapData : TBitmapData;
   if FBitmap.Map (TMapAccess.Read, vBitMapData) then
   begin
     try
-      var color := vBitmapData.GetPixel(trunc(X), trunc(Y));
-      Circle1.Fill.Color := color;
-      Circle1.Position.X := X - Circle1.Width/2;
-      Circle1.Position.Y := Y - Circle1.Height/2;
-      Circle1.Visible := True;
-      edRGB.Text := IntToHex(color);
+      Result := vBitmapData.GetPixel(
+        trunc(X*FBitmap.BitmapScale),
+        trunc(Y*FBitmap.BitmapScale));
     finally
       FBitmap.Unmap(vBitMapData);
     end;
   end;
 end;
 
-procedure TSkGradientView.rbLuminanceInvChange(Sender: TObject);
+procedure TfrmSkGradientView.rbLuminanceInvChange(Sender: TObject);
 begin
   UpdateColorMap;
 end;
 
-procedure TSkGradientView.SkPaintBox1Draw(ASender: TObject;
+procedure TfrmSkGradientView.Button1Click(Sender: TObject);
+begin
+  Layout1.Visible := False;
+  try
+    var bitmap := SkPaintBox1.MakeScreenshot;
+    bitmap.SaveToFile('snaggit.bmp');
+
+  finally
+    Layout1.Visible := True;
+  end;
+end;
+
+procedure TfrmSkGradientView.DrawCircle(ACanvas: ISkCanvas; center, origin: TPointF; Theta: Single);
+begin
+  var comp := GetRotatedPoint(origin, Center, Min(Center.x, Center.y), Theta);
+  var paint: ISkPaint := TSkPaint.Create;
+  paint.Color := TAlphaColors.Black;
+  paint.Style := TSkPaintStyle.Stroke;
+  paint.AntiAlias := True;
+  paint.StrokeWidth := 2;
+
+  ACanvas.DrawCircle(comp, 5, paint);
+  ACanvas.DrawLine(origin, comp, paint);
+
+  paint.Color := GetColor(comp.x, comp.y);
+  paint.Style := TSkPaintStyle.Fill;
+  ACanvas.DrawCircle(comp, 5, paint);
+
+end;
+
+procedure TfrmSkGradientView.PalettePaintBoxDraw(ASender: TObject;
+  const ACanvas: ISkCanvas; const ADest: TRectF; const AOpacity: Single);
+begin
+  if Circle1.Visible then
+  begin
+    var Center := TPointF.Create(ADest.Width/2, ADest.Height/2);
+    var origin := Circle1.Position.Point;
+    origin.Offset(Circle1.Size.Size.cx/2, Circle1.Size.Size.cy/2);
+
+    DrawCircle(ACanvas, center, origin, 120);
+    DrawCircle(ACanvas, center, origin, 240);
+    DrawCircle(ACanvas, center, origin, 0);
+
+  end;
+end;
+
+procedure TfrmSkGradientView.SkPaintBox1Draw(ASender: TObject;
   const ACanvas: ISkCanvas; const ADest: TRectF; const AOpacity: Single);
 begin
   var maxdia := Min(SkPaintBox1.Width/2, SkPaintBox1.Height/2);
@@ -128,26 +222,41 @@ begin
     ACanvas.DrawCircle(
       SkPaintBox1.Width/2, SkPaintBox1.Height/2, curDia, LPaint);
   end;
+
 end;
 
-procedure TSkGradientView.SkPaintBox1MouseDown(Sender: TObject;
+procedure TfrmSkGradientView.MoveCircle(x, y: Single);
+begin
+  if not IsPointInCircle(x,y, SkPaintBox1.Width, SkPaintBox1.Height ) then exit;
+  var color := GetColor(X,Y);
+  Circle1.Fill.Color := color;
+  Circle1.Position.X := X - Circle1.Width/2;
+  Circle1.Position.Y := Y - Circle1.Height/2;
+  Circle1.Visible := True;
+  var colorString := AlphaColorToString(color);
+  edRGB.Text := colorString.Remove(1,2);
+  PalettePaintBox.Redraw;
+end;
+
+procedure TfrmSkGradientView.SkPaintBox1MouseDown(Sender: TObject;
   Button: TMouseButton; Shift: TShiftState; X, Y: Single);
 begin
-  if Button = TMouseButton.mbLeft then GetColor(X,Y);
+  if Button = TMouseButton.mbLeft then
+    MoveCircle(x,y);
 end;
 
-procedure TSkGradientView.SkPaintBox1MouseMove(Sender: TObject;
+procedure TfrmSkGradientView.SkPaintBox1MouseMove(Sender: TObject;
   Shift: TShiftState; X, Y: Single);
 begin
-  if (TShiftStateItem.ssLeft in Shift) then GetColor(X,Y);
+  if (TShiftStateItem.ssLeft in Shift) then MoveCircle(X,Y);
 end;
 
-procedure TSkGradientView.SkPaintBox1Resize(Sender: TObject);
+procedure TfrmSkGradientView.SkPaintBox1Resize(Sender: TObject);
 begin
   UpdateColorMap;
 end;
 
-procedure TSkGradientView.UpdateColorMap;
+procedure TfrmSkGradientView.UpdateColorMap;
 begin
   SkPaintBox1.Redraw;
   FreeAndNil(FBitmap);
@@ -155,7 +264,7 @@ begin
   Circle1.Visible := False;
   FBitmap := SkPaintBox1.MakeScreenshot;
   Circle1.Visible := True;
-  GetColor(
+  MoveCircle(
     Circle1.Position.X + Circle1.Width/2,
     Circle1.Position.Y + Circle1.Height/2);
 end;
