@@ -172,44 +172,40 @@ object Form2: TForm2
     Height = 159
     Caption = ' '
     Color = clRed
+    DoubleBuffered = True
     ParentBackground = False
+    ParentDoubleBuffered = False
     TabOrder = 6
     object paintPalette: TPaintBox
       Left = 1
-      Top = 133
+      Top = 127
       Width = 200
-      Height = 25
+      Height = 31
       Align = alBottom
       OnPaint = paintPalettePaint
     end
-    object paintShade: TPaintBox
+    object paintShadeTint: TPaintBox
       Left = 1
       Top = 1
-      Width = 200
-      Height = 25
-      Align = alTop
-      OnPaint = paintShadePaint
+      Width = 24
+      Height = 126
+      Align = alLeft
+      OnPaint = paintShadeTintPaint
     end
     object paintTone: TPaintBox
       Left = 176
-      Top = 26
+      Top = 1
       Width = 25
-      Height = 107
+      Height = 126
       Align = alRight
-    end
-    object paintTint: TPaintBox
-      Left = 1
-      Top = 26
-      Width = 25
-      Height = 107
-      Align = alLeft
+      OnPaint = paintTonePaint
     end
   end
   object rdPalette: TRadioGroup
-    Left = 368
-    Top = 205
+    Left = 369
+    Top = 173
     Width = 166
-    Height = 191
+    Height = 228
     Caption = 'Palette'
     ItemIndex = 6
     Items.Strings = (
@@ -219,6 +215,7 @@ object Form2: TForm2
       'Quad'
       'Rectangle'
       'Complementary'
+      'Spectrum'
       'All')
     TabOrder = 7
     OnClick = Button1Click

@@ -31,20 +31,21 @@ type
     rdPalette: TRadioGroup;
     Button1: TButton;
     paintPalette: TPaintBox;
-    paintShade: TPaintBox;
+    paintShadeTint: TPaintBox;
     paintTone: TPaintBox;
-    paintTint: TPaintBox;
     procedure tbRedChange(Sender: TObject);
     procedure tbSatChange(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure paintPalettePaint(Sender: TObject);
     procedure FormShow(Sender: TObject);
-    procedure paintShadePaint(Sender: TObject);
+    procedure paintShadeTintPaint(Sender: TObject);
+    procedure paintTonePaint(Sender: TObject);
   private
     { Private declarations }
     FUpdating: Boolean;
     FPalette: TColorPalette;
+    procedure UpdateRGB;
   public
     { Public declarations }
   end;
@@ -59,7 +60,7 @@ implementation
 procedure TForm2.Button1Click(Sender: TObject);
 begin
   paintPalette.Invalidate;
-  paintShade.Invalidate;
+  //paintShadeTint.Invalidate;
 end;
 
 procedure TForm2.FormCreate(Sender: TObject);
@@ -95,7 +96,7 @@ begin
   end;
 end;
 
-procedure TForm2.paintShadePaint(Sender: TObject);
+procedure TForm2.paintShadeTintPaint(Sender: TObject);
 begin
   var h, s, l: Single;
 
@@ -103,21 +104,52 @@ begin
   s := tbSat.Position/tbSat.Max;
   l := tbLum.Position/tbLum.Max;
 
-  var cnvs := paintShade.Canvas;
-  var wt := paintShade.Width div 10;
-  var ht := paintShade.Height;
+  var cnvs := paintShadeTint.Canvas;
+  var wt := paintShadeTint.Width;
+  var ht := paintShadeTint.Height div 10;
+  var rem := paintShadeTint.Height mod 10;
+  var startHeight := 0;
   for var i := 0 to 9 do
   begin
+    var localHeight := ht;
+    if i mod rem > 0 then
+      localHeight := localHeight + 1;
+
     var c := HSLtoRGB(h, s, i/9);
     cnvs.Brush.Color := AlphaColorToColor(c);
-    cnvs.Rectangle(i*wt, 0, i*wt+wt, ht);
+    cnvs.Rectangle(0, startHeight, wt, startHeight + localHeight);
+    startHeight := startHeight + localHeight;
   end;
 end;
 
-procedure TForm2.tbRedChange(Sender: TObject);
+procedure TForm2.paintTonePaint(Sender: TObject);
 begin
-  if FUpdating then exit;
+  var h, s, l: Single;
 
+  h := tbHue.Position/tbHue.Max;
+  s := tbSat.Position/tbSat.Max;
+  l := tbLum.Position/tbLum.Max;
+
+  var cnvs := paintTone.Canvas;
+  var wt := paintTone.Width;
+  var ht := paintTone.Height div 10;
+  var rem := paintTone.Height mod 10;
+  var startHeight := 0;
+  for var i := 0 to 9 do
+  begin
+    var localHeight := ht;
+    if i mod rem > 0 then
+      localHeight := localHeight + 1;
+
+    var c := HSLtoRGB(h, i/9, l);
+    cnvs.Brush.Color := AlphaColorToColor(c);
+    cnvs.Rectangle(0, startHeight, wt, startHeight + localHeight);
+    startHeight := startHeight + localHeight;
+  end;
+end;
+
+procedure TForm2.UpdateRGB;
+begin
   lblRed.Caption := tbRed.Position.ToString;
   lblGreen.Caption := tbGreen.Position.ToString;
   lblBlue.Caption := tbBlue.Position.ToString;
@@ -139,6 +171,13 @@ begin
   finally
     FUpdating := False;
   end;
+end;
+
+procedure TForm2.tbRedChange(Sender: TObject);
+begin
+  if FUpdating then exit;
+
+  UpdateRGB;
 end;
 
 procedure TForm2.tbSatChange(Sender: TObject);
