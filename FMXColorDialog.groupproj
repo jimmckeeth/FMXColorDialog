@@ -15,6 +15,9 @@
         <Projects Include="data\ColorBrowser\ColorBrowser.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="Source\VCLColorPicker\VCLColorPicker.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -59,14 +62,23 @@
     <Target Name="ColorBrowser:Make">
         <MSBuild Projects="data\ColorBrowser\ColorBrowser.dproj" Targets="Make"/>
     </Target>
+    <Target Name="VCLColorPicker">
+        <MSBuild Projects="Source\VCLColorPicker\VCLColorPicker.dproj"/>
+    </Target>
+    <Target Name="VCLColorPicker:Clean">
+        <MSBuild Projects="Source\VCLColorPicker\VCLColorPicker.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VCLColorPicker:Make">
+        <MSBuild Projects="Source\VCLColorPicker\VCLColorPicker.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="FMXColorEditors;FMXColorDialogSample;ColorUtilTests;ColorBrowser"/>
+        <CallTarget Targets="FMXColorEditors;FMXColorDialogSample;ColorUtilTests;ColorBrowser;VCLColorPicker"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="FMXColorEditors:Clean;FMXColorDialogSample:Clean;ColorUtilTests:Clean;ColorBrowser:Clean"/>
+        <CallTarget Targets="FMXColorEditors:Clean;FMXColorDialogSample:Clean;ColorUtilTests:Clean;ColorBrowser:Clean;VCLColorPicker:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="FMXColorEditors:Make;FMXColorDialogSample:Make;ColorUtilTests:Make;ColorBrowser:Make"/>
+        <CallTarget Targets="FMXColorEditors:Make;FMXColorDialogSample:Make;ColorUtilTests:Make;ColorBrowser:Make;VCLColorPicker:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
