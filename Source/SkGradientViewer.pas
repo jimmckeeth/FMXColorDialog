@@ -9,6 +9,7 @@ uses
   FMX.Layouts, FMX.ListBox, FMX.Edit, FMX.Objects;
 
 type
+  TWheelType = (wtPureHue, wtSaturation, wtLuminanceDark, wtLuminanceLight);
   TfrmSkGradientView = class(TForm)
     SkPaintBox1: TSkPaintBox;
     rbSaturation: TRadioButton;
@@ -21,8 +22,8 @@ type
     PalettePaintBox: TSkPaintBox;
     Button1: TButton;
     Layout1: TLayout;
-    procedure SkPaintBox1Draw(ASender: TObject; const ACanvas: ISkCanvas;
-      const ADest: TRectF; const AOpacity: Single);
+    ComboBox1: TComboBox;
+    Label1: TLabel;
     procedure rbLuminanceInvChange(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
@@ -35,6 +36,9 @@ type
       const ACanvas: ISkCanvas; const ADest: TRectF;
       const AOpacity: Single);
     procedure Button1Click(Sender: TObject);
+    procedure SkPaintBox1Draw(ASender: TObject; const ACanvas: ISkCanvas;
+      const ADest: TRectF; const AOpacity: Single);
+    procedure PalettePaintBoxClick(Sender: TObject);
   private
     { Private declarations }
     FBitmap: TBitmap;
@@ -43,6 +47,7 @@ type
     procedure MoveCircle(x, y: Single);
     procedure DrawCircle(ACanvas: ISkCanvas; center, origin: TPointF;
       Theta: Single);
+    function GetWheelType: TWheelType;
   public
     { Public declarations }
   end;
@@ -59,19 +64,45 @@ uses
 
 {$R *.fmx}
 
+
 function HueGradientArray(Saturation: Single = 1; Luminance: Single = 0.5): TArray<TAlphaColor>;
+const
+  HueArray: Array of Single =
+    [60,120,180,240,300,0,59.9];
+//    [90,135,180,225,270,315,0,45,89.9];
+//  [90,105,120,135,150,165,180,195,210,225,240,255,270,285,300,315,330,345,0,15,30,45,60,75,89.9];
 begin
-  Result :=
-    [HSLtoRGB(   0, Saturation, Luminance),
-     HSLtoRGB( 1/7, Saturation, Luminance),
-     HSLtoRGB( 2/7, Saturation, Luminance),
-     HSLtoRGB( 3/7, Saturation, Luminance),
-     HSLtoRGB( 4/7, Saturation, Luminance),
-     HSLtoRGB( 5/7, Saturation, Luminance),
-     HSLtoRGB( 6/7, Saturation, Luminance),
-     HSLtoRGB(0.99, Saturation, Luminance)
-    ];
+  SetLength(Result, Length(HueArray));
+  for var idx := 0 to pred(Length(HueArray)) do
+  Result[idx] := HSLtoRGB( HueArray[idx]/360, Saturation, Luminance);
 end;
+
+procedure RenderColorWheel(ACanvas: ISKCanvas; ADest: TRectF; const AWheelType: TWheelType = wtPureHue);
+begin
+  var maxdia := Min(ADest.Width/2, ADest.Height/2);
+  const max= 100;
+  for var dia := max downto 1 do
+  begin
+    var Saturation: Single := 1;
+    var Luminance: Single := 0.5;
+
+    case AWheelType of
+      wtSaturation: Saturation := dia/max;
+      wtLuminanceDark: Luminance := dia/max*0.5;
+      wtLuminanceLight: Luminance := 1-dia/max*0.5;
+    end;
+
+    var curDia := dia*maxDia/max;
+
+    var LPaint: ISkPaint := TSkPaint.Create;
+    LPaint.Shader :=
+      TSkShader.MakeGradientSweep( ADest.CenterPoint,
+        HueGradientArray(Saturation, Luminance));
+    ACanvas.DrawCircle(
+      ADest.Width/2, ADest.Height/2, curDia, LPaint);
+  end;
+end;
+
 
 function IsPointInCircle(x, y, Width, Height: single): Boolean;
 begin
@@ -146,13 +177,22 @@ end;
 
 procedure TfrmSkGradientView.Button1Click(Sender: TObject);
 begin
+//  var Stream := TFileStream.Create('colorwheel.svg', fmCreate);
+//  try
+//    var svg: ISkCanvas := TSkSVGCanvas.Make(SkPaintBox1.BoundsRect, stream, [TSkSVGCanvasFlag.ConvertTextToPaths]);
+//    RenderColorWheel(svg, SkPaintBox1.BoundsRect, GetWheelType);
+//  finally
+//    Stream.Free;
+//  end;
+
   Layout1.Visible := False;
+  PalettePaintBox.Visible := False;
   try
     var bitmap := SkPaintBox1.MakeScreenshot;
-    bitmap.SaveToFile('snaggit.bmp');
-
+    bitmap.SaveToFile('colorwheel.bmp');
   finally
     Layout1.Visible := True;
+    PalettePaintBox.Visible := True;
   end;
 end;
 
@@ -174,6 +214,19 @@ begin
 
 end;
 
+procedure TfrmSkGradientView.PalettePaintBoxClick(Sender: TObject);
+begin
+
+end;
+
+//None (1)
+//Complementary: 0°, 180°
+//Split-complementary: 0°, 150°, 210°
+//Analogous: 0°, 30°, 330°
+//Triadic: 0°, 120°, 240°
+//Tetradic: 0°, 60°, 180°, 240°
+//Hexadic: 0°, 60°, 120°, 180°, 240° and 300°
+
 procedure TfrmSkGradientView.PalettePaintBoxDraw(ASender: TObject;
   const ACanvas: ISkCanvas; const ADest: TRectF; const AOpacity: Single);
 begin
@@ -186,43 +239,7 @@ begin
     DrawCircle(ACanvas, center, origin, 120);
     DrawCircle(ACanvas, center, origin, 240);
     DrawCircle(ACanvas, center, origin, 0);
-
   end;
-end;
-
-procedure TfrmSkGradientView.SkPaintBox1Draw(ASender: TObject;
-  const ACanvas: ISkCanvas; const ADest: TRectF; const AOpacity: Single);
-begin
-  var maxdia := Min(SkPaintBox1.Width/2, SkPaintBox1.Height/2);
-  const max= 100;
-  for var dia := max downto 1 do
-  begin
-    var Saturation: Single := 1;
-    var Luminance: Single := 0.5;
-
-    if rbSaturation.IsChecked then
-      Saturation := dia/max
-    else if rbLuminanceInv.IsChecked then
-      Luminance := dia/max*0.5
-    else if rbLuminance.IsChecked then
-      Luminance := 1-dia/max*0.5;
-
-    if rbLuminanceInv.IsChecked then
-      Circle1.Stroke.Color := TAlphaColorRec.White
-    else
-      Circle1.Stroke.Color := TAlphaColorRec.Black;
-
-    var curDia := dia*maxDia/max;
-
-    var LPaint: ISkPaint := TSkPaint.Create;
-    LPaint.Shader :=
-      TSkShader.MakeGradientSweep(
-        ADest.CenterPoint,
-        HueGradientArray(Saturation, Luminance));
-    ACanvas.DrawCircle(
-      SkPaintBox1.Width/2, SkPaintBox1.Height/2, curDia, LPaint);
-  end;
-
 end;
 
 procedure TfrmSkGradientView.MoveCircle(x, y: Single);
@@ -236,6 +253,30 @@ begin
   var colorString := AlphaColorToString(color);
   edRGB.Text := colorString.Remove(1,2);
   PalettePaintBox.Redraw;
+end;
+
+function TfrmSkGradientView.GetWheelType: TWheelType;
+begin
+  if rbSaturation.IsChecked then
+    Result := wtSaturation
+  else if rbLuminance.IsChecked then
+    Result := wtLuminanceLight
+  else if rbLuminanceInv.IsChecked then
+    Result := wtLuminanceDark
+  else
+    Result := wtPureHue;
+end;
+
+procedure TfrmSkGradientView.SkPaintBox1Draw(ASender: TObject;
+  const ACanvas: ISkCanvas; const ADest: TRectF; const AOpacity: Single);
+begin
+
+  if rbLuminanceInv.IsChecked  then
+    Circle1.Stroke.Color := TAlphaColorRec.White
+  else
+    Circle1.Stroke.Color := TAlphaColorRec.Black;
+
+  RenderColorWheel(ACanvas, ADest, GetWheelType);
 end;
 
 procedure TfrmSkGradientView.SkPaintBox1MouseDown(Sender: TObject;

@@ -24,7 +24,7 @@ object Form1: TForm1
       Size.Width = 125.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 20
+      TabOrder = 19
       Text = 'Gradient Editor'
       TextSettings.Trimming = None
       OnClick = Button2Click
@@ -43,7 +43,7 @@ object Form1: TForm1
       Size.Width = 124.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 20
+      TabOrder = 19
       Text = 'Color Dialog'
       TextSettings.Trimming = None
       OnClick = Button3Click
@@ -62,7 +62,7 @@ object Form1: TForm1
       Size.Width = 124.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 20
+      TabOrder = 19
       Text = 'Color Sliders'
       TextSettings.Trimming = None
       OnClick = Button4Click
@@ -79,6 +79,7 @@ object Form1: TForm1
     Text = 'rdFancyGradient'
   end
   object rdSkiaGriadient: TRadioButton
+    IsChecked = True
     Position.X = 48.000000000000000000
     Position.Y = 125.000000000000000000
     Size.Width = 150.000000000000000000
@@ -92,7 +93,7 @@ object Form1: TForm1
       Size.Width = 125.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 20
+      TabOrder = 19
       Text = 'Skia Gradient'
       TextSettings.Trimming = None
       OnClick = Button5Click
@@ -111,14 +112,13 @@ object Form1: TForm1
       Size.Width = 125.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 20
+      TabOrder = 19
       Text = 'Simple Sliders'
       TextSettings.Trimming = None
       OnClick = Button1Click
     end
   end
   object rdShadeTintTone: TRadioButton
-    IsChecked = True
     Position.X = 48.000000000000000000
     Position.Y = 184.000000000000000000
     Size.Width = 150.000000000000000000
@@ -131,7 +131,7 @@ object Form1: TForm1
       Size.Width = 125.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 20
+      TabOrder = 19
       Text = 'Shade, Tint, Tone'
       TextSettings.Trimming = None
       OnClick = Button6Click
