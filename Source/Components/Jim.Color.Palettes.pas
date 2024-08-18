@@ -6,7 +6,7 @@ uses
   System.UITypes, System.SysUtils;
 
 type
-  TPaletteType = (ptAnalogous, ptTriad, ptSplitComplementary, ptQuad, ptRectangle, ptComplementary, ptAll);
+  TPaletteType = (ptAnalogous, ptTriad, ptSplitComplementary, ptQuad, ptRectangle, ptComplementary, ptSpectrum, ptAll);
   TRGBA = record
     case Cardinal of
       0: (Color: TAlphaColor);
@@ -27,7 +27,7 @@ type
     FPaletteType: TPaletteType;
     function GetColor(Index: Integer): TAlphaColor;
     function GetBGRColor(Index: Integer): TColor;
-    procedure CreatePalette(const BaseColor: TAlphaColor);
+    procedure PopulatePalette(const BaseColor: TAlphaColor);
   public
     constructor Create(AColor: TAlphaColor; AType: TPaletteType);
     property Colors[Index: Integer]: TAlphaColor read GetColor; default;
@@ -126,21 +126,6 @@ begin
   Result := TColorPalette.Create(AColor, ptAll);
 end;
 
-constructor TColorPalette.Create(AColor: TAlphaColor; AType: TPaletteType);
-begin
-  FPaletteType := AType;
-  case FPaletteType of
-    ptAnalogous, ptTriad, ptSplitComplementary: FColorCount := 3;
-    ptQuad, ptRectangle: FColorCount := 4;
-    ptComplementary: FColorCount := 2;
-    ptAll: FColorCount := 3 + 3 + 3 + 4 + 4 + 2 + 4; // Sum of all distinct colors in the other types
-  else
-    FColorCount := 3; // Default to 3 colors if unspecified
-  end;
-  SetLength(FColors, FColorCount);
-  CreatePalette(AColor);
-end;
-
 function TColorPalette.GetBGRColor(Index: Integer): TColor;
 begin
   Result := AlphaColorToColor(GetColor(Index));
@@ -154,10 +139,26 @@ begin
     raise ERangeError.CreateFmt('Color index (%d) out of bounds', [Index]);
 end;
 
-procedure TColorPalette.CreatePalette(const BaseColor: TAlphaColor);
+constructor TColorPalette.Create(AColor: TAlphaColor; AType: TPaletteType);
+begin
+  FPaletteType := AType;
+  case FPaletteType of
+    ptAnalogous, ptTriad, ptSplitComplementary: FColorCount := 3;
+    ptQuad, ptRectangle: FColorCount := 4;
+    ptComplementary: FColorCount := 2;
+    ptSpectrum: FColorCount := 7;
+    ptAll: FColorCount := 12;
+  else
+    raise ENotImplemented.Create('Unimplemented palette type');
+  end;
+  SetLength(FColors, FColorCount);
+  PopulatePalette(AColor);
+end;
+
+procedure TColorPalette.PopulatePalette(const BaseColor: TAlphaColor);
 var
   H, S, L: Single;
-  I, Count: Integer;
+  I: Integer;
 
   procedure AddColor(Hue: Single);
   begin
@@ -165,129 +166,74 @@ var
       Hue := Hue - 1
     else if Hue < 0 then
       Hue := Hue + 1;
+    Assert(I < Length(FColors), 'Attempting to add too many colors to palette!');
     FColors[I] := HSLToRGB(Hue, S, L);
     Inc(I);
   end;
 
 begin
-  FColors[0] := BaseColor;
-  RGBToHSL(FColors[0], H, S, L);
+  RGBToHSL(BaseColor, H, S, L);
 
   I := 0;
+  AddColor(H);
   case FPaletteType of
     ptAnalogous:
     begin
-      AddColor(H);
       AddColor(H + 1/12); // 30 degrees
       AddColor(H - 1/12); // -30 degrees
     end;
     ptTriad:
     begin
-      AddColor(H);
       AddColor(H + 1/3); // 120 degrees
       AddColor(H + 2/3); // 240 degrees
     end;
     ptSplitComplementary:
     begin
-      AddColor(H);
       AddColor(H + 5/12); // 150 degrees
       AddColor(H - 5/12); // 210 degrees
     end;
     ptQuad:
     begin
-      AddColor(H);
       AddColor(H + 1/4); // 90 degrees
       AddColor(H + 1/2); // 180 degrees
       AddColor(H + 3/4); // 270 degrees
     end;
     ptRectangle:
     begin
-      AddColor(H);
       AddColor(H + 1/6); // 60 degrees
       AddColor(H + 1/2); // 180 degrees
       AddColor(H + 5/6); // 300 degrees
     end;
     ptComplementary:
     begin
-      AddColor(H);
       AddColor(H + 1/2); // 180 degrees
+    end;
+    ptSpectrum:
+    begin
+      AddColor(H + 1/7);
+      AddColor(H + 2/7);
+      AddColor(H + 3/7);
+      AddColor(H + 4/7);
+      AddColor(H + 5/7);
+      AddColor(H + 6/7);
     end;
     ptAll:
     begin
-      var TempPalette: TColorPalette;
-      var Hue: Single;
-
-      TempPalette := TColorPalette.Create(FColors[0], ptAnalogous);
-      for Count := 0 to pred(TempPalette.ColorCount) do
-      begin
-        RGBToHSL(TempPalette.Colors[Count], Hue, S, L);
-        AddColor(Hue);
-      end;
-
-      TempPalette := TColorPalette.Create(FColors[0], ptTriad);
-      for Count := 0 to pred(TempPalette.ColorCount) do
-      begin
-        RGBToHSL(TempPalette.Colors[Count], Hue, S, L);
-        AddColor(Hue);
-      end;
-
-      TempPalette := TColorPalette.Create(FColors[0], ptSplitComplementary);
-      for Count := 0 to pred(TempPalette.ColorCount) do
-      begin
-        RGBToHSL(TempPalette.Colors[Count], Hue, S, L);
-        AddColor(Hue);
-      end;
-
-      TempPalette := TColorPalette.Create(FColors[0], ptQuad);
-      for Count := 0 to TempPalette.ColorCount - 1 do
-      begin
-        RGBToHSL(TempPalette.Colors[Count], Hue, S, L);
-        AddColor(Hue);
-      end;
-
-      TempPalette := TColorPalette.Create(FColors[0], ptRectangle);
-      for Count := 0 to pred(TempPalette.ColorCount) do
-      begin
-        RGBToHSL(TempPalette.Colors[Count], Hue, S, L);
-        AddColor(Hue);
-      end;
-
-      TempPalette := TColorPalette.Create(FColors[0], ptComplementary);
-      for Count := 0 to pred(TempPalette.ColorCount) do
-      begin
-        RGBToHSL(TempPalette.Colors[Count], Hue, S, L);
-        AddColor(Hue);
-      end;
-
-      // Remove duplicates
-      var UniqueColors: TArray<TAlphaColor>;
-      SetLength(UniqueColors, FColorCount);
-      var UniqueCount: Integer := 0;
-      for Count := 0 to pred(I) do
-      begin
-        var Found: Boolean := False;
-        for var J: Integer := 0 to pred(UniqueCount) do
-        begin
-          if UniqueColors[J] = FColors[Count] then
-          begin
-            Found := True;
-            Break;
-          end;
-        end;
-        if not Found then
-        begin
-          UniqueColors[UniqueCount] := FColors[Count];
-          Inc(UniqueCount);
-        end;
-      end;
-      SetLength(UniqueColors, UniqueCount);
-      FColorCount := UniqueCount;
-      FColors := UniqueColors;
-      I := UniqueCount;
-    end;
+      {030} AddColor(H + 1/12);  // 30 degrees
+      {060} AddColor(H + 1/6);   // 60 degrees
+      {090} AddColor(H + 1/4);   // 90 degrees
+      {120} AddColor(H + 1/3);   // 120 degrees
+      {150} AddColor(H + 5/12);  // 150 degrees
+      {180} AddColor(H + 1/2);   // 180 degrees
+      {210} AddColor(H + 7/12);  // 210 degrees
+      {240} AddColor(H + 2/3);   // 240 degrees
+      {270} AddColor(H + 3/4);   // 270 degrees
+      {300} AddColor(H + 5/6);   // 300 degrees
+      {330} AddColor(H + 11/12); // 330 degrees
+    end
+    else
+      raise ENotImplemented.Create('Unimplemented palette type');
   end;
-
-  SetLength(FColors, I);
 end;
 
 initialization
