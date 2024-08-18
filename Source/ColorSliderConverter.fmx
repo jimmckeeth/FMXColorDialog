@@ -2,7 +2,7 @@ object frmSlideConverter: TfrmSlideConverter
   Left = 0
   Top = 0
   Caption = 'Jim'#39's Overengineered Color Picker'
-  ClientHeight = 409
+  ClientHeight = 410
   ClientWidth = 720
   FormFactor.Width = 320
   FormFactor.Height = 480
@@ -12,7 +12,7 @@ object frmSlideConverter: TfrmSlideConverter
   object Layout6: TLayout
     Align = Client
     Size.Width = 185.000000000000000000
-    Size.Height = 409.000000000000000000
+    Size.Height = 410.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 3
     object ColorBox1: TColorBox
@@ -44,7 +44,7 @@ object frmSlideConverter: TfrmSlideConverter
       Lum = 0.831325292587280300
       Sat = 0.994594573974609400
       Size.Width = 185.000000000000000000
-      Size.Height = 249.000000000000000000
+      Size.Height = 250.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
     end
@@ -52,7 +52,7 @@ object frmSlideConverter: TfrmSlideConverter
   object Layout5: TLayout
     Align = Left
     Size.Width = 344.000000000000000000
-    Size.Height = 409.000000000000000000
+    Size.Height = 410.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 2
     object AlphaTrackSpin1: TAlphaTrackSpin
@@ -413,7 +413,7 @@ object frmSlideConverter: TfrmSlideConverter
     Align = Right
     Position.X = 538.000000000000000000
     Size.Width = 182.000000000000000000
-    Size.Height = 409.000000000000000000
+    Size.Height = 410.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 4
     object ColorListBox1: TColorListBox
@@ -422,7 +422,7 @@ object frmSlideConverter: TfrmSlideConverter
       Margins.Right = 5.000000000000000000
       Margins.Bottom = 5.000000000000000000
       Size.Width = 172.000000000000000000
-      Size.Height = 239.000000000000000000
+      Size.Height = 240.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       OnDblClick = Button1Click
@@ -431,7 +431,7 @@ object frmSlideConverter: TfrmSlideConverter
       DefaultItemStyles.GroupFooterStyle = ''
       OnChange = ColorListBox1Change
       Viewport.Width = 152.000000000000000000
-      Viewport.Height = 235.000000000000000000
+      Viewport.Height = 236.000000000000000000
     end
     object GridPanelLayout1: TGridPanelLayout
       Align = Top
@@ -789,7 +789,7 @@ object frmSlideConverter: TfrmSlideConverter
     MinSize = 20.000000000000000000
     Position.X = 344.000000000000000000
     Size.Width = 9.000000000000000000
-    Size.Height = 409.000000000000000000
+    Size.Height = 410.000000000000000000
     Size.PlatformDefault = False
   end
 end

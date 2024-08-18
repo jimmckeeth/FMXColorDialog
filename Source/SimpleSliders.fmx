@@ -1,0 +1,114 @@
+object frmSimpleSliders: TfrmSimpleSliders
+  Left = 0
+  Top = 0
+  Caption = 'Simple Color Sliders'
+  ClientHeight = 324
+  ClientWidth = 484
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Hue: THueTrackBar
+    Align = Top
+    CanParentFocus = True
+    Orientation = Horizontal
+    Size.Width = 484.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    OnChange = HueChange
+  end
+  object Sat: TTrackBar
+    Align = Top
+    CanParentFocus = True
+    Max = 1.000000000000000000
+    Orientation = Horizontal
+    Position.Y = 19.000000000000000000
+    Size.Width = 484.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Value = 1.000000000000000000
+    OnChange = HueChange
+  end
+  object Lum: TTrackBar
+    Align = Top
+    CanParentFocus = True
+    Max = 1.000000000000000000
+    Orientation = Horizontal
+    Position.Y = 38.000000000000000000
+    Size.Width = 484.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Value = 0.500000000000000000
+    OnChange = HueChange
+    OnDblClick = LumDblClick
+  end
+  object Layout1: TLayout
+    Align = Top
+    Position.Y = 57.000000000000000000
+    Size.Width = 484.000000000000000000
+    Size.Height = 65.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object Rectangle1: TRectangle
+      Position.X = 216.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label1: TLabel
+      Position.X = 32.000000000000000000
+      Position.Y = 24.000000000000000000
+      Text = 'Label1'
+      TabOrder = 0
+    end
+  end
+  object Red: TGradientTrackBar
+    Align = Top
+    CanParentFocus = True
+    Max = 255.000000000000000000
+    Orientation = Horizontal
+    Position.Y = 122.000000000000000000
+    Size.Width = 484.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Value = 200.000000000000000000
+    OnChange = RedChange
+    BeginColor = claBlack
+    EndColor = claRed
+  end
+  object Green: TGradientTrackBar
+    Align = Top
+    CanParentFocus = True
+    Max = 255.000000000000000000
+    Orientation = Horizontal
+    Position.Y = 141.000000000000000000
+    Size.Width = 484.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Value = 10.000000000000000000
+    OnChange = RedChange
+    BeginColor = claBlack
+    EndColor = claGreen
+  end
+  object Blue: TGradientTrackBar
+    Align = Top
+    CanParentFocus = True
+    Max = 255.000000000000000000
+    Orientation = Horizontal
+    Position.Y = 160.000000000000000000
+    Size.Width = 484.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Value = 100.000000000000000000
+    OnChange = RedChange
+    BeginColor = claBlack
+    EndColor = claBlue
+  end
+end

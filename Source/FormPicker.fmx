@@ -1,0 +1,140 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 238
+  ClientWidth = 254
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object rdCircularGradient: TRadioButton
+    Position.X = 48.000000000000000000
+    Position.Y = 17.000000000000000000
+    Size.Width = 150.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Circular Gradient'
+    object Button2: TButton
+      Position.X = 20.000000000000000000
+      Position.Y = -1.000000000000000000
+      Size.Width = 125.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 20
+      Text = 'Gradient Editor'
+      TextSettings.Trimming = None
+      OnClick = Button2Click
+    end
+  end
+  object rdColorDialog: TRadioButton
+    Position.X = 48.000000000000000000
+    Position.Y = 44.000000000000000000
+    Size.Width = 150.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'rdColorDialog'
+    object Button3: TButton
+      Position.X = 20.000000000000000000
+      Size.Width = 124.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 20
+      Text = 'Color Dialog'
+      TextSettings.Trimming = None
+      OnClick = Button3Click
+    end
+  end
+  object rdColorSlideConverter: TRadioButton
+    Position.X = 48.000000000000000000
+    Position.Y = 71.000000000000000000
+    Size.Width = 150.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'rdColorSlideConverter'
+    object Button4: TButton
+      Position.X = 20.000000000000000000
+      Size.Width = 124.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 20
+      Text = 'Color Sliders'
+      TextSettings.Trimming = None
+      OnClick = Button4Click
+    end
+  end
+  object rdFancyGradient: TRadioButton
+    Enabled = False
+    Position.X = 48.000000000000000000
+    Position.Y = 98.000000000000000000
+    Size.Width = 150.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'rdFancyGradient'
+  end
+  object rdSkiaGriadient: TRadioButton
+    Position.X = 48.000000000000000000
+    Position.Y = 125.000000000000000000
+    Size.Width = 150.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'rdSkiaGriadient'
+    object Button5: TButton
+      Position.X = 20.000000000000000000
+      Position.Y = -1.000000000000000000
+      Size.Width = 125.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 20
+      Text = 'Skia Gradient'
+      TextSettings.Trimming = None
+      OnClick = Button5Click
+    end
+  end
+  object rdSimpleSliders: TRadioButton
+    Position.X = 48.000000000000000000
+    Position.Y = 154.000000000000000000
+    Size.Width = 150.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'rdSkiaGriadient'
+    object Button1: TButton
+      Position.X = 20.000000000000000000
+      Size.Width = 125.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 20
+      Text = 'Simple Sliders'
+      TextSettings.Trimming = None
+      OnClick = Button1Click
+    end
+  end
+  object rdShadeTintTone: TRadioButton
+    IsChecked = True
+    Position.X = 48.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 150.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'rdSkiaGriadient'
+    object Button6: TButton
+      Position.X = 20.000000000000000000
+      Size.Width = 125.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 20
+      Text = 'Shade, Tint, Tone'
+      TextSettings.Trimming = None
+      OnClick = Button6Click
+    end
+  end
+end

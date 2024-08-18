@@ -10,7 +10,7 @@ uses
   Math;
 
 type
-  TForm4 = class(TForm)
+  TfrmFancyGradientColorPicker = class(TForm)
     SkPaintBox1: TSkPaintBox;
     procedure SkPaintBox1Draw(ASender: TObject; const ACanvas: ISkCanvas;
       const ADest: TRectF; const AOpacity: Single);
@@ -21,7 +21,7 @@ type
   end;
 
 var
-  Form4: TForm4;
+  frmFancyGradientColorPicker: TfrmFancyGradientColorPicker;
 
 implementation
 
@@ -63,7 +63,7 @@ begin
 end;
 
 
-procedure TForm4.SkPaintBox1Draw(ASender: TObject;
+procedure TfrmFancyGradientColorPicker.SkPaintBox1Draw(ASender: TObject;
   const ACanvas: ISkCanvas; const ADest: TRectF; const AOpacity: Single);
 begin
   var lastSteps := 4;

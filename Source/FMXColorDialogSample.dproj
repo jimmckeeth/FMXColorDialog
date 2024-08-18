@@ -99,6 +99,7 @@
         <AUP_READ_PHONE_STATE>true</AUP_READ_PHONE_STATE>
         <AUP_WRITE_EXTERNAL_STORAGE>true</AUP_WRITE_EXTERNAL_STORAGE>
         <DCC_DcuOutput>.\$(Platform)\$(Config)</DCC_DcuOutput>
+        <DCC_Define>SKIA;$(DCC_Define)</DCC_Define>
         <DCC_ExeOutput>.\$(Platform)\$(Config)</DCC_ExeOutput>
         <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
         <DCC_UnitSearchPath>C:\Users\jim\Documents\GitHub\FMXColorDialog\Source\Components;..\..\..\Embarcadero\Studio\Projects\Codolex\.fsrc\TimeAndDate\DataSources;..\..\..\Embarcadero\Studio\Projects\Codolex\.fsrc\TimeAndDate\TimeAndDate;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
@@ -282,16 +283,29 @@
         <DCCReference Include="Components\Jim.FMX.TrackAndSpin.pas"/>
         <DCCReference Include="Components\Jim.FMX.MoreTrackbars.pas"/>
         <DCCReference Include="Components\Jim.Color.Palettes.pas"/>
-        <DCCReference Include="CircularGradientDisplay.pas">
-            <Form>Form2</Form>
+        <DCCReference Include="GradientDisplay.pas">
+            <Form>frmGradientDisplay</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="SkGradientViewer.pas">
-            <Form>SkGradientView</Form>
+            <Form>frmSkGradientView</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="FancyGradientColorPicker.pas">
-            <Form>Form4</Form>
+            <Form>frmFancyGradientColorPicker</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="FullColor.pas"/>
+        <DCCReference Include="FormPicker.pas">
+            <Form>Form1</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="SimpleSliders.pas">
+            <Form>frmSimpleSliders</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="ShadeTintToneView.pas">
+            <Form>frmShadeTintTone</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">
