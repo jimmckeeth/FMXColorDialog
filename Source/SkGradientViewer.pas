@@ -96,10 +96,11 @@ begin
 
     var LPaint: ISkPaint := TSkPaint.Create;
     LPaint.Shader :=
-      TSkShader.MakeGradientSweep( ADest.CenterPoint,
-        HueGradientArray(Saturation, Luminance));
-    ACanvas.DrawCircle(
-      ADest.Width/2, ADest.Height/2, curDia, LPaint);
+      TSkShader.MakeGradientSweep(
+        ADest.CenterPoint,
+        HueGradientArray(Saturation, Luminance),
+        nil,TSkTileMode.Repeat,0,360);
+    ACanvas.DrawCircle(ADest.Width/2, ADest.Height/2, curDia, LPaint);
   end;
 end;
 

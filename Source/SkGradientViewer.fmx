@@ -134,6 +134,7 @@ object frmSkGradientView: TfrmSkGradientView
         TabOrder = 10
       end
       object Label1: TLabel
+        Anchors = [akLeft, akBottom]
         Position.X = 8.000000000000000000
         Position.Y = 457.000000000000000000
         Text = 'Color Scheme'

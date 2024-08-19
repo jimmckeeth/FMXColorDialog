@@ -340,7 +340,6 @@
                 <Platform value="Win64">True</Platform>
                 <Platform value="iOSDevice64">True</Platform>
                 <Platform value="iOSSimARM64">True</Platform>
-                <Platform value="Win64x">False</Platform>
             </Platforms>
             <CodolexProjectStorageNotifier/>
         </BorlandProject>
