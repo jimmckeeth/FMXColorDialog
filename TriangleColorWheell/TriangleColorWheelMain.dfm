@@ -6,8 +6,8 @@ object Form27: TForm27
   Margins.Right = 5
   Margins.Bottom = 5
   Caption = 'Form27'
-  ClientHeight = 664
-  ClientWidth = 938
+  ClientHeight = 977
+  ClientWidth = 1030
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -19,8 +19,8 @@ object Form27: TForm27
   object SkPaintBox1: TSkPaintBox
     Left = 0
     Top = 0
-    Width = 938
-    Height = 664
+    Width = 1030
+    Height = 977
     Margins.Left = 5
     Margins.Top = 5
     Margins.Right = 5

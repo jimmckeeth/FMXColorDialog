@@ -2,7 +2,8 @@
 
 uses
   Vcl.Forms,
-  TriangleColorWheelMain in 'TriangleColorWheelMain.pas' {Form27};
+  TriangleColorWheelMain in 'TriangleColorWheelMain.pas' {Form27},
+  SkiaHelpers in '..\SkiaHelpers.pas';
 
 {$R *.res}
 

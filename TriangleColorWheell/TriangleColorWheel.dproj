@@ -120,6 +120,7 @@
             <Form>Form27</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="..\SkiaHelpers.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
