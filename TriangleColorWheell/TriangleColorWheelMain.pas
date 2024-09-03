@@ -187,7 +187,7 @@ begin
     if flip then ACanvas.Rotate(180, Center.X, hexPosition+5);
     paint.Color := TAlphaColors.Black;
     paint.Style := TSkPaintStyle.Stroke;
-    paint.StrokeWidth := 1.5;
+    paint.StrokeWidth := 2;
 
     ACanvas.DrawSimpleText(hex, x, hexPosition+10, HexFont, paint);
     paint.Style := TSkPaintStyle.Fill;
