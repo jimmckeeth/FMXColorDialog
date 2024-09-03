@@ -20,6 +20,15 @@ object frmSkGradientView: TfrmSkGradientView
     OnMouseMove = SkPaintBox1MouseMove
     OnResize = SkPaintBox1Resize
     OnDraw = SkPaintBox1Draw
+    object PalettePaintBox: TSkPaintBox
+      Align = Client
+      Size.Width = 512.000000000000000000
+      Size.Height = 512.000000000000000000
+      Size.PlatformDefault = False
+      Visible = False
+      OnClick = PalettePaintBoxClick
+      OnDraw = PalettePaintBoxDraw
+    end
     object Layout1: TLayout
       Align = Client
       Size.Width = 512.000000000000000000
@@ -34,14 +43,22 @@ object frmSkGradientView: TfrmSkGradientView
         Size.Height = 32.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
-        Text = 'Button1'
+        Text = 'Save Image'
         TextSettings.Trimming = None
         OnClick = Button1Click
+      end
+      object Circle1: TCircle
+        HitTest = False
+        Position.X = 154.000000000000000000
+        Position.Y = 20.000000000000000000
+        Size.Width = 10.000000000000000000
+        Size.Height = 10.000000000000000000
+        Size.PlatformDefault = False
       end
       object edRGB: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         Anchors = [akTop, akRight]
-        TabOrder = 6
+        TabOrder = 8
         TextSettings.HorzAlign = Center
         Position.X = 404.000000000000000000
         Position.Y = 8.000000000000000000
@@ -55,7 +72,7 @@ object frmSkGradientView: TfrmSkGradientView
         Size.PlatformDefault = False
         TextSettings.HorzAlign = Center
         Text = 'RGB'
-        TabOrder = 7
+        TabOrder = 9
       end
       object rbLuminance: TRadioButton
         Position.X = 8.000000000000000000
@@ -73,7 +90,7 @@ object frmSkGradientView: TfrmSkGradientView
         Size.Width = 105.000000000000000000
         Size.Height = 19.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 4
+        TabOrder = 5
         Text = 'Dark'
         OnChange = rbLuminanceInvChange
       end
@@ -98,22 +115,31 @@ object frmSkGradientView: TfrmSkGradientView
         Text = 'Saturation'
         OnChange = rbLuminanceInvChange
       end
-    end
-    object Circle1: TCircle
-      HitTest = False
-      Position.X = 154.000000000000000000
-      Position.Y = 20.000000000000000000
-      Size.Width = 10.000000000000000000
-      Size.Height = 10.000000000000000000
-      Size.PlatformDefault = False
-    end
-    object PalettePaintBox: TSkPaintBox
-      Align = Client
-      Size.Width = 512.000000000000000000
-      Size.Height = 512.000000000000000000
-      Size.PlatformDefault = False
-      Visible = False
-      OnDraw = PalettePaintBoxDraw
+      object ComboBox1: TComboBox
+        Anchors = [akLeft, akBottom]
+        Items.Strings = (
+          'None (1)'
+          'Complement (2)'
+          'Split (3)'
+          'Analogous (3)'
+          'Triadic (3)'
+          'Tetradic (4)'
+          'Hexadic (6)')
+        ItemIndex = 0
+        Position.X = 8.000000000000000000
+        Position.Y = 482.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 10
+      end
+      object Label1: TLabel
+        Anchors = [akLeft, akBottom]
+        Position.X = 8.000000000000000000
+        Position.Y = 457.000000000000000000
+        Text = 'Color Scheme'
+        TabOrder = 11
+      end
     end
   end
 end
