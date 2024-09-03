@@ -33,6 +33,7 @@ type
     paintPalette: TPaintBox;
     paintShadeTint: TPaintBox;
     paintTone: TPaintBox;
+    paintComplementary: TPaintBox;
     procedure tbRedChange(Sender: TObject);
     procedure tbSatChange(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -72,7 +73,7 @@ procedure TForm2.FormShow(Sender: TObject);
 begin
   FPalette := TColorPalette.Create(
     ColorToAlphaColor( pnlColor.Color ),
-    TPaletteType(rdPalette.ItemIndex));
+    TPaletteType( rdPalette.ItemIndex ));
 end;
 
 procedure TForm2.paintPalettePaint(Sender: TObject);
