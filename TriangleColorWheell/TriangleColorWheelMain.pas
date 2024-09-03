@@ -102,6 +102,18 @@ begin
   DrawTriangle(ACanvas, Vertices, Color);
 end;
 
+function GetTextHeight(AText: String; AFont: ISkFont): Single;
+begin
+  var bounds := AFont.GetBounds(AFont.GetGlyphs(AText));
+  Result := 0;
+  for var bound in bounds do
+  begin
+    if bound.Height > Result then
+      Result := bound.Height;
+  end;
+
+end;
+
 procedure RenderColorWheel(const ACanvas: ISkCanvas;
   const AOpacity: Single; const ADest: TRectF);
 
@@ -160,10 +172,11 @@ begin
     // Name
     if NumTriangles = Length(Names30DegreeColors) then
     begin
+      var height := GetTextHeight(Names30DegreeColors[i], NameFont);
       X := Center.X - NameFont.MeasureText(Names30DegreeColors[i]) / 2;
-      if flip then ACanvas.Rotate(180, Center.X, NamePosition-NameFont.Size);
+      if flip then ACanvas.Rotate(180, Center.X, NamePosition-NameFont.Size/2);
       ACanvas.DrawSimpleText(Names30DegreeColors[i], X, NamePosition, NameFont, paint);
-      if flip then ACanvas.Rotate(180, Center.X, NamePosition-NameFont.Size);
+      if flip then ACanvas.Rotate(180, Center.X, NamePosition-NameFont.Size/2);
     end;
 
     // Hex
