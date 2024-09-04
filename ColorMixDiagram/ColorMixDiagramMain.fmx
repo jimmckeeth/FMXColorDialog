@@ -1,0 +1,18 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'Form4'
+  ClientHeight = 750
+  ClientWidth = 750
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object SkPaintBox1: TSkPaintBox
+    Align = Client
+    Size.Width = 750.000000000000000000
+    Size.Height = 750.000000000000000000
+    Size.PlatformDefault = False
+    OnDraw = SkPaintBox1Draw
+  end
+end

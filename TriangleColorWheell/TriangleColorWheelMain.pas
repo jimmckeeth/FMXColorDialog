@@ -87,18 +87,15 @@ begin
   Paint.Color := Color;
   ACanvas.DrawPath(path, Paint);
 
-//  paint.Color := TAlphaColors.White;
-//  paint.Style := TSkPaintStyle.Stroke;
-//  ACanvas.DrawPath(path, Paint);
 end;
 
 procedure RenderTriangle(const AIndex, ANumTriangles: Integer;
-  const ACenter: TPointF; const ARadius: Single;
-  const ACanvas: ISkCanvas);
+  const ACenter: TPointF; const ARadius: Single; const ACanvas: ISkCanvas);
 begin
   var Angle := AIndex * 2 * Pi / ANumTriangles;
   var Vertices := CalculateTriangleVertices(ACenter, ARadius, Angle);
   var Color := HSLToRGB((Angle + pi) / (2 * Pi), 1, 0.5);
+
   DrawTriangle(ACanvas, Vertices, Color);
 end;
 
@@ -111,14 +108,11 @@ begin
     if bound.Height > Result then
       Result := bound.Height;
   end;
-
 end;
 
-procedure RenderColorWheel(const ACanvas: ISkCanvas;
+procedure RenderColorWheel(const ANumTrianges: Integer; const ACanvas: ISkCanvas;
   const AOpacity: Single; const ADest: TRectF);
-
 begin
-  const NumTriangles = 12;
   var Center :=
     TPointF.Create(
       (ADest.Left + ADest.Right) / 2,
@@ -130,73 +124,77 @@ begin
   Paint.AlphaF := AOpacity;
 
   // First pass: Draw every other triangle starting at 30 degrees
-  for var i := 1 to NumTriangles - 1 do
+  for var i := 1 to ANumTrianges - 1 do
     if i mod 2 = 1 then
-      RenderTriangle(i, NumTriangles, Center, TriangleHeight, ACanvas);
+      RenderTriangle(i, ANumTrianges, Center, TriangleHeight, ACanvas);
 
   // Second pass: Draw the remaining triangles
-  for var i := 0 to NumTriangles do
+  for var i := 0 to ANumTrianges do
     if i mod 2 = 0 then
-      RenderTriangle(i, NumTriangles, Center, TriangleHeight, ACanvas);
+      RenderTriangle(i, ANumTrianges, Center, TriangleHeight, ACanvas);
 
+    var DegreeFont := TSKFont.Interfaced(
+      TSkTypeface.MakeFromName('Ubuntu', TSkFontStyle.Normal), Radius*0.04);
+    var NameFont := TSKFont.Interfaced(
+      TSkTypeface.MakeFromName('Ubuntu', TSkFontStyle.Normal), Radius*0.07);
+    var HexFont := TSKFont.Interfaced(
+      TSkTypeface.MakeFromName('Ubuntu Mono', TSkFontStyle.Bold), Radius*0.05);
 
-  var DegreeFont := TSKFont.Interfaced(
-    TSkTypeface.MakeFromName('Ubuntu', TSkFontStyle.Normal), Radius*0.04);
-  var NameFont := TSKFont.Interfaced(
-    TSkTypeface.MakeFromName('Ubuntu', TSkFontStyle.Normal), Radius*0.07);
-  var HexFont := TSKFont.Interfaced(
-    TSkTypeface.MakeFromName('Ubuntu Mono', TSkFontStyle.Bold), Radius*0.06);
+    var HexPosition := Min(ADest.Width, ADest.Height) / 4;
+    var DegreePosition := DegreeFont.Size+DegreeFont.Size;
+    var NamePosition := DegreePosition + NameFont.Size;
 
-  var HexPosition := Min(ADest.Width, ADest.Height) / 4;
-  var DegreePosition := DegreeFont.Size;
-  var NamePosition := DegreePosition + NameFont.Size;
-
-
-
-  for var i := 0 to NumTriangles-1 do
-  begin
-    paint.Color := TAlphaColors.Black;
-
-    var offsetAngle := Trunc(360/NumTriangles)*i;
-
-    var flip := (offsetAngle > 90) and (offsetAngle < 270);
-
-
-    // Degrees
-    var X := Center.X - DegreeFont.MeasureText(offsetAngle.ToString) / 2;
-
-    if flip then ACanvas.Rotate(180, Center.X, DegreePosition/2);
-    ACanvas.DrawSimpleText(offsetAngle.ToString + #$0B0, X, DegreePosition, DegreeFont, paint);
-    if flip then ACanvas.Rotate(180, Center.X, DegreePosition/2);
-
-    // Name
-    if NumTriangles = Length(Names30DegreeColors) then
+  if ANumTrianges = 12 then
+    for var i := 0 to ANumTrianges-1 do
     begin
-      var height := GetTextHeight(Names30DegreeColors[i], NameFont);
-      X := Center.X - NameFont.MeasureText(Names30DegreeColors[i]) / 2;
-      if flip then ACanvas.Rotate(180, Center.X, NamePosition-NameFont.Size/2);
-      ACanvas.DrawSimpleText(Names30DegreeColors[i], X, NamePosition, NameFont, paint);
-      if flip then ACanvas.Rotate(180, Center.X, NamePosition-NameFont.Size/2);
+      paint.Color := TAlphaColors.Black;
+
+      var offsetAngle := Trunc(360/ANumTrianges)*i;
+
+      var flip := (offsetAngle > 90) and (offsetAngle < 270);
+
+      // Degrees
+      var X := Center.X - DegreeFont.MeasureText(offsetAngle.ToString) / 2;
+      var TextHeight := GetTextHeight(offsetAngle.ToString + #$0B0, DegreeFont);
+      if offsetAngle mod 10 =0 then
+      begin
+        if flip then ACanvas.Rotate(180, Center.X, DegreePosition - TextHeight/2);
+        ACanvas.DrawSimpleText(offsetAngle.ToString + #$0B0, X, DegreePosition, DegreeFont, paint);
+        if flip then ACanvas.Rotate(180, Center.X, DegreePosition - TextHeight/2);
+      end;
+
+      if ANumTrianges = 12 then
+      begin
+        // Name
+        if ANumTrianges = Length(Names30DegreeColors) then
+        begin
+          TextHeight := GetTextHeight(Names30DegreeColors[i], NameFont);
+          X := Center.X - NameFont.MeasureText(Names30DegreeColors[i]) / 2;
+          if flip then ACanvas.Rotate(180, Center.X, NamePosition - TextHeight/2);
+          ACanvas.DrawSimpleText(Names30DegreeColors[i], X, NamePosition, NameFont, paint);
+          if flip then ACanvas.Rotate(180, Center.X, NamePosition - TextHeight/2);
+        end;
+
+        // Hex
+        var color := HSLtoRGB(offsetAngle/360, 1.0, 0.5);
+        var hex := '#'+IntToHex(color).Remove(0,2);
+        TextHeight := GetTextHeight(hex, HexFont);
+
+        x := Center.X - HexFont.MeasureText(hex) / 2;
+        paint.Color := TAlphaColors.Black;
+        paint.Style := TSkPaintStyle.Stroke;
+        paint.StrokeWidth := 2;
+
+        if flip then ACanvas.Rotate(180, Center.X, hexPosition + TextHeight/3);
+        ACanvas.DrawSimpleText(hex, x, hexPosition+10, HexFont, paint);
+        paint.Style := TSkPaintStyle.Fill;
+        paint.Color := TAlphaColors.White;
+        ACanvas.DrawSimpleText(hex, x, hexPosition+10, HexFont, paint);
+        if flip then ACanvas.Rotate(180, Center.X, hexPosition + TextHeight/3);
+      end;
+
+      ACanvas.Rotate(360/ANumTrianges, Center.X, Center.Y);
     end;
-
-    // Hex
-    var color := HSLtoRGB(offsetAngle/360, 1.0, 0.5);
-    var hex := '#'+IntToHex(color).Remove(0,2);
-
-    x := Center.X - HexFont.MeasureText(hex) / 2;
-    if flip then ACanvas.Rotate(180, Center.X, hexPosition+5);
-    paint.Color := TAlphaColors.Black;
-    paint.Style := TSkPaintStyle.Stroke;
-    paint.StrokeWidth := 2;
-
-    ACanvas.DrawSimpleText(hex, x, hexPosition+10, HexFont, paint);
-    paint.Style := TSkPaintStyle.Fill;
-    paint.Color := TAlphaColors.White;
-    ACanvas.DrawSimpleText(hex, x, hexPosition+10, HexFont, paint);
-    if flip then ACanvas.Rotate(180, Center.X, hexPosition+5);
-
-    ACanvas.Rotate(360/NumTriangles, Center.X, Center.Y);
-  end;
 
 end;
 
@@ -205,7 +203,7 @@ begin
   var LStream := TFileStream.Create(AOutputFileName, fmCreate);
   try
     var LCanvas := TSkSVGCanvas.Make(ADest, LStream, [TSkSVGCanvasFlag.ConvertTextToPaths]);
-    RenderColorWheel(LCanvas, 1, ADest);
+    RenderColorWheel(12, LCanvas, 1, ADest);
     LCanvas := nil;
   finally
     LStream.Free;
@@ -220,7 +218,8 @@ end;
 procedure TForm27.SkPaintBox1Draw(ASender: TObject;
   const ACanvas: ISkCanvas; const ADest: TRectF; const AOpacity: Single);
 begin
-  RenderColorWheel(ACanvas, AOpacity, ADest);
+  RenderColorWheel(72, ACanvas, AOpacity, ADest);
+  RenderColorWheel(12, ACanvas, AOpacity, ADest);
 end;
 
 end.

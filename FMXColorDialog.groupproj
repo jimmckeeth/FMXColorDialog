@@ -21,6 +21,9 @@
         <Projects Include="C:\Users\jim\Documents\Git\FMXColorDialog\TriangleColorWheell\TriangleColorWheel.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="C:\Users\jim\Documents\Git\FMXColorDialog\ColorMixDiagram\ColorMixDiagram.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -83,14 +86,23 @@
     <Target Name="TriangleColorWheel:Make">
         <MSBuild Projects="C:\Users\jim\Documents\Git\FMXColorDialog\TriangleColorWheell\TriangleColorWheel.dproj" Targets="Make"/>
     </Target>
+    <Target Name="ColorMixDiagram">
+        <MSBuild Projects="C:\Users\jim\Documents\Git\FMXColorDialog\ColorMixDiagram\ColorMixDiagram.dproj"/>
+    </Target>
+    <Target Name="ColorMixDiagram:Clean">
+        <MSBuild Projects="C:\Users\jim\Documents\Git\FMXColorDialog\ColorMixDiagram\ColorMixDiagram.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ColorMixDiagram:Make">
+        <MSBuild Projects="C:\Users\jim\Documents\Git\FMXColorDialog\ColorMixDiagram\ColorMixDiagram.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="FMXColorEditors;FMXColorDialogSample;ColorUtilTests;ColorBrowser;VCLColorPicker;TriangleColorWheel"/>
+        <CallTarget Targets="FMXColorEditors;FMXColorDialogSample;ColorUtilTests;ColorBrowser;VCLColorPicker;TriangleColorWheel;ColorMixDiagram"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="FMXColorEditors:Clean;FMXColorDialogSample:Clean;ColorUtilTests:Clean;ColorBrowser:Clean;VCLColorPicker:Clean;TriangleColorWheel:Clean"/>
+        <CallTarget Targets="FMXColorEditors:Clean;FMXColorDialogSample:Clean;ColorUtilTests:Clean;ColorBrowser:Clean;VCLColorPicker:Clean;TriangleColorWheel:Clean;ColorMixDiagram:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="FMXColorEditors:Make;FMXColorDialogSample:Make;ColorUtilTests:Make;ColorBrowser:Make;VCLColorPicker:Make;TriangleColorWheel:Make"/>
+        <CallTarget Targets="FMXColorEditors:Make;FMXColorDialogSample:Make;ColorUtilTests:Make;ColorBrowser:Make;VCLColorPicker:Make;TriangleColorWheel:Make;ColorMixDiagram:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
