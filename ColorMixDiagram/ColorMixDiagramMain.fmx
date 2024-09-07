@@ -11,8 +11,23 @@ object Form4: TForm4
   object SkPaintBox1: TSkPaintBox
     Align = Client
     Size.Width = 750.000000000000000000
-    Size.Height = 750.000000000000000000
+    Size.Height = 700.000000000000000000
     Size.PlatformDefault = False
     OnDraw = SkPaintBox1Draw
+  end
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 750.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Button1: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 0
+      Text = 'Button1'
+      TextSettings.Trimming = None
+      OnClick = Button1Click
+    end
   end
 end
