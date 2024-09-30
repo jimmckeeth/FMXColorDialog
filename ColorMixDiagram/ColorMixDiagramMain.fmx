@@ -1,33 +1,216 @@
 object Form4: TForm4
   Left = 0
   Top = 0
-  Caption = 'Form4'
-  ClientHeight = 750
-  ClientWidth = 750
+  Caption = 'Color Mixer'
+  ClientHeight = 783
+  ClientWidth = 900
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
   DesignerMasterStyle = 0
+  object SkSvg1: TSkSvg
+    Align = Client
+    Size.Width = 840.000000000000000000
+    Size.Height = 723.000000000000000000
+    Size.PlatformDefault = False
+    Svg.Source = 
+      '<?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="h' +
+      'ttp://www.w3.org/2000/svg" viewBox="0 0 971.1 971.04"><g id="Lay' +
+      'er_1-2"><path d="M326.6,605.4c-108.5-61-172.8-180.7-163.5-304.9,' +
+      '7.9-112.7,75.7-214.6,176.7-265.3,99.5-50.5,220.1-45.5,315.1,13.2' +
+      ',108.2,66.2,168,191.4,151.3,317.2-93.3-53-209.1-55.7-304.8-7-95,' +
+      '47.7-161.4,141.3-174.8,246.8h0Z" fill="red" fill-rule="evenodd" ' +
+      'stroke="#231f20" stroke-miterlimit="10"/><path d="M644.6,605.4c1' +
+      '6.3,123.4-40.9,246.6-145.8,313.8-94.9,61.3-217.1,68.2-318.2,17.8' +
+      'C80.4,887.7,12.1,788.2,2,677.1c-11.9-126.3,52.4-249.2,163-311.4,' +
+      '13.6,106.4,80.9,200.7,177.2,248,95.2,47.4,209.9,44.3,302.4-8.2v-' +
+      '.1Z" fill="lime" fill-rule="evenodd" stroke="#231f20" stroke-mit' +
+      'erlimit="10"/><path d="M485.6,367.2c102.7-59.6,231.7-57.5,332.4,' +
+      '5.4,96.1,59.4,154.7,166.9,152.5,279.9-1.5,107.3-57.7,208.5-148.1' +
+      ',266.5-101.3,65.6-232.5,68.8-336.9,8.3,98-56.3,160-161.7,161.6-2' +
+      '74.7,2.2-116.8-60.3-227.1-161.6-285.3h0l.1-.1Z" fill="blue" fill' +
+      '-rule="evenodd" stroke="#231f20" stroke-miterlimit="10"/><path d' +
+      '="M644.6,605.4c-93.3,53-209.1,55.7-304.8,7-95-47.7-161.4-141.3-1' +
+      '74.8-246.8,93.3-53,209.1-55.7,304.8-7,95,47.7,161.4,141.3,174.8,' +
+      '246.8h0Z" fill="#ff0" fill-rule="evenodd" stroke="#231f20" strok' +
+      'e-miterlimit="10"/><path d="M485.6,927.2c-98-56.3-160-161.7-161.' +
+      '6-274.7-2.2-116.8,60.3-227.1,161.6-285.3,98,56.3,160,161.7,161.6' +
+      ',274.7,2.2,116.8-60.3,227.1-161.6,285.3h0Z" fill="aqua" fill-rul' +
+      'e="evenodd" stroke="#231f20" stroke-miterlimit="10"/><path d="M3' +
+      '26.6,605.4c13.6-106.4,80.9-200.7,177.2-248,95.2-47.4,209.9-44.3,' +
+      '302.4,8.2-13.6,106.4-80.9,200.7-177.2,248-95.2,47.4-209.9,44.3-3' +
+      '02.4-8.2h0Z" fill="#f0f" fill-rule="evenodd" stroke="#231f20" st' +
+      'roke-miterlimit="10"/><path d="M326.6,605.4c12.6-99.1,72.3-188.5' +
+      ',159-238.2,86.7,49.7,146.3,139.1,159,238.2-98,55.6-219.9,55.6-31' +
+      '7.9,0h-.1Z" fill="#fff" stroke="#231f20" stroke-miterlimit="10"/' +
+      '><path d="M485.6.5c178.6,0,323.3,144.8,323.3,323.3-17,428.9-629.' +
+      '7,428.8-646.7,0C162.2,145.2,307,.5,485.5.5h.1Z" fill="none" stro' +
+      'ke="#231f20"/><path d="M323.9,323.8c178.6,0,323.3,144.8,323.3,32' +
+      '3.3-17,428.9-629.7,428.8-646.7,0,0-178.6,144.8-323.3,323.3-323.3' +
+      'h.1Z" fill="none" stroke="#231f20"/><path d="M647.3,323.8c178.6,' +
+      '0,323.3,144.8,323.3,323.3-17,428.9-629.7,428.8-646.7,0,0-178.6,1' +
+      '44.8-323.3,323.3-323.3h.1Z" fill="none" stroke="#231f20"/></g></' +
+      'svg>'
+  end
   object SkPaintBox1: TSkPaintBox
     Align = Client
-    Size.Width = 750.000000000000000000
-    Size.Height = 700.000000000000000000
+    Size.Width = 840.000000000000000000
+    Size.Height = 723.000000000000000000
     Size.PlatformDefault = False
     OnDraw = SkPaintBox1Draw
+    object Hex1: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Lines.Strings = (
+        '  FF0000'
+        #8855' 00FF00'
+        '---------'
+        '= FFFF00')
+      ReadOnly = True
+      ShowScrollBars = False
+      StyledSettings = [Style, FontColor]
+      TextSettings.Font.Family = 'Consolas'
+      TextSettings.HorzAlign = Trailing
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 65.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Viewport.Width = 69.000000000000000000
+      Viewport.Height = 61.000000000000000000
+    end
+    object Hex2: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Lines.Strings = (
+        '  FFFF00'
+        #8855' FFFF00'
+        '---------'
+        '= FFFF00')
+      ReadOnly = True
+      ShowScrollBars = False
+      StyledSettings = [Style, FontColor]
+      TextSettings.Font.Family = 'Consolas'
+      TextSettings.HorzAlign = Trailing
+      Anchors = [akTop, akRight]
+      Position.X = 760.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 72.000000000000000000
+      Size.Height = 65.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Viewport.Width = 68.000000000000000000
+      Viewport.Height = 61.000000000000000000
+    end
   end
   object Layout1: TLayout
     Align = Top
-    Size.Width = 750.000000000000000000
-    Size.Height = 50.000000000000000000
+    Size.Width = 900.000000000000000000
+    Size.Height = 30.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
     object Button1: TButton
       Position.X = 8.000000000000000000
-      Position.Y = 8.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
       TabOrder = 0
-      Text = 'Button1'
+      Text = 'Export'
       TextSettings.Trimming = None
       OnClick = Button1Click
+    end
+    object HueTrackBar1: THueTrackBar
+      Anchors = [akLeft, akTop, akRight]
+      CanParentFocus = True
+      Orientation = Horizontal
+      Position.X = 81.000000000000000000
+      Position.Y = 6.000000000000000000
+      Size.Width = 751.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Value = 0.000000000000000000
+      OnChange = HueTrackBar1Change
+    end
+    object chkSync: TCheckBox
+      Anchors = [akTop, akRight]
+      IsChecked = True
+      Position.X = 840.000000000000000000
+      Position.Y = 6.000000000000000000
+      Size.Width = 52.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Sync'
+    end
+  end
+  object Layout2: TLayout
+    Align = Left
+    Position.Y = 30.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 723.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object HueTrackBar2: THueTrackBar
+      Anchors = [akLeft, akTop, akBottom]
+      CanParentFocus = True
+      Orientation = Vertical
+      Position.X = 5.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 19.000000000000000000
+      Size.Height = 707.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Value = 0.660000000000000000
+      OnChange = HueTrackBar2Change
+    end
+  end
+  object Layout3: TLayout
+    Align = Right
+    Position.X = 870.000000000000000000
+    Position.Y = 30.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 723.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object HueTrackBar3: THueTrackBar
+      Anchors = [akLeft, akTop, akBottom]
+      CanParentFocus = True
+      Orientation = Vertical
+      Position.X = 5.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 19.000000000000000000
+      Size.Height = 707.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Value = 0.330000000000000000
+      OnChange = HueTrackBar3Change
+    end
+  end
+  object Layout4: TLayout
+    Align = Bottom
+    Position.Y = 753.000000000000000000
+    Size.Width = 900.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object Hex3: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Anchors = [akTop]
+      TabOrder = 0
+      ReadOnly = True
+      Text = '00FF00 '#8855' 0000FF = 00FFFF'
+      TextSettings.Font.Family = 'Consolas'
+      TextSettings.HorzAlign = Center
+      Position.X = 349.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 201.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Style, FontColor]
     end
   end
 end

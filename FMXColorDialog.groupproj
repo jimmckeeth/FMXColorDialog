@@ -18,10 +18,13 @@
         <Projects Include="Source\VCLColorPicker\VCLColorPicker.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="C:\Users\jim\Documents\Git\FMXColorDialog\TriangleColorWheell\TriangleColorWheel.dproj">
+        <Projects Include="TriangleColorWheell\TriangleColorWheel.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="C:\Users\jim\Documents\Git\FMXColorDialog\ColorMixDiagram\ColorMixDiagram.dproj">
+        <Projects Include="ColorMixDiagram\ColorMixDiagram.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Source\FMXColorWheelMain.dproj">
             <Dependencies/>
         </Projects>
     </ItemGroup>
@@ -78,31 +81,40 @@
         <MSBuild Projects="Source\VCLColorPicker\VCLColorPicker.dproj" Targets="Make"/>
     </Target>
     <Target Name="TriangleColorWheel">
-        <MSBuild Projects="C:\Users\jim\Documents\Git\FMXColorDialog\TriangleColorWheell\TriangleColorWheel.dproj"/>
+        <MSBuild Projects="TriangleColorWheell\TriangleColorWheel.dproj"/>
     </Target>
     <Target Name="TriangleColorWheel:Clean">
-        <MSBuild Projects="C:\Users\jim\Documents\Git\FMXColorDialog\TriangleColorWheell\TriangleColorWheel.dproj" Targets="Clean"/>
+        <MSBuild Projects="TriangleColorWheell\TriangleColorWheel.dproj" Targets="Clean"/>
     </Target>
     <Target Name="TriangleColorWheel:Make">
-        <MSBuild Projects="C:\Users\jim\Documents\Git\FMXColorDialog\TriangleColorWheell\TriangleColorWheel.dproj" Targets="Make"/>
+        <MSBuild Projects="TriangleColorWheell\TriangleColorWheel.dproj" Targets="Make"/>
     </Target>
     <Target Name="ColorMixDiagram">
-        <MSBuild Projects="C:\Users\jim\Documents\Git\FMXColorDialog\ColorMixDiagram\ColorMixDiagram.dproj"/>
+        <MSBuild Projects="ColorMixDiagram\ColorMixDiagram.dproj"/>
     </Target>
     <Target Name="ColorMixDiagram:Clean">
-        <MSBuild Projects="C:\Users\jim\Documents\Git\FMXColorDialog\ColorMixDiagram\ColorMixDiagram.dproj" Targets="Clean"/>
+        <MSBuild Projects="ColorMixDiagram\ColorMixDiagram.dproj" Targets="Clean"/>
     </Target>
     <Target Name="ColorMixDiagram:Make">
-        <MSBuild Projects="C:\Users\jim\Documents\Git\FMXColorDialog\ColorMixDiagram\ColorMixDiagram.dproj" Targets="Make"/>
+        <MSBuild Projects="ColorMixDiagram\ColorMixDiagram.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FMXColorWheelMain">
+        <MSBuild Projects="Source\FMXColorWheelMain.dproj"/>
+    </Target>
+    <Target Name="FMXColorWheelMain:Clean">
+        <MSBuild Projects="Source\FMXColorWheelMain.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FMXColorWheelMain:Make">
+        <MSBuild Projects="Source\FMXColorWheelMain.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
-        <CallTarget Targets="FMXColorEditors;FMXColorDialogSample;ColorUtilTests;ColorBrowser;VCLColorPicker;TriangleColorWheel;ColorMixDiagram"/>
+        <CallTarget Targets="FMXColorEditors;FMXColorDialogSample;ColorUtilTests;ColorBrowser;VCLColorPicker;TriangleColorWheel;ColorMixDiagram;FMXColorWheelMain"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="FMXColorEditors:Clean;FMXColorDialogSample:Clean;ColorUtilTests:Clean;ColorBrowser:Clean;VCLColorPicker:Clean;TriangleColorWheel:Clean;ColorMixDiagram:Clean"/>
+        <CallTarget Targets="FMXColorEditors:Clean;FMXColorDialogSample:Clean;ColorUtilTests:Clean;ColorBrowser:Clean;VCLColorPicker:Clean;TriangleColorWheel:Clean;ColorMixDiagram:Clean;FMXColorWheelMain:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="FMXColorEditors:Make;FMXColorDialogSample:Make;ColorUtilTests:Make;ColorBrowser:Make;VCLColorPicker:Make;TriangleColorWheel:Make;ColorMixDiagram:Make"/>
+        <CallTarget Targets="FMXColorEditors:Make;FMXColorDialogSample:Make;ColorUtilTests:Make;ColorBrowser:Make;VCLColorPicker:Make;TriangleColorWheel:Make;ColorMixDiagram:Make;FMXColorWheelMain:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

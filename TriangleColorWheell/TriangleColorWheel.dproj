@@ -8,7 +8,7 @@
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <ProjectGuid>{65EB2822-3DAA-442E-B128-65B4EA80765D}</ProjectGuid>
         <ProjectName Condition="'$(ProjectName)'==''">TriangleColorWheel</ProjectName>
-        <ProjectVersion>20.1</ProjectVersion>
+        <ProjectVersion>20.2</ProjectVersion>
         <TargetedPlatforms>3</TargetedPlatforms>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
@@ -61,6 +61,7 @@
     <PropertyGroup Condition="'$(Base)'!=''">
         <SanitizedProjectName>TriangleColorWheel</SanitizedProjectName>
         <DCC_DcuOutput>.\$(Platform)\$(Config)</DCC_DcuOutput>
+        <DCC_Define>SKIA;$(DCC_Define)</DCC_Define>
         <DCC_ExeOutput>.\$(Platform)\$(Config)</DCC_ExeOutput>
         <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
         <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
@@ -118,7 +119,6 @@
         </DelphiCompile>
         <DCCReference Include="TriangleColorWheelMain.pas">
             <Form>Form27</Form>
-            <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="..\SkiaHelpers.pas"/>
         <BuildConfiguration Include="Base">
@@ -143,16 +143,16 @@
                 </Source>
             </Delphi.Personality>
             <Platforms>
+                <Platform value="Android">False</Platform>
+                <Platform value="Android64">False</Platform>
+                <Platform value="Linux64">False</Platform>
+                <Platform value="OSX64">False</Platform>
+                <Platform value="OSXARM64">False</Platform>
                 <Platform value="Win32">True</Platform>
                 <Platform value="Win64">True</Platform>
-                <Platform value="OSX64">False</Platform>
-                <Platform value="Android64">False</Platform>
-                <Platform value="Android">False</Platform>
-                <Platform value="OSXARM64">False</Platform>
+                <Platform value="Win64x">False</Platform>
                 <Platform value="iOSDevice64">False</Platform>
                 <Platform value="iOSSimARM64">False</Platform>
-                <Platform value="Win64x">False</Platform>
-                <Platform value="Linux64">False</Platform>
             </Platforms>
         </BorlandProject>
         <ProjectFileVersion>12</ProjectFileVersion>

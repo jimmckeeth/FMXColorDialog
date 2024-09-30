@@ -2,6 +2,8 @@
 
 uses
   Vcl.Forms,
+  Skia.API,
+  Skia,
   TriangleColorWheelMain in 'TriangleColorWheelMain.pas' {Form27},
   SkiaHelpers in '..\SkiaHelpers.pas';
 
